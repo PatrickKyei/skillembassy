@@ -35,17 +35,9 @@ module.exports = {
         '1/1': '100%',
       },
       fontFamily: {
-        inter: ['SF Pro Text', 'Inter', 'sans-serif'],
+        inter: ['Inter', 'sans-serif'],
         'architects-daughter': ['"Architects Daughter"', 'sans-serif']
       },
-
-      // fontFamily: {
-      //   primary:
-      //     "SF Pro Text", -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"',
-      //   secondary: "SF Pro Text",
-      //   code: "monospace"
-      // },
-
       fontSize: {
         xs: '0.75rem',
         sm: '0.875rem',

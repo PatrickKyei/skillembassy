@@ -10,7 +10,6 @@ export default defineConfig({
   css: {
     postcss,
   },
-  base: "/https:/skillembassy",
   plugins: [react()],
   resolve: {
     alias: [
