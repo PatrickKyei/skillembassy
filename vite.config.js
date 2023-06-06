@@ -10,7 +10,7 @@ export default defineConfig({
   css: {
     postcss,
   },
-  base: "/https://github.com/PatrickKyei/skillembassy",
+  base: "/https:/skillembassy",
   plugins: [react()],
   resolve: {
     alias: [
