@@ -45,7 +45,7 @@ function HeroHome() {
             Do You Have Zero Tech Skills?
             </h1>
             <p className="text-xl text-gray-400 mb-8" data-aos="fade-up" data-aos-delay="200">
-            Discover the skills you need to succeed in today's World. Join our supportive community and achieve your career goal.
+            Discover the skills you need to succeed in today's World. Join our supportive community and achieve your career goals.
             </p>
             <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center">
               <div data-aos="fade-up" data-aos-delay="400">
