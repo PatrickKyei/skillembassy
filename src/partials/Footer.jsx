@@ -20,7 +20,7 @@ function Footer() {
                   </svg>
                 </Link>
               </div>
-              <div className="text-gray-400">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</div>
+              <div className="text-gray-400">Skill Embassy empowers and prepares product managers, product designers, and software developers for success within the tech industry.</div>
             </div>
 
             {/* 2nd, 3rd and 4th blocks */}
@@ -31,57 +31,55 @@ function Footer() {
                 <h6 className="text-gray-200 font-medium mb-1">Products</h6>
                 <ul>
                   <li className="mb-1">
-                    <Link to="#" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Web Studio</Link>
+                    <Link to="#" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Software Development</Link>
                   </li>
                   <li className="mb-1">
-                    <Link to="#" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">DynamicBox Flex</Link>
+                    <Link to="#" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Product Design</Link>
                   </li>
                   <li className="mb-1">
-                    <Link to="#" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Programming Forms</Link>
+                    <Link to="#" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Product Management</Link>
+                  </li>
+                  <li className="mb-1">
+                    <Link to="#" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">DevOps Engineer</Link>
+                  </li>
+                  <li className="mb-1">
+                    <Link to="#" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Data Science</Link>
                   </li>
                 </ul>
               </div>
 
               {/* 3rd block */}
               <div className="text-sm">
-                <h6 className="text-gray-200 font-medium mb-1">Resources</h6>
+                <h6 className="text-gray-200 font-medium mb-1">Help</h6>
                 <ul>
                   <li className="mb-1">
-                    <Link to="#" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Nostrud exercitation</Link>
+                    <Link to="#" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">About skill embassy</Link>
                   </li>
                   <li className="mb-1">
-                    <Link to="#" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Visual mockups</Link>
+                    <Link to="#" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Podcasts</Link>
                   </li>
                   <li className="mb-1">
-                    <Link to="#" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Nostrud exercitation</Link>
+                    <Link to="#" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Privacy Policy</Link>
                   </li>
                   <li className="mb-1">
-                    <Link to="#" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Visual mockups</Link>
-                  </li>
-                  <li className="mb-1">
-                    <Link to="#" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Nostrud exercitation</Link>
+                    <Link to="#" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Terms & Conditions</Link>
                   </li>
                 </ul>
               </div>
 
               {/* 4th block */}
               <div className="text-sm">
-                <h6 className="text-gray-200 font-medium mb-1">Company</h6>
+                <h6 className="text-gray-200 font-medium mb-1">Contact Us</h6>
                 <ul>
                   <li className="mb-1">
-                    <Link to="#" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Consectetur adipiscing</Link>
+                    <Link to="#" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">We’re 100% remote but send mail here:</Link>
                   </li>
                   <li className="mb-1">
-                    <Link to="#" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Labore et dolore</Link>
+                    <Link to="#" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">skill@skillembassy.de
++44 345 678 903</Link>
                   </li>
                   <li className="mb-1">
-                    <Link to="#" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Consectetur adipiscing</Link>
-                  </li>
-                  <li className="mb-1">
-                    <Link to="#" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Labore et dolore</Link>
-                  </li>
-                  <li className="mb-1">
-                    <Link to="#" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Consectetur adipiscing</Link>
+                    <Link to="#" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">SchenkendorfstraÃŸe 7 34119 Kassel, Germany</Link>
                   </li>
                 </ul>
               </div>
@@ -135,7 +133,7 @@ function Footer() {
             </ul>
 
             {/* Copyrights note */}
-            <div className="text-gray-400 text-sm mr-4">&copy; Cruip.com. All rights reserved.</div>
+            <div className="text-gray-400 text-sm mr-4">&copy; Skill Embassy. All rights reserved.</div>
 
           </div>
 

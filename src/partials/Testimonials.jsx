@@ -13,7 +13,7 @@ function Testimonials() {
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
             <h2 className="h2 mb-4">Don't take our word for it</h2>
-            <p className="text-xl text-gray-400">Vitae aliquet nec ullamcorper sit amet risus nullam eget felis semper quis lectus nulla at volutpat diam ut venenatis tellus—in ornare.</p>
+            <p className="text-xl text-gray-400">What Some Students Say About Skill Embassy</p>
           </div>
 
           {/* Testimonials */}
@@ -29,9 +29,9 @@ function Testimonials() {
                     </svg>
                         </div>
                 </div>
-                <blockquote className="text-lg text-gray-400 grow">— Open PRO lets me quickly get the insights I care about so that I can focus on my productive work. I've had Open PRO for about 24 hours now and I honestly don't know how I functioned without it before.</blockquote>
+                <blockquote className="text-lg text-gray-400 grow">— This is the best learning platform I have ever worked with. Everything is professional and done at ease.</blockquote>
                 <div className="text-gray-700 font-medium mt-6 pt-5 border-t border-gray-700">
-                  <cite className="text-gray-200 not-italic">Anastasia Dan</cite> - <a className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out" href="#0">UX Board</a>
+                  <cite className="text-gray-200 not-italic">Backend Developer, Cohort 1</cite> - <a className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out" href="#0">Christiana Sunbabaara</a>
                 </div>
               </div>
 
@@ -45,9 +45,9 @@ function Testimonials() {
                       </svg>
                         </div>
                   </div>
-                  <blockquote className="text-lg text-gray-400 grow">— Open PRO lets me quickly get the insights I care about so that I can focus on my productive work. I've had Open PRO for about 24 hours now and I honestly don't know how I functioned without it before.</blockquote>
+                  <blockquote className="text-lg text-gray-400 grow">— Nice coaching, good mentors and an all round focused people at work. I am enjoying the journey.</blockquote>
                   <div className="text-gray-700 font-medium mt-6 pt-5 border-t border-gray-700">
-                    <cite className="text-gray-200 not-italic">Anastasia Dan</cite> - <a className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out" href="#0">UX Board</a>
+                    <cite className="text-gray-200 not-italic">Frontend Developer, Cohort 1</cite> - <a className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out" href="#0">Emmanuel Uchenna</a>
                   </div>
                 </div>
 
@@ -61,9 +61,9 @@ function Testimonials() {
                         </svg>
                         </div>
                     </div>
-                    <blockquote className="text-lg text-gray-400 grow">— Open PRO lets me quickly get the insights I care about so that I can focus on my productive work. I've had Open PRO for about 24 hours now and I honestly don't know how I functioned without it before.</blockquote>
+                    <blockquote className="text-lg text-gray-400 grow">— I enjoyed the service and the opportunity Skill Embassy offers. I think as a platform that is seeking to breach the gap and provide a solution helping potential professionals in tech find a foot or experience. Apart from communication concerns, I think it can help young individuals willing to contribute to a team build their case study.</blockquote>
                     <div className="text-gray-700 font-medium mt-6 pt-5 border-t border-gray-700">
-                      <cite className="text-gray-200 not-italic">Anastasia Dan</cite> - <a className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out" href="#0">UX Board</a>
+                      <cite className="text-gray-200 not-italic">Product Designer, Cohort 1</cite> - <a className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out" href="#0">Hakeem Adjei</a>
                     </div>
                   </div>
 
