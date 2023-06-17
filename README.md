@@ -54,4 +54,4 @@ See [Configuration Reference](https://vitejs.dev/guide/).
 
 ## Stay in the loop
 
-If you would like to know when we release new resources, you can follow us on [facebook](/), [linkedin](/)
+
