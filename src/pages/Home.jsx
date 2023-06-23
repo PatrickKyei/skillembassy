@@ -1,14 +1,11 @@
 import React from 'react';
 
-import Header from '../partials/Header';
-import PageIllustration from '../partials/PageIllustration';
-import HeroHome from '../partials/HeroHome';
-import FeaturesBlocks from '../partials/FeaturesBlocks';
-import FeaturesZigZag from '../partials/FeaturesZigzag';
-import Testimonials from '../partials/Testimonials';
-import Newsletter from '../partials/Newsletter';
-import Banner from '../partials/Banner';
-import Footer from '../partials/Footer';
+import Header from '../sections/Header';
+import PageIllustration from '../sections/PageIllustration';
+// import Testimonials from '../sections/Testimonials';
+// import Newsletter from '../sections/Newsletter';
+import Banner from '../sections/Banner';
+import Footer from '../sections/Footer';
 
 function Home() {
   return (
@@ -24,11 +21,8 @@ function Home() {
         </div>
 
         {/*  Page sections */}
-        <HeroHome />
-        <FeaturesBlocks />
-        <FeaturesZigZag />
-        <Testimonials />
-        <Newsletter />
+        {/* <Testimonials />
+        <Newsletter /> */}
       </main>
 
       <Banner />
