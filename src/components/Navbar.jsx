@@ -26,7 +26,7 @@ const Navbar = () => {
                     type='button'
                     className='hidden font-bold bg-white text-base border-[2px] py-[5px] px-[20px] rounded-md hover:drop-shadow-xl md:flex'
                 >
-                    Join Us
+                    Start Now
                 </button>
             </div>
         </div>

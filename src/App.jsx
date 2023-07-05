@@ -1,7 +1,9 @@
 import React from 'react'
-import Button from './components/Button'
+// import Button from './components/Button'
 import Navbar from './components/Navbar'
-import Hero from './pages/Hero'
+import Hero from './components/Hero'
+import Careers from './components/Careers'
+
 
 function App() {
   return (
@@ -9,6 +11,7 @@ function App() {
       <div className='p-6 md:mx-[150px]'>
         <Navbar />
         <Hero />
+        <Careers />
       </div>
     </div>
   )
