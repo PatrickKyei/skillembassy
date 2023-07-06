@@ -39,10 +39,10 @@ const Navbar = () => {
                 <a href='#mycv'>Join Us</a>
             </div>
             <ul className='w-full flex flex-col py-6 px-4'>
-                <li><a href="#home">Courses</a></li>
-                <li><a href="#discover">For Business</a></li>
-                <li><a href="#post">Our Story</a></li>
-                <li><a href="#contact">Blog</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#business">For Business</a></li>
+                <li><a href="story">Our Story</a></li>
+                <li><a href="#blog">Blog</a></li>
             </ul>
         </div>
 
