@@ -8,33 +8,33 @@ const Faqs = () => {
   const faqData = [
     {
       id: 1,
-      question: 'What is skill embassy product accelerator?',
+      question: 'What is Skill Embassy Product Accelerator?',
       answer:
-        'Skill embassy is an 10-week program of hands-on learning. Based on your workstyles and interests, you...',
+        'Skill Embassy is a 10-week program of hands-on learning. Based on your work styles and interests, you will gain real-world experience working on projects with a team of professionals including Product Designers, Developers, and more.',
     },
     {
       id: 2,
-      question: 'What will I gain from skill embassy product accelerator?',
+      question: 'What will I gain from Skill Embassy Product Accelerator?',
       answer:
-        'You will be able to work as a real product team with a Product Designer and Developer...',
+        'You will gain valuable skills and experience, learn industry best practices, and build a portfolio of real-world projects. Additionally, you will have the opportunity to collaborate with professionals and expand your network in the tech industry.',
     },
     {
       id: 3,
-      question: 'What is the cost of skill embassy product accelerator?',
+      question: 'What is the cost of Skill Embassy Product Accelerator?',
       answer:
-        'The entire 10-week product accelerator is 850 Ghana Cedis...',
+        'The entire 10-week product accelerator is priced at 850 Ghana Cedis. We believe in providing accessible and affordable education to empower individuals in their tech journeys.',
     },
     {
       id: 4,
       question: 'Can I apply without a college/university degree?',
       answer:
-        'Of course! As long as you\'re 18 years old, you can apply.',
+        'Yes, you can apply to Skill Embassy Product Accelerator even if you do not have a college or university degree. We value diversity and believe that passion, dedication, and a willingness to learn are more important than formal education.',
     },
     {
       id: 5,
       question: 'Will Skill Embassy Product Accelerator help me find work?',
       answer:
-        'Finally, don\'t believe anyone who claims that completing a course, program, or bootcamp...',
+        'While Skill Embassy does not guarantee job placement, the program is designed to equip you with the skills, knowledge, and experience that are highly sought after by employers in the tech industry. We provide support, guidance, and networking opportunities to enhance your chances of finding work in the field.',
     },
   ];
 
@@ -46,10 +46,9 @@ const Faqs = () => {
     <div className="section">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div>
-          <h2>Frequently Asked Questions?</h2>
+          <h2 class="text-2xl md:text-3xl">Frequently Asked Questions</h2>
           <p className="mt-20 text_highlight">
-            Not sure how Skill Embassy can help you? Wonder why you need the tech Skills and 
-            leverage your ways into tech.
+            Not sure how Skill Embassy can help you? Wonder why you need tech skills and how to leverage them in your journey into tech.
           </p>
           <button className="mt-20 btn btn-primary">
             Talk to a Learning Advisor
@@ -57,7 +56,7 @@ const Faqs = () => {
         </div>
         <div>
           {faqData.map((faq) => (
-            <div key={faq.id}>
+            <div key={faq.id} className="border rounded p-4 mb-4">
               <div
                 className="cursor-pointer"
                 onClick={() => handleCollapse(faq.id)}
@@ -68,8 +67,10 @@ const Faqs = () => {
                     icon={activeItem === faq.id ? faAngleUp : faAngleDown}
                   />
                 </div>
-                {activeItem === faq.id && <p>{faq.answer}</p>}
               </div>
+              {activeItem === faq.id && (
+                <div className="mt-4 text-gray-700">{faq.answer}</div>
+              )}
             </div>
           ))}
         </div>

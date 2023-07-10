@@ -5,7 +5,7 @@ const Collab = () => {
   return (
     <div className="flex flex-col items-center my-20 font-poppins lg:my-[150px]">
       <div className="flex flex-col gap-6">
-        <div className="max-w-full bg-white shadow-lg rounded-lg py-16 overflow-hidden">
+        <div className="max-w-full bg-white rounded-lg py-16 overflow-hidden">
           <div className="md:flex">
             <div className="md:w-2/3 p-10">
               <img

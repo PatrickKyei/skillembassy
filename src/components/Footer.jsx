@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTwitter, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faTwitter, faLinkedin, faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 function Footer() {
   return (
@@ -14,7 +14,7 @@ function Footer() {
             {/* 1st block */}
             <div className="md:col-span-4 lg:col-span-5">
         
-              <div className="text-gray-400">Skill Embassy empowers and prepares product managers, product designers, and software developers for success within the tech industry.</div>
+              <div className="text-gray-800">Skill Embassy empowers and prepares product managers, product designers, and software developers for success within the tech industry.</div>
             </div>
 
             {/* 2nd, 3rd and 4th blocks */}
@@ -90,12 +90,22 @@ function Footer() {
             <ul className="flex mb-4 md:order-1 md:ml-4 md:mb-0">
               <li>
                 <a href="#" className="flex justify-center items-center text-white bg-gray-800 hover:text-gray-100 hover:bg-purple-600 rounded-full transition duration-150 ease-in-out" aria-label="Twitter">
-                  <FontAwesomeIcon icon={faTwitter} className="w-8 h-8 fill-current" />
+                  <FontAwesomeIcon icon={faLinkedin} className="w-8 h-8 fill-current" />
                 </a>
               </li>
               <li className="ml-4">
                 <a href="#" className="flex justify-center items-center text-white bg-gray-800 hover:text-gray-100 hover:bg-purple-600 rounded-full transition duration-150 ease-in-out" aria-label="Github">
-                  <FontAwesomeIcon icon={faGithub} className="w-8 h-8 fill-current" />
+                  <FontAwesomeIcon icon={faFacebook} className="w-8 h-8 fill-current" />
+                </a>
+              </li>
+              <li className="ml-4">
+                <a href="#" className="flex justify-center items-center text-white bg-gray-800 hover:text-gray-100 hover:bg-purple-600 rounded-full transition duration-150 ease-in-out" aria-label="Github">
+                  <FontAwesomeIcon icon={faInstagram} className="w-8 h-8 fill-current" />
+                </a>
+              </li>
+              <li className="ml-4">
+                <a href="#" className="flex justify-center items-center text-white bg-gray-800 hover:text-gray-100 hover:bg-purple-600 rounded-full transition duration-150 ease-in-out" aria-label="Github">
+                  <FontAwesomeIcon icon={faTwitter} className="w-8 h-8 fill-current" />
                 </a>
               </li>
             </ul>

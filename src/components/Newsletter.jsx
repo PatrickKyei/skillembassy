@@ -6,7 +6,7 @@ function Newsletter() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
 
         {/* CTA box */}
-        <div className="relative bg-blue py-10 px-8 md:py-16 md:px-12" data-aos="fade-up">
+        <div className="relative bg-gray-800 py-10 px-8 md:py-16 md:px-12" data-aos="fade-up">
 
           {/* Background illustration */}
           <div className="absolute right-0 top-0 -ml-40 pointer-events-none" aria-hidden="true">
@@ -17,7 +17,7 @@ function Newsletter() {
             {/* CTA content */}
             <div className="mb-6 lg:mr-16 lg:mb-0 text-center lg:text-left lg:w-1/2">
               <h3 className="h3 text-white mb-2">Stay in the loop</h3>
-              <p className="text-purple-200 text-lg">Join our newsletter to get top news before anyone else.</p>
+              <p className="text-gray-300 text-lg">Join our newsletter to get top news before anyone else.</p>
             </div>
 
             {/* CTA form */}
@@ -31,7 +31,7 @@ function Newsletter() {
     />
     <button
       type="submit"
-      className="btn text-blue bg-white hover:bg-white shadow px-4 py-3 rounded-sm"
+      className="btn text-black bg-white hover:bg-white shadow px-4 py-3 rounded-sm"
     >
       Subscribe
     </button>

@@ -4,7 +4,7 @@ import { FaPhone } from 'react-icons/fa';
 const CallToAction = () => {
   return (
     <div className="flex flex-col items-center my-20">
-      <div className="max-w-4xl w-full bg-white shadow-lg rounded-lg py-8 px-10 sm:py-10 sm:px-16">
+      <div className="max-w-4xl w-full bg-white shadow-sm rounded-lg py-8 px-10 sm:py-10 sm:px-16">
         <h2 className="text-2xl md:text-3xl font-semibold mb-4 md:mb-6 text-center">
           READY TO CHANGE YOUR LIFE?
         </h2>
