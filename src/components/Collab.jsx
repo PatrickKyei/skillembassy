@@ -20,11 +20,8 @@ const Collab = () => {
               We have the ability to shape the next generation of innovators and thinkers. Let us collaborate to create, impact, and develop the next generation of engineers, managers and designers.
               </p>
               <div className='flex py-8'>
-              <button
-            type='button'
-            className='font-bold bg-blue text-sm text-white border-[1px] py-[15px] px-[20px] rounded-full md:text-base hover:drop-shadow-xl' >
-            Learn More
-          </button>
+              <button className="px-6 py-3 bg-black text-white font-bold rounded">Learn More</button>
+
           </div>
             </div>
           </div>

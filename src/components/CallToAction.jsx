@@ -12,10 +12,8 @@ const CallToAction = () => {
           Take the next step & sign up to Skill Embassy.
         </h2>
         <div className="flex flex-col sm:flex-row justify-center items-center">
-          <button className="flex items-center mt-4 sm:mt-0 bg-blue hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded mr-2">
-            <FaPhone className="mr-2" />
-            SIGN UP TODAY
-          </button>
+        <button className="px-6 py-3 bg-black text-white font-bold rounded">Appy Now →</button>
+
     
         </div>
       </div>

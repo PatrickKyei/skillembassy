@@ -11,13 +11,13 @@ Tech Career</h1>
         <div className='flex justify-center mb-8 md:mb-[10px]'>
           <button
             type='button'
-            className='font-bold bg-blue text-sm text-white mx-[10px] py-[10px] px-[30px] rounded-md md:text-base hover:drop-shadow-xl'
+            className='font-bold bg-black text-sm text-white mx-[10px] py-[10px] px-[30px] rounded-md md:text-base hover:drop-shadow-xl'
           >
             Start Today
           </button>
           <button
             type='button'
-            className='font-bold text-sm text-blue border-[1px] border-blue rounded-md underline-offset-auto py-[px] px-[20px] md:text-base hover:drop-shadow-xl'
+            className='font-bold text-sm text-black border-[1px] border-black rounded-md underline-offset-auto py-[px] px-[20px] md:text-base hover:drop-shadow-xl'
           >
             How it works ?
           </button>

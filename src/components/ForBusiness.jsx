@@ -20,7 +20,7 @@ const ForBusiness = () => {
               <p className="text-gray-700 leading-relaxed">
               Accelerate the pace of your company's digital evolution with training that makes your team more agile, collaborative and innovative.              </p>
               <div className='flex py-8'>
-              <button className="flex items-center mt-4 sm:mt-0 bg-blue hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded ml-2">
+              <button className="flex items-center mt-4 sm:mt-0 hover:bg-gray-400 px-6 py-3 bg-black text-white font-bold rounded">
             <FaPhone className="mr-2" />
             TALK TO US
           </button>

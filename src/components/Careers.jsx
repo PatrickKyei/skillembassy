@@ -8,7 +8,7 @@ const Careers = () => {
     return (
       <div className='flex flex-col items-center my-20 font-poppins lg:my-[150px]'>
          <div className='flex flex-col gap-6'>
-          <h1 className='font-semibold text-slate-600'>Career Paths</h1>
+          <h1 className='font-semibold text-lg'>Career Paths</h1>
           <div className='flex flex-col gap-4 lg:flex-row'>
             <Cardhero 
               imgUrl={Figma}

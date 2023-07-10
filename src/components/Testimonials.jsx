@@ -1,65 +1,56 @@
-import React from 'react';
-import {FaUser, FaCode, FaPalette } from 'react-icons/fa'
-import user1 from '../assets/patrick.jpg';
-import user2 from '../assets/patrick.jpg';
-import user3 from '../assets/patrick.jpg';
+const testimonials = [
+  {
+    id: 1,
+    name: 'Kenzie Edgar',
+    image: 'https://i.pravatar.cc/100?img=1',
+    testimonial: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sunt ratione dolor exercitationem minima quas itaque saepe quasi architecto vel! Accusantium, vero sint recusandae cum tempora nemo commodi soluta deleniti.',
+  },
+  // Add more testimonial objects as needed
+];
 
-const Testimonials = () => {
-  const testimonialsData = [
-    {
-      id: 1,
-      image: user1,
-      name: 'John Doe',
-      description: 'Product Manager',
-      testimonial:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam accumsan urna at arcu interdum, id tincidunt mauris fermentum.',
-      icon: <FaUser />,
-    },
-    {
-      id: 2,
-      image: user2,
-      name: 'Jane Smith',
-      description: 'Software Developer',
-      testimonial:
-        'Sed nec mi nec est tincidunt sollicitudin eu vitae urna. Pellentesque eget massa ullamcorper, pellentesque risus et, tempor sem.',
-      icon: <FaCode />,
-    },
-    {
-      id: 3,
-      image: user3,
-      name: 'Alex Johnson',
-      description: 'Product Designer',
-      testimonial:
-        'Nulla tempor, lectus nec sollicitudin auctor, eros lorem aliquet metus, non malesuada sapien justo eget diam. Curabitur quis lorem ac ligula consequat condimentum.',
-      icon: <FaPalette />,
-    },
-  ];
-
+function Testimonials() {
   return (
-    <div className="container mx-auto py-10">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-        {testimonialsData.map((testimonial) => (
-          <div key={testimonial.id} className="py-6 px-4">
-            <div className="flex items-center mb-4">
-              <img
-                src={testimonial.image}
-                alt={testimonial.name}
-                className="w-12 h-12 rounded-full mr-4"
-              />
-              <div>
-                <h4 className="text-lg font-semibold">{testimonial.name}</h4>
-                <div className="flex items-center text-gray-600">
-                  {testimonial.icon}
-                  <p>{testimonial.description}</p>
+    <div className="min-w-screen min-h-screen bg-gray-50 flex items-center justify-center py-5">
+      <div className="w-full bg-white border-t border-b border-gray-200 px-5 py-16 md:py-24 text-gray-800">
+        <div className="w-full max-w-6xl mx-auto">
+          <div className="text-center max-w-xl mx-auto">
+            <h1 className="text-6xl md:text-7xl font-bold mb-5 text-black">What our students say</h1>
+            <h3 className="text-xl mb-5 font-light">Dont take our word for it.</h3>
+            <div className="text-center mb-10">
+              <span className="inline-block w-1 h-1 rounded-full bg-black ml-1"></span>
+              <span className="inline-block w-3 h-1 rounded-full bg-black ml-1"></span>
+              <span className="inline-block w-40 h-1 rounded-full bg-black"></span>
+              <span className="inline-block w-3 h-1 rounded-full bg-black ml-1"></span>
+              <span className="inline-block w-1 h-1 rounded-full bg-black ml-1"></span>
+            </div>
+          </div>
+          <div className="flex flex-wrap -mx-3">
+            {testimonials.map((testimonial) => (
+              <div key={testimonial.id} className="w-full md:w-1/2 lg:w-1/3 px-3">
+                <div className="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
+                  <div className="flex mb-4 items-center">
+                    <div className="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
+                      <img src={testimonial.image} alt="" />
+                    </div>
+                    <div className="flex-grow pl-3">
+                      <h6 className="font-bold text-sm uppercase text-gray-600">{testimonial.name}</h6>
+                    </div>
+                  </div>
+                  <div className="w-full">
+                    <p className="text-sm leading-tight">
+                      <span className="text-lg leading-none italic font-bold text-gray-400 mr-1">"</span>
+                      {testimonial.testimonial}
+                      <span className="text-lg leading-none italic font-bold text-gray-400 ml-1">"</span>
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <p className="text-gray-700">{testimonial.testimonial}</p>
+            ))}
           </div>
-        ))}
+        </div>
       </div>
     </div>
   );
-};
+}
 
 export default Testimonials;

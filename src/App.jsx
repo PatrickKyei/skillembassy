@@ -2,11 +2,11 @@ import React from 'react'
 // import Button from './components/Button'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
-import ExampleComponent from './components/Benefits'
-import Role from './components/Role'
+import Benefits from './components/Benefits'
+import CTA from './components/CTA'
 import Collab from './components/Collab'
 import Careers from './components/Careers'
-import Advisor from './components/Advisor'
+// import Advisor from './components/Advisor'
 import Impact from './components/Impact'
 import Testimonials from './components/Testimonials'
 import ForBusiness from './components/ForBusiness'
@@ -23,11 +23,10 @@ function App() {
       <div className='p-6 md:mx-[100px]'>
         <Navbar />
         <Hero />
-        <Role />
-        <ExampleComponent />
+        <CTA />
+        <Benefits />
         <Careers />
         <Collab />
-        <Advisor />
         <Impact />
         <Testimonials />
         <ForBusiness />

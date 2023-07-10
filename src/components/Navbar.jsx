@@ -46,9 +46,7 @@ const Navbar = () => {
                 <li><a href="#courses">Courses</a></li>
                 <li><a href="#business">For Business</a></li>
                 <li><a href="#inclusion">Inclusion</a></li>
-                <li><a href="story">Our Story</a></li>
-                <li><a href="#business">For Business</a></li>
-                <li><a href="#blog">Blog</a></li>
+                <li><a href="story">Our Story</a></li>                <li><a href="#blog">Blog</a></li>
             </ul>
         </div>
 
