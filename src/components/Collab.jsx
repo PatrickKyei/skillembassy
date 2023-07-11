@@ -11,7 +11,7 @@ const Collab = () => {
             className="w-full h-auto rounded-md object-cover"
           />
         </div>
-        <div className="flex flex-col pt-8">
+        <div className="flex flex-col justify-center sm:p-8 pl-1 pt-8">
           <h2 className="text-blue-gray-700 text-4xl font-bold mb-4">
             No Tech Skills? No Problem.
           </h2>

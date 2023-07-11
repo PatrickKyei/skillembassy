@@ -46,11 +46,11 @@ const Faqs = () => {
     <div className="section">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div>
-          <h2 class="text-3xl font-semibold mb-6">Frequently Asked Questions</h2>
+          <h2 class="text-3xl font-semibold mb-4">Frequently Asked Questions</h2>
           <p className="mt-20 text_highlight">
             Not sure how Skill Embassy can help you? Wonder why you need tech skills and how to leverage them in your journey into tech.
           </p>
-          <div className="flex flex-col sm:flex-row justify-center py-2">
+          <div className="flex flex-col sm:flex-row py-4">
           <a href="https://wa.me/message/CFQ6VVR53WCBN1">
             <button className="px-6 py-3 bg-black text-white font-bold rounded">
               Talk To A Learning Advisor

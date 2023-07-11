@@ -2,7 +2,7 @@ import React from 'react'
 
 const Cardhero = ({ imgUrl, jobTitle, platform, text, tag, currency }) => {
   return (
-    <div className='bg-white text-slate-600 hover:bg-blue hover:text-white p-6 rounded-lg w-[350px] drop-shadow-2xl'>
+    <div className='bg-white text-slate-600 hover:bg-black hover:text-white p-6 rounded-lg w-[350px] drop-shadow-2xl'>
       <div className='flex gap-6 mb-6'>
         <img src={imgUrl} className='text-black w-[50px]' />
         <div className='flex flex-col m'>
