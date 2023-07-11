@@ -46,13 +46,17 @@ const Faqs = () => {
     <div className="section">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div>
-          <h2 class="text-2xl md:text-3xl">Frequently Asked Questions</h2>
+          <h2 class="text-3xl font-semibold mb-6">Frequently Asked Questions</h2>
           <p className="mt-20 text_highlight">
             Not sure how Skill Embassy can help you? Wonder why you need tech skills and how to leverage them in your journey into tech.
           </p>
-          <button className="mt-20 btn btn-primary">
-            Talk to a Learning Advisor
-          </button>
+          <div className="flex flex-col sm:flex-row justify-center py-2">
+          <a href="https://wa.me/message/CFQ6VVR53WCBN1">
+            <button className="px-6 py-3 bg-black text-white font-bold rounded">
+              Talk To A Learning Advisor
+            </button>
+          </a>
+        </div>
         </div>
         <div>
           {faqData.map((faq) => (

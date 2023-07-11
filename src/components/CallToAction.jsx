@@ -1,5 +1,4 @@
-import React from 'react';
-import { FaPhone } from 'react-icons/fa';
+import React from "react";
 
 const CallToAction = () => {
   return (
@@ -12,9 +11,11 @@ const CallToAction = () => {
           Take the next step & sign up to Skill Embassy.
         </h2>
         <div className="flex flex-col sm:flex-row justify-center items-center">
-        <button className="px-6 py-3 bg-black text-white font-bold rounded">Appy Now →</button>
-
-    
+          <a href="https://nas.io/skillembassy">
+            <button className="px-6 py-3 bg-black text-white font-bold rounded">
+              Sign Up Now →
+            </button>
+          </a>
         </div>
       </div>
     </div>

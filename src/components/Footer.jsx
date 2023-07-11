@@ -22,22 +22,25 @@ function Footer() {
 
               {/* 2nd block */}
               <div className="text-sm">
-                <h6 className="text-black font-medium mb-1">Products</h6>
+                <h6 className="text-black font-medium mb-1">Careers</h6>
                 <ul>
                   <li className="mb-1">
-                    <a href="#" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Software Development</a>
+                    <a href="#" className="text-gray-400 hover:text-black transition duration-150 ease-in-out">Software Development</a>
                   </li>
                   <li className="mb-1">
-                    <a href="#" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Product Design</a>
+                    <a href="#" className="text-gray-400 hover:text-black transition duration-150 ease-in-out">Product Management</a>
                   </li>
                   <li className="mb-1">
-                    <a href="#" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Product Management</a>
+                    <a href="#" className="text-gray-400 hover:text-black transition duration-150 ease-in-out">Product Design</a>
                   </li>
                   <li className="mb-1">
-                    <a href="#" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">DevOps Engineer</a>
+                    <a href="#" className="text-gray-400 hover:text-black transition duration-150 ease-in-out">Cybersecurity</a>
                   </li>
                   <li className="mb-1">
-                    <a href="#" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Data Science</a>
+                    <a href="#" className="text-gray-400 hover:text-black transition duration-150 ease-in-out">Data Science</a>
+                  </li>
+                  <li className="mb-1">
+                    <a href="#" className="text-gray-400 hover:text-black transition duration-150 ease-in-out">DevOps</a>
                   </li>
                 </ul>
               </div>
@@ -47,16 +50,16 @@ function Footer() {
                 <h6 className="text-black font-medium mb-1">Help</h6>
                 <ul>
                   <li className="mb-1">
-                    <a href="#" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">About skill embassy</a>
+                    <a href="#" className="text-gray-400 hover:text-black transition duration-150 ease-in-out">About skill embassy</a>
                   </li>
                   <li className="mb-1">
-                    <a href="#" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Podcasts</a>
+                    <a href="#" className="text-gray-400 hover:text-black transition duration-150 ease-in-out">Podcasts</a>
                   </li>
                   <li className="mb-1">
-                    <a href="#" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Privacy Policy</a>
+                    <a href="#" className="text-gray-400 hover:text-black transition duration-150 ease-in-out">Privacy Policy</a>
                   </li>
                   <li className="mb-1">
-                    <a href="#" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Terms & Conditions</a>
+                    <a href="#" className="text-gray-400 hover:text-black transition duration-150 ease-in-out">Terms & Conditions</a>
                   </li>
                 </ul>
               </div>
@@ -66,14 +69,14 @@ function Footer() {
                 <h6 className="text-black font-medium mb-1">Contact Us</h6>
                 <ul>
                   <li className="mb-1">
-                    <a href="#" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">We’re 100% remote but send mail here:</a>
+                    <a href="#" className="text-gray-400 hover:text-black transition duration-150 ease-in-out">We’re 100% remote but send mail here:</a>
                   </li>
                   <li className="mb-1">
-                    <a href="#" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">skill@skillembassy.de
+                    <a href="#" className="text-gray-400 hover:text-black transition duration-150 ease-in-out">skill@skillembassy.de
 +44 345 678 903</a>
                   </li>
                   <li className="mb-1">
-                    <a href="#" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">SchenkendorfstraÃŸe 7 34119 Kassel, Germany</a>
+                    <a href="#" className="text-gray-400 hover:text-black transition duration-150 ease-in-out">SchenkendorfstraÃŸe 7 34119 Kassel, Germany</a>
                   </li>
                
                 </ul>
@@ -89,22 +92,22 @@ function Footer() {
             {/* Social links */}
             <ul className="flex mb-4 md:order-1 md:ml-4 md:mb-0">
               <li>
-                <a href="#" className="flex justify-center items-center text-white bg-gray-800 hover:text-gray-100 hover:bg-purple-600 rounded-full transition duration-150 ease-in-out" aria-label="Twitter">
+                <a href="#" className="flex justify-center items-center text-white bg-gray-800 hover:text-gray-100 hover:bg-gray-600 rounded-full transition duration-150 ease-in-out" aria-label="Twitter">
                   <FontAwesomeIcon icon={faLinkedin} className="w-8 h-8 fill-current" />
                 </a>
               </li>
               <li className="ml-4">
-                <a href="#" className="flex justify-center items-center text-white bg-gray-800 hover:text-gray-100 hover:bg-purple-600 rounded-full transition duration-150 ease-in-out" aria-label="Github">
+                <a href="#" className="flex justify-center items-center text-white bg-gray-800 hover:text-gray-100 hover:bg-gray-600 rounded-full transition duration-150 ease-in-out" aria-label="Github">
                   <FontAwesomeIcon icon={faFacebook} className="w-8 h-8 fill-current" />
                 </a>
               </li>
               <li className="ml-4">
-                <a href="#" className="flex justify-center items-center text-white bg-gray-800 hover:text-gray-100 hover:bg-purple-600 rounded-full transition duration-150 ease-in-out" aria-label="Github">
+                <a href="#" className="flex justify-center items-center text-white bg-gray-800 hover:text-gray-100 hover:bg-gray-600 rounded-full transition duration-150 ease-in-out" aria-label="Github">
                   <FontAwesomeIcon icon={faInstagram} className="w-8 h-8 fill-current" />
                 </a>
               </li>
               <li className="ml-4">
-                <a href="#" className="flex justify-center items-center text-white bg-gray-800 hover:text-gray-100 hover:bg-purple-600 rounded-full transition duration-150 ease-in-out" aria-label="Github">
+                <a href="#" className="flex justify-center items-center text-white bg-gray-800 hover:text-gray-100 hover:bg-gray-600 rounded-full transition duration-150 ease-in-out" aria-label="Github">
                   <FontAwesomeIcon icon={faTwitter} className="w-8 h-8 fill-current" />
                 </a>
               </li>

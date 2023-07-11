@@ -9,12 +9,14 @@ Tech Career</h1>
             <p className='font-semibold text-slate-500 mb-[40px]'>Learn, build and launch an impactful product with your own product designer, product manager, software engineer and cloud engineer.</p>
         </div>
         <div className='flex justify-center mb-8 md:mb-[10px]'>
+          <a href='https://nas.io/skillembassy'>
           <button
             type='button'
             className='font-bold bg-black text-sm text-white mx-[10px] py-[10px] px-[30px] rounded-md md:text-base hover:drop-shadow-xl'
           >
             Start Today
           </button>
+          </a>
           <button
             type='button'
             className='font-bold text-sm text-black border-[1px] border-black rounded-md underline-offset-auto py-[px] px-[20px] md:text-base hover:drop-shadow-xl'

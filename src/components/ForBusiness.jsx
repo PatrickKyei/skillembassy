@@ -1,37 +1,34 @@
-import React from 'react';
-import {FaPhone} from 'react-icons/fa'
-import Classes from '../assets/classes.png'
-
 const ForBusiness = () => {
   return (
-    <div className="flex flex-col items-center my-20 font-poppins lg:my-[150px]">
-      <div className="flex flex-col gap-6">
-        <div className="max-w-full bg-white rounded-lg py-16 overflow-hidden">
-          <div className="md:flex">
-            <div className="md:w-2/3 p-10">
-              <img
-                src={Classes}
-                alt="Hero Image"
-                className="w-full object-cover rounded" 
-              />
-            </div>
-            <div className="p-8 md:w-3/5 flex flex-col justify-center">
-              <h2 className="text-2xl font-semibold mb-6">DEVELOP DIGITAL TALENT IN YOUR COMPANY</h2>
-              <p className="text-gray-700 leading-relaxed">
-              Accelerate the pace of your company's digital evolution with training that makes your team more agile, collaborative and innovative.              </p>
-              <div className='flex py-8'>
-              <button className="flex items-center mt-4 sm:mt-0 hover:bg-gray-400 px-6 py-3 bg-black text-white font-bold rounded">
-            <FaPhone className="mr-2" />
-            TALK TO US
+    <div className="w-full pb-12 mb-12">
+    <div className="flex flex-col md:flex-row w-full max-w-[60rem]">
+      <div>
+        <img 
+          src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80" 
+          alt="image" 
+          className="w-full h-auto rounded-md object-cover"
+        />
+      </div>
+      <div className="flex flex-col justify-center p-8">
+        <h2 className="text-blue-gray-700 text-4xl font-bold mb-4">For Businesses.</h2>
+        <h4 className="text-blue-gray-700 text-2xl font-bold mb-2">
+          Develop Digital Talent In Your Company
+        </h4>
+        <p className="text-gray-600 mb-8">
+          Accelerate the pace of your company's digital evolution with training that makes your team more agile, collaborative and innovative.
+        </p>
+        <a href="#" className="inline-block">
+          <button
+            type='button'
+            className='font-bold bg-black text-sm text-white mx-[10px] py-[10px] px-[30px] rounded-md md:text-base hover:drop-shadow-xl'
+          >
+            Start Today
           </button>
-          </div>
-            </div>
-          </div>
-        </div>
+        </a>
       </div>
     </div>
+    </div>
   );
-};
+}
 
 export default ForBusiness;
-

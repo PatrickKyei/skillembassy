@@ -23,12 +23,14 @@ const Navbar = () => {
                 </ul>
             </div>
             <div>
+                <a href='https://nas.io/skillembassy'>
                 <button
                     type='button'
                     className='hidden font-bold bg-white text-base border-[2px] py-[5px] px-[20px] rounded-md hover:drop-shadow-xl md:flex'
                 >
                     Start Now
                 </button>
+                </a>
             </div>
         </div>
 
@@ -40,7 +42,7 @@ const Navbar = () => {
 
         <div className={!nav ? 'fixed flex flex-col items-center p-4 top-16 top-16 w-[100%] border-b-2 bg-wblue h-[250px] ease-in-out duration-300 z-10 md:hidden': 'fixed bottom-[-100%]'}>
             <div className='text-center bg-black bg-opacity-10 rounded w-[40%] shadow-black px-2 py-2.5'>
-                <a href='#mycv'>Start Now</a>
+                <a href='https://nas.io/skillembassy'>Start Now</a>
             </div>
             <ul className='w-full flex flex-col py-6 px-4'>
                 <li><a href="#courses">Courses</a></li>
