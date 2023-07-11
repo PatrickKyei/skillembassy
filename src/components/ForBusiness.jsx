@@ -9,7 +9,7 @@ const ForBusiness = () => {
           className="w-full h-auto rounded-md object-cover"
         />
       </div>
-      <div className="flex flex-col justify-center p-8">
+      <div className="flex flex-col justify-center pt-8">
         <h2 className="text-blue-gray-700 text-4xl font-bold mb-4">For Businesses.</h2>
         <h4 className="text-blue-gray-700 text-2xl font-bold mb-2">
           Develop Digital Talent In Your Company
@@ -20,7 +20,7 @@ const ForBusiness = () => {
         <a href="#" className="inline-block">
           <button
             type='button'
-            className='font-bold bg-black text-sm text-white mx-[10px] py-[10px] px-[30px] rounded-md md:text-base hover:drop-shadow-xl'
+            className='font-bold bg-black text-sm text-white mx-[1px] py-[10px] px-[30px] rounded-md md:text-base hover:drop-shadow-xl'
           >
             Start Today
           </button>

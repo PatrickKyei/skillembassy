@@ -43,7 +43,7 @@ function Testimonials() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
             {testimonials.map((testimonial) => (
-              <div key={testimonial.id} className="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
+              <div key={testimonial.id} className="w-full mx-auto rounded-lg bg-white font-poppins border border-gray-200 p-5 text-gray-800 font-light mb-6">
                 <div className="flex mb-4 items-center">
                   <div className="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
                     <img src={testimonial.image} alt="" />
