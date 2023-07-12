@@ -6,7 +6,7 @@ import Benefits from './components/Benefits'
 import CTA from './components/CTA'
 import Collab from './components/Collab'
 import Careers from './components/Careers'
-// import Advisor from './components/Advisor'
+import Mentors from './components/Mentors'
 import Impact from './components/Impact'
 import Testimonials from './components/Testimonials'
 import ForBusiness from './components/ForBusiness'
@@ -27,6 +27,7 @@ function App() {
         <Benefits />
         <Careers />
         <Collab />
+        <Mentors />
         <Impact />
         <Testimonials />
         <ForBusiness />

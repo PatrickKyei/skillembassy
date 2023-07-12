@@ -18,7 +18,7 @@ const Navbar = () => {
                 <li><a href="#courses">Courses</a></li>
                 <li><a href="#business">For Business</a></li>
                 <li><a href="#inclusion">Inclusion</a></li>
-                <li><a href="#story">Our Story</a></li>
+                <li><a href="https://www.notion.so/About-Us-e66464fbbad34cbb938f05c234772413">Our Story</a></li>
                 <li><a href="#block">Blog</a></li>
                 </ul>
             </div>
@@ -48,7 +48,7 @@ const Navbar = () => {
                 <li><a href="#courses">Courses</a></li>
                 <li><a href="#business">For Business</a></li>
                 <li><a href="#inclusion">Inclusion</a></li>
-                <li><a href="story">Our Story</a></li>                <li><a href="#blog">Blog</a></li>
+                <li><a href="https://www.notion.so/About-Us-e66464fbbad34cbb938f05c234772413">Our Story</a></li>                <li><a href="#blog">Blog</a></li>
             </ul>
         </div>
 

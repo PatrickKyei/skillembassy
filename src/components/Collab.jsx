@@ -20,11 +20,11 @@ const Collab = () => {
             and work.
           </h4>
           <p className="text-gray-600 mb-8">
-            Maybe like you, you want to learn how to edit your documents, reply
+            Maybe like you, you want to learn how to manage your documents, reply
             emails, or set up your business online. Technology has the power to
             make everyone's life better.
           </p>
-          <a href="#" className="inline-block">
+          <a href="https://nas.io/skillembassy" className="inline-block">
             <button
               type="button"
               className="font-bold bg-black text-sm text-white mx-[1px] py-[10px] px-[30px] rounded-md md:text-base hover:drop-shadow-xl">
