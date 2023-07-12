@@ -2,10 +2,8 @@
 
 Created and maintained with [React](/), HTML, [Tailwindcss](/) 
 
-## Live demo
+## Website
 
-
-## Open PRO
 
 ## Table of contents
 
@@ -21,8 +19,6 @@ Created and maintained with [React](/), HTML, [Tailwindcss](/)
 * [Stay in the loop](#stay-in-the-loop)
 
 ## Usage
-
-This project was bootstrapped with [Vite](https://vitejs.dev/).
 
 ### Project setup
 ```

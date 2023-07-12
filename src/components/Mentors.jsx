@@ -74,7 +74,7 @@ const Mentors = () => {
               <img
                 src={mentor.image}
                 alt=""
-                className="rounded-full w-13 h-13 mr-3 cursor-pointer"
+                className="rounded-full w-10 h-10 mr-3 cursor-pointer"
               />
               {activeMentor === index && (
                 <div className="absolute p-2 bg-white rounded-lg shadow-lg top-0 left-0 mt-[-1.25rem] ml-[-1.25rem]">
