@@ -2,19 +2,21 @@ import React from "react";
 
 const CallToAction = () => {
   return (
-    <div className="flex flex-col items-center my-20">
-      <div className="max-w-4xl w-full bg-white shadow-sm rounded-lg py-8 px-10 sm:py-10 sm:px-16">
-        <h2 className="text-2xl md:text-3xl font-semibold mb-4 md:mb-6 text-center">
-          READY TO CHANGE YOUR LIFE?
-        </h2>
-        <h2 className="text-2xl md:text-3xl font-semibold mb-4 md:mb-6 text-center">
+    <div className="pb-12 mb-8 mt-8">
+      <div class="w-full p- text-center bg-white border border-gray-200 rounded-lg shadow p-4 sm:p-8 dark:bg-gray-800 dark:border-gray-700">
+        <h5 class="mb-2 text-3xl font-bold text-gray-900 dark:text-white">
+          Ready to Change Your Life?
+        </h5>
+        <p class="mb-5 text-base text-gray-500 sm:text-lg dark:text-gray-400">
           Take the next step & sign up to Skill Embassy.
-        </h2>
-        <div className="flex flex-col sm:flex-row justify-center items-center">
-          <a href="https://nas.io/skillembassy">
-            <button className="px-6 py-3 bg-black text-white font-bold rounded">
-              Sign Up Now →
-            </button>
+        </p>
+        <div class="items-center justify-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4">
+          <a
+            href="https://nas.io/skillembassy"
+            class="w-full sm:w-auto bg-gray-800 hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-300 text-white rounded-lg inline-flex items-center justify-center px-12 py-4 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700">
+            <div class="text-left">
+              <div class="-mt-1 font-sans text-sm font-semibold">Start Now</div>
+            </div>
           </a>
         </div>
       </div>

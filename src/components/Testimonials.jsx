@@ -31,7 +31,7 @@ function Testimonials() {
       <div className="w-full bg-white border-t border-b border-gray-200 px-5 py-16 md:py-24 text-gray-800">
         <div className="w-full max-w-6xl mx-auto">
           <div className="text-center max-w-xl mx-auto">
-            <h1 className="text-3xl md:text-3xl font-bold mb-5 text-black font-poppins">What our learners s say</h1>
+            <h1 className="text-3xl md:text-3xl font-bold mb-5 text-black font-poppins">What our learners say</h1>
             <h3 className="text-xl mb-5 font-light font-poppins">Don't take our word for it.</h3>
             <div className="text-center mb-10">
               <span className="inline-block w-1 h-1 rounded-full bg-black ml-1"></span>

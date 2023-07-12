@@ -7,7 +7,6 @@ import CTA from './components/CTA'
 import Collab from './components/Collab'
 import Careers from './components/Careers'
 import Mentors from './components/Mentors'
-import Impact from './components/Impact'
 import Testimonials from './components/Testimonials'
 import ForBusiness from './components/ForBusiness'
 import Faqs from './components/Faqs'
@@ -28,7 +27,6 @@ function App() {
         <Careers />
         <Collab />
         <Mentors />
-        <Impact />
         <Testimonials />
         <ForBusiness />
         <Faqs />
