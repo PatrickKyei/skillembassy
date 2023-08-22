@@ -22,7 +22,7 @@ const Faqs = () => {
       id: 3,
       question: "What is the cost of Skill Embassy Product Accelerator?",
       answer:
-        "The entire 10-week product accelerator is priced at 850 Ghana Cedis and has been sponsored. We are currently giving out scholarships. What you need to pay is Attention.",
+        "The entire 10-week product accelerator is on **scholarship** basis. Please contact us for more information!",
     },
     {
       id: 4,
@@ -46,36 +46,48 @@ const Faqs = () => {
     <div className="section">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div>
-          <h2 class="text-3xl font-semibold mb-4">
+          <h2
+            class="text-3xl font-semibold text-gray-900 mb-4"
+            data-aos="fade-right">
             Frequently Asked Questions
           </h2>
-          <p className="mt-20 text_highlight">
+          <p
+            className="mt-12 text-lg font-normal dark:text-gray-200"
+            data-aos="fade-right"
+            data-aos-duration="1000">
             Not sure how Skill Embassy can help you? Wonder why you need tech
             skills and how to leverage them in your journey into tech?
           </p>
-          <div className="flex flex-col sm:flex-row py-4">
+          <div
+            className="flex flex-col sm:flex-row py-4"
+            data-aos="fade-right"
+            data-aos-duration="1000">
             <a href="https://wa.me/message/CFQ6VVR53WCBN1">
-              <button className="px-6 py-3 bg-black text-white font-bold rounded">
+              <button className="px-6 py-3 bg-gray-900 text-white font-bold rounded">
                 Talk To A Learning Advisor
               </button>
             </a>
           </div>
         </div>
-        <div>
+        <div data-aos="fade-left">
           {faqData.map((faq) => (
             <div key={faq.id} className="border rounded p-4 mb-4">
               <div
                 className="cursor-pointer"
                 onClick={() => handleCollapse(faq.id)}>
                 <div className="flex items-center mb-2">
-                  <h5 className="mr-2">{faq.question}</h5>
+                  <h5 className="mr-2 text-lg font-normal dark:text-gray-200">
+                    {faq.question}
+                  </h5>
                   <FontAwesomeIcon
                     icon={activeItem === faq.id ? faAngleUp : faAngleDown}
                   />
                 </div>
               </div>
               {activeItem === faq.id && (
-                <div className="mt-4 text-gray-700">{faq.answer}</div>
+                <div className="mt-4 text-lg font-normal text-gray-700 dark:text-gray-200">
+                  {faq.answer}
+                </div>
               )}
             </div>
           ))}

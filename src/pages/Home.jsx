@@ -6,6 +6,7 @@ import Benefits from "../components/Benefits";
 import CTA from "../components/CTA";
 import Collab from "../components/Collab";
 import Careers from "../components/Careers";
+import Admission from "../components/Admission";
 import Mentors from "../components/Mentors";
 import Testimonials from "../components/Testimonials";
 import ForBusiness from "../components/ForBusiness";
@@ -13,22 +14,22 @@ import Faqs from "../components/Faqs";
 import CallToAction from "../components/CallToAction";
 import Newsletter from "../components/Newsletter";
 import Footer from "../components/Footer";
-// import "./src/App.css";
+import "../App.css";
 
 function Home() {
   return (
-    <div className="background-pattern mb-[0px] flex flex-col overflow-hidden">
+    <div className="mb-[0px] flex flex-col overflow-hidden">
       {/*  Site header */}
       <main className="p-8 md:mx[100px] grow">
-      <Navbar />
+        <Navbar />
 
-      {/*  Page content */}
-     
-        {/*  Page sections */}
+        {/*  Page content */}
+
         <Hero />
         <CTA />
         <Benefits />
         <Careers />
+        <Admission/>
         <Collab />
         <Mentors />
         <Testimonials />

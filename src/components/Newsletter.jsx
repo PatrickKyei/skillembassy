@@ -3,10 +3,11 @@ import React from 'react';
 function Newsletter() {
   return (
     <div>
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+      <div className="max-w-auto mx-auto px-4 sm:px-0">
 
         {/* CTA box */}
-        <div className="relative bg-gray-800 py-10 px-8 md:py-16 md:px-12" data-aos="fade-up">
+        <div className="relative bg-gray-900 py-10 px-8 md:py-16 md:px-12 rounded-lg" data-aos="fade-up"
+     data-aos-anchor-placement="bottom-bottom">
 
           {/* Background illustration */}
           <div className="absolute right-0 top-0 -ml-40 pointer-events-none" aria-hidden="true">
@@ -25,7 +26,7 @@ function Newsletter() {
   <div className="flex flex-col sm:flex-row justify-center max-w-xs mx-auto sm:max-w-md lg:max-w-none">
     <input
       type="email"
-      className="w-full appearance-none blue-700 border border-blue-500 focus:border-blue-300 rounded-sm px-4 py-3 mb-2 sm:mb-0 sm:mr-2 text-white placeholder-blue-400"
+      className="w-full appearance-none bg-gray-700 border border-gray-500 focus:border-blue-300 rounded-sm px-4 py-3 mb-2 sm:mb-0 sm:mr-2 text-white placeholder-blue-400"
       placeholder="Your best email…"
       aria-label="Your best email…"
     />

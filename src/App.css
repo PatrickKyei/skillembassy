@@ -1,13 +1,19 @@
-.background-pattern {
-    --dot-color: hsl(256, 33%, 70%);
-    --dot-size: 1px;
-    --dot-space: 22px;
-    --bg-color: #fff;
-  
-    background:
-      linear-gradient(90deg, var(--bg-color) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center,
-      linear-gradient(var(--bg-color) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center,
-      var(--dot-color);
-    background-size: var(--dot-space) var(--dot-space);
+.container-main {
+  width: 90%; /* Default width for both mobile and desktop */
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+/* Media query for mobile devices */
+@media (max-width: 767px) {
+  .container-main {
+    width: 100%; /* Set full width for mobile screens */
   }
-  
+}
+
+/* Media query for desktop devices */
+@media (min-width: 768px) {
+  .container-main {
+    width: 90%; /* Set 80% width for desktop screens */
+  }
+}
+
