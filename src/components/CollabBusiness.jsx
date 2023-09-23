@@ -45,7 +45,7 @@ const CollabBusiness = () => {
           {posts.map((post) => (
             <article
               key={post.id}
-              className="flex max-w-xl flex-col items-start justify-between">
+              className="flex max-w-xl flex-col items-start justify-between bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-8 md:p-8 mb-8">
               <div className="group relative">
                 <h3 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                   {post.title}
@@ -54,6 +54,28 @@ const CollabBusiness = () => {
                   {post.description}
                 </p>
               </div>
+              
+              <div className="py-3"></div>
+<a
+            href="#"
+            className="text-gray-500 border border-gray-500 inline-flex justify-center items-center py-2.5 px-5  font-medium text-center rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+            Collaborate
+            <svg
+              className="w-3.5 h-3.5 ml-2"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 14 10">
+              <path
+                stroke="currentColor"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M1 5h12m0 0L9 1m4 4L9 9"
+              />
+            </svg>
+          </a>
+
             </article>
           ))}
         </div>

@@ -3,34 +3,34 @@ import React from "react";
 import Navbar from "../components/Navbar";
 
 import IncludeJumbo from "../components/IncludeJumbo";
-import Solution from "../components/Solution";
-import Collab from "../components/Collab";
-import Identity from "../components/Identity";
+import IncludeMission from "../components/IncludeMission";
+import Volunteer from "../components/Volunteer";
+import InclusionStory from "../components/InclusionStory";
 
 import CallToAction from "../components/CallToAction";
 
 import Newsletter from "../components/Newsletter";
+import Timeline from "../components/Timeline";
 import Footer from "../components/Footer";
-
-// import "./src/App.css";
 
 function Inclusion() {
   return (
     <div className="background-pattern mb-[0px] flex flex-col overflow-hidden">
       {/*  Site header */}
       <main className="p-8 md:mx[100px] grow">
-      <Navbar />
+        <Navbar />
 
-      {/*  Page content */}
-     
+        {/*  Page content */}
+
         {/*  Page sections */}
-        <IncludeJumbo/>
-        <Solution />
-        <Collab />
-<Identity />
-       
-        <CallToAction />
-        <Newsletter />
+        <IncludeJumbo />
+        <IncludeMission />
+        <InclusionStory />
+        <Volunteer />
+        <Timeline />
+
+        {/* <CallToAction /> */}
+        {/* <Newsletter /> */}
       </main>
 
       {/*  Site footer */}

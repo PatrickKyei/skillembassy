@@ -131,7 +131,7 @@ function Footer() {
                     <a
                       href="#"
                       className="text-gray-400 hover:text-black transition duration-150 ease-in-out">
-                      SchenkendorfstraÃŸe 7 34119 Kassel, Germany
+                      Schenkendorfstrasse 7 34119 Kassel, Germany
                     </a>
                   </li>
                 </ul>
@@ -192,6 +192,17 @@ function Footer() {
             {/* Attribution */}
             <div className="text-sm text-black">
               <p>© 2023 Skill Embassy. All rights reserved.</p>
+              <p>
+                Privacy and 
+                <a
+                  href="#"
+                  class="transititext-primary text-primary transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600"
+                  data-te-toggle="tooltip"
+                  title="This website is intended to provide general information about Skillembassy.org, its products and services. They are not intended to provide professional advice or instructions regarding the products and services sold. For special inquiries about the products and services, please contact Skillembassy.org directly. We strive to provide you with accurate and up-to-date information. However, Skillembassy.org cannot be held liable for damages related to this information. Therefore, we do not assume any warranty or guarantee, either expressly or implicitly, and make no representations whatsoever with regard to the correctness and completeness of the information provided or referred to. Any use of our website is at the user's own risk. Neither Skillembassy.org nor any other party involved in the production, provision, design and maintenance of the entire Internet offer or individual parts thereof is liable in any way for any direct, indirect, fault-based or no-fault damage caused due to access to the website , the use, the impossibility of using the Internet offer from Skillembassy.org We reserve the right to change the content of this website without prior notice whenever we deem it appropriate. Liability does not arise from this.">
+                  {" "}
+                  Terms
+                </a> {" "}of use
+              </p>
             </div>
           </div>
         </div>

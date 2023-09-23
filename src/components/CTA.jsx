@@ -19,17 +19,17 @@ const CTA = () => {
             Step Into A Role
           </h2>
           <h3 className="text-lg text-gray-700 mb-4">
-            Step into a role. Work with a group with your own Product Manager,
-            Developer and Designer.
+          Gain REAL-WORLD EXPERIENCE!! - No boring case studies or theory
           </h3>
           <p className="text-base text-gray-600 mb-4">
+          Work with a group with your own Product Manager,
+            Developer and Designer.
+
             We want to empower and trust students, just as they themselves, and
             the unique experiences they have brought about, to make an absolute
             difference.
           </p>
-          <button className="px-6 py-3 bg-gray-900 text-white font-bold rounded">
-            Appy Now →
-          </button>
+         
         </div>
 
         {/* Image */}

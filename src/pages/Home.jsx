@@ -12,6 +12,7 @@ import Testimonials from "../components/Testimonials";
 import ForBusiness from "../components/ForBusiness";
 import Faqs from "../components/Faqs";
 import CallToAction from "../components/CallToAction";
+import Partners from "../components/Partners";
 import Newsletter from "../components/Newsletter";
 import Footer from "../components/Footer";
 import "../App.css";
@@ -28,13 +29,14 @@ function Home() {
         <Hero />
         <CTA />
         <Benefits />
+        <Collab />
         <Careers />
         <Admission/>
-        <Collab />
         <Mentors />
         <Testimonials />
         <ForBusiness />
         <Faqs />
+        <Partners/>
         <CallToAction />
         <Newsletter />
       </main>

@@ -4,11 +4,12 @@ const IncludeJumbo = () => {
   return (
     <div className="flex flex-col items-center my-20 font-poppins lg:my-[100px]">
       <div className="flex flex-col text-center gap-[30px] md:w-[700px]">
-        <h1 className="font-bold text-6xl md:text-4xl text-gray-900">
-          We want to empower everyone.
+        <h1 className="font-bold text-gray-900 text-6xl md:text-6xl">
+          Innovation, Empowerment, Diversity.
         </h1>
         <p className="font-semibold text-slate-500 mb-[40px]">
-        We empower and prepare product managers, product designers, and software developers for success within the tech industry.
+          We provide opportunities for everyone who might face physical or developmental limitations to get access to education by utilizing accessebility tools and assistive technologies that cater to individuals with disabilities.
+          {" "}
         </p>
       </div>
       <div className="flex justify-center mb-8 md:mb-[10px]">
@@ -25,7 +26,6 @@ const IncludeJumbo = () => {
           className="font-bold text-sm text-black border-[1px] border-black rounded-md underline-offset-auto py-[px] px-[20px] md:text-base hover:drop-shadow-xl">
           How it works ?
         </button>
-        
       </div>
     </div>
   );

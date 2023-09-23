@@ -2,10 +2,11 @@ import React from "react";
 
 import Navbar from "../components/Navbar";
 
-import Jumbo from "../components/Jumbo";
-import Solution from "../components/Solution";
-import Collab from "../components/Collab";
-import Identity from "../components/Identity";
+import OurStoryJumbo from "../components/OurStoryJumbo";
+import Community from "../components/Community";
+import OurstorySolution from "../components/OurstorySolution";
+import Timeline from "../components/Timeline";
+import Team from "../components/Team";
 
 import CallToAction from "../components/CallToAction";
 
@@ -24,10 +25,12 @@ function OurStory() {
       {/*  Page content */}
      
         {/*  Page sections */}
-        <Jumbo/>
-        <Solution />
-        <Collab />
-<Identity />
+        <OurStoryJumbo/>
+        <Community />
+        <OurstorySolution />
+        <Team/>
+        <Timeline />
+{/* <Identity /> */}
        
         <CallToAction />
         <Newsletter />

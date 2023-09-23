@@ -5,7 +5,8 @@ import "aos/dist/aos.css";
 import AOS from "aos";
 import Home from "./pages/Home";
 import Business from "./pages/Business";
-// import Inclusion from "./pages/Inclusion";
+import Inclusion from "./pages/Inclusion";
+import OurStory from "./pages/OurStory";
 // import Blog from "./pages/Blog";
 
 function App() {
@@ -34,8 +35,8 @@ function App() {
           {/* <Route path="careers" element={<Courses />} /> */}
 
           <Route path="business" element={<Business />} />
-          {/* <Route path="inclusion" element={<Inclusion />} /> */}
-          {/* <Route path="ourstory" element={<OurStory />} /> */}
+          <Route path="inclusion" element={<Inclusion />} />
+          <Route path="ourstory" element={<OurStory />} />
           {/* <Route path="blog" element={<Blog />} /> */}
         </Routes>
       </div>

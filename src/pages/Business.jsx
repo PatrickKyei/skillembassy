@@ -6,7 +6,6 @@ import Jumbo from "../components/Jumbo";
 import Solution from "../components/Solution";
 // import Identity from "../components/Identity";
 import CollabBusiness from "../components/CollabBusiness";
-import CollabWithUs from "../components/CollabWithUs";
 import Donate from "../components/Donate";
 
 import Newsletter from "../components/Newsletter";
@@ -28,7 +27,6 @@ function Business() {
         <Solution />
         {/* <Identity /> */}
         <CollabBusiness />
-<CollabWithUs />
         <Donate />
         <Newsletter />
       </main>
