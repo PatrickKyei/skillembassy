@@ -8,7 +8,7 @@ const OurStoryJumbo = () => {
           We Are Community Driven{" "}
         </h1>
         <p className="text-lg font-normal text-gray-500 dark:text-gray-400 mb-6">
-        We want you to succeed in Tech. As the sole Product Accelerators, we democratize innovation for aspiring Product Managers, Builders and Side Hustlers.
+        We want you to succeed in Tech. As the only Product Accelerators in the job market, we democratize innovation for aspiring Product Managers, Builders and Side Hustlers.
 
         </p>
       </div>

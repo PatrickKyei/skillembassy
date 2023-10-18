@@ -7,9 +7,6 @@ import IncludeMission from "../components/IncludeMission";
 import Volunteer from "../components/Volunteer";
 import InclusionStory from "../components/InclusionStory";
 
-import CallToAction from "../components/CallToAction";
-
-import Newsletter from "../components/Newsletter";
 import Timeline from "../components/Timeline";
 import Footer from "../components/Footer";
 

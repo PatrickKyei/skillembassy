@@ -119,13 +119,13 @@ const Mentors = () => {
     <div className="section pb-12">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
         <div
-          className="p-8 bg-gray-800 rounded-md"
+          className="p-8 bg-neurtal-300 rounded-md"
           data-aos="fade-right"
           data-aos-duration="1000">
-          <h3 className="text-3xl font-medium mb-8 text-white">
+          <h3 className="text-3xl font-medium mb-8 text-neutral-50">
             Our Mentors from Renowned Industries
           </h3>
-          <p className="text-white">
+          <p className="text-neutral-100">
             Our dedicated projects and discipline mentors will make sure you're
             on track. Along with check-ins, workshops, office hours, and more.
           </p>
@@ -133,7 +133,7 @@ const Mentors = () => {
             href="https://forms.gle/eXz54VWYu1N2fQoq8"
             target="_blank"
             rel="noopener noreferrer">
-            <button className="mt-8 flex items-center text-gray-900 bg-white px-6 py-3 rounded-md">
+            <button className="mt-8 flex items-center text-neutral-950 bg-neutral-50 px-6 py-3 rounded-md">
               <span className="mr-2">JOIN AS A MENTOR</span>
               {/* <i className="el-icon-user"></i> */}
             </button>
@@ -153,16 +153,16 @@ const Mentors = () => {
           {mentors.mentor1.map((mentor, index) => (
             <div
               key={index}
-              className="p-4 bg-white rounded-md shadow-lg text-center">
+              className="p-4 rounded-md shadow-lg text-center">
               <img
                 src={mentor.image}
                 alt=""
                 className={`mx-auto rounded-full w-20 h-20 mb-4 border-4 border-transparent ${
-                  activeMentor === index ? "border-gray-500" : ""
+                  activeMentor === index ? "border-neutral-100" : ""
                 }`}
               />
-              <h3 className="font-bold text-lg">{mentor.name}</h3>
-              <p className="text-gray-500 text-sm">
+              <h3 className="font-bold text-neutral-50 text-lg">{mentor.name}</h3>
+              <p className="text-neutral-100 text-sm">
                 {mentor.title} <br />
                 <span className="font-semibold">{mentor.company}</span>
               </p>

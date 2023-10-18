@@ -50,4 +50,26 @@ See [Configuration Reference](https://vitejs.dev/guide/).
 
 ## Stay in the loop
 
+## Backgound style
+
+<!-- style="
+      --dot-color: hsl(256, 33%, 70%);
+      --dot-size: 1px;
+      --dot-space: 22px;
+      --bg-color: #020202;
+      background: linear-gradient(
+            90deg,
+            var(--bg-color) calc(var(--dot-space) - var(--dot-size)),
+            transparent 1%
+          )
+          center,
+        linear-gradient(
+            var(--bg-color) calc(var(--dot-space) - var(--dot-size)),
+            transparent 1%
+          )
+          center,
+        var(--dot-color);
+      background-size: var(--dot-space) var(--dot-space);
+    ">  -->
+
 

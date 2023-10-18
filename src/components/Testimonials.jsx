@@ -27,37 +27,37 @@ const testimonials = [
 
 function Testimonials() {
   return (
-    <div className="min-w-screen min-h-screen bg-gray-50 flex items-center justify-center py-5">
-      <div className="w-full bg-white border-t border-b border-gray-200 px-5 py-16 md:py-24 text-gray-800">
+    <div className="min-w-screen min-h-screen flex items-center justify-center py-5">
+      <div className="w-full border-t border-b border-gray-200 px-5 py-16 md:py-24 text-neurtal-50">
         <div className="w-full max-w-6xl mx-auto">
           <div className="text-center max-w-xl mx-auto" data-aos="fade-up">
-            <h1 className="text-3xl md:text-3xl font-bold mb-5 text-gray-900">Don't take our word for it.</h1>
-            <h3 className="text-xl mb-5">Hear why learners like you love our full learning experience.</h3>
+            <h1 className="text-3xl md:text-3xl font-bold mb-5 text-neutral-50">Don't take our word for it.</h1>
+            <h3 className="text-x text-neutral-50 l mb-5">Hear why learners like you love our full learning experience.</h3>
             <div className="text-center mb-10">
-              <span className="inline-block w-1 h-1 rounded-full bg-gray-900 ml-1"></span>
-              <span className="inline-block w-3 h-1 rounded-full bg-gray-900 ml-1"></span>
-              <span className="inline-block w-40 h-1 rounded-full bg-gray-900"></span>
-              <span className="inline-block w-3 h-1 rounded-full bg-gray-900 ml-1"></span>
-              <span className="inline-block w-1 h-1 rounded-full bg-gray-900 ml-1"></span>
+              <span className="inline-block w-1 h-1 rounded-full bg-neutral-50 ml-1"></span>
+              <span className="inline-block w-3 h-1 rounded-full bg-neutral-50 ml-1"></span>
+              <span className="inline-block w-40 h-1 rounded-full bg-neutral-200"></span>
+              <span className="inline-block w-3 h-1 rounded-full bg-neutral-200 ml-1"></span>
+              <span className="inline-block w-1 h-1 rounded-full bg-neutral-200 ml-1"></span>
             </div>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4" data-aos="fade-up" data-aos-duration="1000">
             {testimonials.map((testimonial) => (
-              <div key={testimonial.id} className="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 mb-6">
+              <div key={testimonial.id} className="w-full mx-auto rounded-lg bg-neutral border border-neutral-100 p-5 text-neutral-50 mb-6">
                 <div className="flex mb-4 items-center">
-                  <div className="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
+                  <div className="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-neutral-100">
                     <img src={testimonial.image} alt="" />
                   </div>
                   <div className="flex-grow pl-3">
-                    <h6 className="font-bold text-gray-600">{testimonial.name}</h6>
+                    <h6 className="font-bold text-neutral-50">{testimonial.name}</h6>
                   </div>
                 </div>
                 <div className="w-full">
                   <p>
-                    <span className="text-lg leading-none italic font-bold text-gray-400 mr-1">"</span>
+                    <span className="text-lg leading-none italic font-bold text-neutral-50 mr-1">"</span>
                     {testimonial.testimonial}
-                    <span className="text-lg leading-none italic font-bold text-gray-400 ml-1">"</span>
+                    <span className="text-lg leading-none italic font-bold text-neutral-50 ml-1">"</span>
                   </p>
                 </div>
               </div>

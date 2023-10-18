@@ -47,12 +47,12 @@ const Faqs = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div>
           <h2
-            class="text-3xl font-semibold text-gray-900 mb-4"
+            class="text-3xl font-semibold text-neutral-50 mb-4"
             data-aos="fade-right">
             Frequently Asked Questions
           </h2>
           <p
-            className="mt-12 text-lg font-normal dark:text-gray-200"
+            className="mt-12 text-lg font-normal text-neutral-50"
             data-aos="fade-right"
             data-aos-duration="1000">
             Not sure how Skill Embassy can help you? Wonder why you need tech
@@ -63,7 +63,7 @@ const Faqs = () => {
             data-aos="fade-right"
             data-aos-duration="1000">
             <a href="https://wa.me/message/CFQ6VVR53WCBN1">
-              <button className="px-6 py-3 bg-gray-900 text-white font-bold rounded">
+              <button className="px-6 py-3 bg-neutral-50 text-neutral-950 font-bold rounded">
                 Talk To A Learning Advisor
               </button>
             </a>
@@ -76,16 +76,19 @@ const Faqs = () => {
                 className="cursor-pointer"
                 onClick={() => handleCollapse(faq.id)}>
                 <div className="flex items-center mb-2">
-                  <h5 className="mr-2 text-lg font-normal dark:text-gray-200">
+                  <h5 className="mr-2 text-lg font-normal text-neutral-50">
                     {faq.question}
                   </h5>
                   <FontAwesomeIcon
                     icon={activeItem === faq.id ? faAngleUp : faAngleDown}
+                    className={
+                      activeItem === faq.id ? "text-neutral-50" : "text-neutral-400"
+                    }
                   />
                 </div>
               </div>
               {activeItem === faq.id && (
-                <div className="mt-4 text-lg font-normal text-gray-700 dark:text-gray-200">
+                <div className="mt-4 text-lg font-normal text-neutral-500">
                   {faq.answer}
                 </div>
               )}

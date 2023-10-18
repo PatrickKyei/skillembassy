@@ -12,12 +12,13 @@ const Navbar = () => {
     <div className="w-full flex justify-center ">
       <div className="w-full flex justify-between items-center">
         <div>
-          <Link to="/" className="font-bold text-3xl text-gray-700">
+          <Link to="/" className="font-bold text-3xl text-neutral-50">
             Skill Embassy
           </Link>
         </div>
+        
         <div>
-          <ul className="hidden w-full flex-row justify-center gap-5 md:flex">
+          <ul className="hidden text-neutral-50 w-full flex-row justify-center gap-5 md:flex">
             <li>
               <Link to="/careers">Careers</Link>
             </li>
@@ -39,7 +40,7 @@ const Navbar = () => {
           <a href="https://nas.io/skillembassy">
             <button
               type="button"
-              className="hidden font-bold bg-white text-base border-[2px] py-[5px] px-[20px] rounded-md hover:drop-shadow-xl md:flex">
+              className="hidden font-bold bg-neutral-50 text-base border-[2px] py-[5px] px-[20px] rounded-md hover:drop-shadow-xl md:flex">
               Start Now
             </button>
           </a>
@@ -67,7 +68,7 @@ const Navbar = () => {
         <div className="text-center bg-gray-900 bg-opacity-10 rounded w-[40%] shadow-black px-2 py-2.5">
           <a href="https://nas.io/skillembassy">Start Now</a>
         </div>
-        <ul className="w-full flex flex-col py-6 px-4">
+        <ul className="w-full flex text-neutral-50 flex-col py-6 px-4">
           <li>
             <Link to="/careers">Careers</Link>
           </li>

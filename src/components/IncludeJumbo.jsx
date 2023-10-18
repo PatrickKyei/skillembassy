@@ -7,7 +7,7 @@ const IncludeJumbo = () => {
         <h1 className="font-bold text-gray-900 text-6xl md:text-6xl">
           Innovation, Empowerment, Diversity.
         </h1>
-        <p className="font-semibold text-slate-500 mb-[40px]">
+        <p className="text-lg font-normal text-gray-500 dark:text-gray-400 mb-6">
           We provide opportunities for everyone who might face physical or developmental limitations to get access to education by utilizing accessebility tools and assistive technologies that cater to individuals with disabilities.
           {" "}
         </p>
