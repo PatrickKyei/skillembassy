@@ -2,9 +2,9 @@ import React from "react";
 
 const Solution = () => {
   return (
-    <section className="bg-white rounded-lg dark:bg-gray-900">
-      <div className="py-8 px-4 mx-auto max-w-screen-x lg:py-16">
-        <div className="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-8 md:p-12 mb-8" data-aos="fade-up">
+    <section className="bg rounded-lg">
+      <div className="py-8 mx-auto max-w-screen-x lg:py-16">
+        <div className="bg-neurtral-900 border border-neutral rounded-sm p-8 md:p-12 mb-8" data-aos="fade-up">
           {/* <a
             href="#"
             className="bg-blue-100 text-blue-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md dark:bg-gray-700 dark:text-blue-400 mb-2">
@@ -18,10 +18,10 @@ const Solution = () => {
             </svg>
             Tutorial
           </a> */}
-          <h1 className="text-gray-900 dark:text-white text-3xl font-bold mb-2">
+          <h1 className="text-neutral-100 text-3xl font-bold mb-2">
           We combine technology and creative problem solving
           </h1>
-          <p className="text-lg font-normal text-gray-500 dark:text-gray-400 mb-6">
+          <p className="text-lg font-normal text-neutral-500 mb-6">
             We are not doing anything new; rather, we are doing what everyone
             else does, just better. Learners are able to grasp and solve
             modern-day problems, break down futile societal constructs, and
@@ -32,7 +32,7 @@ const Solution = () => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-8" data-aos="fade-right">
-          <div className="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-8 md:p-12">
+          <div className="bg-neutral border border-neutral-200 rounded-sm p-8 md:p-12">
             {/* <a
               href="#"
               className="bg-green-100 text-green-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md dark:bg-gray-700 dark:text-green-400 mb-2">
@@ -46,10 +46,10 @@ const Solution = () => {
               </svg>
               Design
             </a> */}
-            <h2 className="text-gray-900 dark:text-white text-3xl font-bold mb-2">
+            <h2 className="text-neutral-100 text-3xl font-bold mb-2">
               We inspire motivated individuals
             </h2>
-            <p className="text-lg font-normal text-gray-500 dark:text-gray-400 mb-4">
+            <p className="text-lg font-normal text-neutral-500 mb-4">
               It is difficult to break into and excel in technology. It's even
               more challenging if you're changing careers or don't have a
               traditional graduate degree. Our mission is to inspire motivated
@@ -59,7 +59,7 @@ const Solution = () => {
             
           </div>
           
-          <div className="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-8 md:p-12" data-aos="fade-left" data-aos-duration="1000">
+          <div className="bg border border-neutral-200 rounded-sm p-8 md:p-12" data-aos="fade-left" data-aos-duration="1000">
             {/* <a
               href="#"
               className="bg-purple-100 text-purple-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md dark:bg-gray-700 dark:text-purple-400 mb-2">
@@ -79,7 +79,7 @@ const Solution = () => {
               </svg>
               Code
             </a> */}
-            <h2 className="text-gray-900 dark:text-white text-3xl font-bold mb-2">
+            <h2 className="text-neutral-100 dark:text-white text-3xl font-bold mb-2">
               Our approach is hands-on.
             </h2>
             <p className="text-lg font-normal text-gray-500 dark:text-gray-400 mb-4">

@@ -5,7 +5,7 @@ const Partners = () => {
     <div className="container my-24 mx-auto md:px-6">
       <section className="mb-32 text-center">
         <h2 className="text-gray-200 mb-16 text-3xl font-bold">
-          Content and technology you can trust. Powered by <u className="">experts</u> 
+        Powered by <u className="">reliable</u> companies
         </h2>
 
         <div className="grid items-center gap-6 md:grid-cols-2 lg:grid-cols-6">

@@ -6,10 +6,10 @@ import Benefits from "../components/Benefits";
 import CTA from "../components/CTA";
 import Collab from "../components/Collab";
 import Careers from "../components/Careers";
-import Admission from "../components/Admission";
-import Mentors from "../components/Mentors";
+import Admission from "../components/Alumni";
+import Solution from "../components/Solution";
 import Testimonials from "../components/Testimonials";
-import ForBusiness from "../components/ForBusiness";
+import ForBusiness from "../components/Interview";
 import Faqs from "../components/Faqs";
 import CallToAction from "../components/CallToAction";
 import Partners from "../components/Partners";
@@ -32,13 +32,12 @@ function Home() {
         <Collab />
         <Careers />
         <Admission/>
-        <Mentors />
-        <Testimonials />
+        <Solution/>
         <ForBusiness />
+        <Testimonials />
         <Faqs />
         <Partners/>
         <CallToAction />
-        <Newsletter />
       </main>
 
       {/*  Site footer */}

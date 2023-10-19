@@ -1,96 +1,70 @@
 import React from "react";
-import Figma from "../assets/uxui.png";
-import Facebook from "../assets/datascience.png";
-import Vercel from "../assets/devops.png";
-import Security from "../assets/security.png";
-import TeamViewer from "../assets/teamviewer.png";
-import Analytics from "../assets/analytics.png";
-
-const careerData = [
-  {
-    imgUrl: Figma,
-    careerTitle: "Product Design",
-    platform: "Figma",
-    text: "Learn the step by step method of creating, managing and growing successful products, directly from the leaders who have been there and done that.",
-    tool: "Figma",
-    skill: "Prototypes",
-  },
-  {
-    imgUrl: Facebook,
-    careerTitle: "Data Science",
-    platform: "Big Query",
-    text: "Do you want to enjoy the experience of developing and launching a social or human problem from idea to completion with your own designer, product manager, and software developer?",
-    tool: "Python",
-    skill: "Data Models",
-  },
-  {
-    imgUrl: Vercel,
-    careerTitle: "DevOps",
-    platform: "AWS",
-    text: "Learn the step by step method of creating, deploying and automating infrastructures directly from the leaders who have been there and done that.",
-    tool: "CI/CD",
-    skill: "Automation",
-  },
-  {
-    imgUrl: Security,
-    careerTitle: "Cybersecurity",
-    platform: "Wireshark",
-    text: "Explore the world of cybersecurity and learn how to protect organizations from cyber threats. Gain hands-on experience in identifying and mitigating security risks, and become a key player in safeguarding valuable data and systems.",
-    tool: "Networks",
-    skill: "Pen-Test",
-  },
-  {
-    imgUrl: TeamViewer,
-    careerTitle: "IT Support",
-    platform: "TeamViewer",
-    text: "Master the skills required to provide exceptional IT support to businesses and users. Learn how to troubleshoot hardware and software issues, set up networks, and ensure smooth IT operations for enhanced productivity.",
-    tool: "RDP",
-    skill: "Troubleshoot",
-  },
-  {
-    imgUrl: Analytics,
-    careerTitle: "Digital Marketing",
-    platform: "Google Analytics",
-    text: "Dive into the dynamic field of digital marketing and acquire the tools to reach and engage with the right audience. Unleash the potential of online advertising, social media, and content marketing to drive growth and success for businesses.",
-    tool: "Insights",
-    skill: "Analytics",
-  },
-];
 
 const Careers = () => {
+  const careerData = [
+    {
+      title: "Card Title 1",
+      description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      imageUrl: "https://tecdn.b-cdn.net/img/new/standard/nature/186.jpg",
+    },
+    {
+      title: "Card Title 2",
+      description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      imageUrl: "https://tecdn.b-cdn.net/img/new/standard/nature/186.jpg",
+    },
+    {
+      title: "Card Title 3",
+      description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      imageUrl: "https://tecdn.b-cdn.net/img/new/standard/nature/186.jpg",
+    },
+    {
+      title: "Card Title 4",
+      description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      imageUrl: "https://tecdn.b-cdn.net/img/new/standard/nature/186.jpg",
+    },
+    {
+      title: "Card Title 5",
+      description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      imageUrl: "https://tecdn.b-cdn.net/img/new/standard/nature/186.jpg",
+    },
+    {
+      title: "Card Title 6",
+      description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      imageUrl: "https://tecdn.b-cdn.net/img/new/standard/nature/186.jpg",
+    },
+  ];
+
   return (
-    <div className="container my-20 lg:my-[150px]">
-      <h1 className="text-3xl font-semibold text-gray-900 mb-6">
-        Our Career Change Courses
-      </h1>
-      <div className="flex justify-center">
-        <div className="grid grid-cols-1 gap-4 lg:grid-cols-3">
-          {careerData.map((career) => (
+    <div className="text-center">
+      <h2 className="text-5xl font-semibold text-neutral-100 mb-8">Our Career Change Courses</h2>
+      <div className="grid grid-cols-1 gap-8 lg:grid-cols-4">
+        {careerData.map((career, index) => (
+          <div
+            key={index}
+            className="block rounded-sm bg-neutral-900"
+          >
             <div
-              key={career.careerTitle}
-              className="bg-white text-slate-600 hover:bg-gray-900 hover:text-white p-6 rounded-lg shadow-lg">
-              <div className="flex gap-6 mb-6">
-                <img
-                  src={career.imgUrl}
-                  className="text-black w-[50px]"
-                  alt={career.careerTitle}
-                />
-                <div className="flex flex-col m">
-                  <h1 className="font-bold text-xl">{career.careerTitle}</h1>
-                  <p className="font-light">{career.platform}</p>
-                </div>
-              </div>
-              <p className="text-lg font-normal text-gray-500 dark:text-gray-200 mb-6">
-                {career.text}
-              </p>
-              <div className="w-full border-[0.1px] border-slate-100 mb-6" />
-              <div className="flex justify-between items-center font-semibold">
-                <p className="bg-white bg-opacity-10 p-1">{career.tool}</p>
-                <p>{career.skill}</p>
-              </div>
+              className="relative overflow-hidden bg-cover bg-no-repeat"
+              data-te-ripple-init
+              data-te-ripple-color="light"
+            >
+              <img className="rounded-t-lg" src={career.imageUrl} alt={career.title} />
+              <a href="#!">
+                <div
+                  className="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-[hsla(0,0%,98%,0.15)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"
+                ></div>
+              </a>
             </div>
-          ))}
-        </div>
+            <div className="pt-2 pl-2">
+              <h5 className="mb-2 font-medium leading-tight text-neutral-100">
+                {career.title}
+              </h5>
+              <p className="mb-4 text-base text-neutral-100">
+                {career.description}
+              </p>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );
