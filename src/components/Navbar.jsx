@@ -32,18 +32,19 @@ const Navbar = () => {
               <Link to="/ourstory">Our Story</Link>
             </li>
             <li>
-              <Link to="/blog">Blog</Link>
+              <Link to="/application">Application</Link>
             </li>
           </ul>
         </div>
         <div>
-          <a href="https://nas.io/skillembassy">
+      
+            <Link to="application">
             <button
               type="button"
-              className="hidden font-bold bg-neutral-50 text-base border-[2px] py-[5px] px-[20px] rounded-md hover:drop-shadow-xl md:flex">
-              Start Now
+              className="hidden text-purple-800 font-semibold bg-purple-100 text-base py-[10px] px-[30px] rounded-sm hover:drop-shadow-xl md:flex">
+              Join Cohort
             </button>
-          </a>
+            </Link>
         </div>
       </div>
 
@@ -51,9 +52,9 @@ const Navbar = () => {
         onClick={handleNav}
         className="flex items-center cursor-pointer md:hidden">
         {!nav ? (
-          <MdClose className="text-black" size={30} />
+          <MdClose className="text-white" size={30} />
         ) : (
-          <MdViewHeadline className="text-black" size={30} />
+          <MdViewHeadline className="text-white" size={30} />
         )}
       </div>
 
@@ -66,9 +67,9 @@ const Navbar = () => {
             : "fixed bottom-[-100%]"
         }>
         <div className="text-center bg-gray-900 bg-opacity-10 rounded w-[40%] shadow-black px-2 py-2.5">
-          <a href="https://nas.io/skillembassy">Start Now</a>
+          <a href="https://nas.io/skillembassy">Join Cohort</a>
         </div>
-        <ul className="w-full flex text-neutral-50 flex-col py-6 px-4">
+        <ul className="w-full flex text-neutral-950 flex-col py-6 px-4">
           <li>
             <Link to="/careers">Careers</Link>
           </li>
@@ -82,7 +83,7 @@ const Navbar = () => {
             <Link to="/ourstory">Our Story</Link>
           </li>
           <li>
-            <Link to="/blog">Blog</Link>
+            <Link to="/application">Application</Link>
           </li>
         </ul>
       </div>

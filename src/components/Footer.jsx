@@ -150,7 +150,7 @@ function Footer() {
                   aria-label="Linkedin">
                   <FontAwesomeIcon
                     icon={faLinkedin}
-                    className="w-8 h-8 fill-current"
+                    className="w-6 h-6 fill-current"
                   />
                 </a>
               </li>
@@ -161,7 +161,7 @@ function Footer() {
                   aria-label="Facebook">
                   <FontAwesomeIcon
                     icon={faFacebook}
-                    className="w-8 h-8 fill-current"
+                    className="w-6 h-6 fill-current"
                   />
                 </a>
               </li>
@@ -172,7 +172,7 @@ function Footer() {
                   aria-label="Instagram">
                   <FontAwesomeIcon
                     icon={faInstagram}
-                    className="w-8 h-8 fill-current"
+                    className="w-6 h-6 fill-current"
                   />
                 </a>
               </li>
@@ -183,7 +183,7 @@ function Footer() {
                   aria-label="Twitter">
                   <FontAwesomeIcon
                     icon={faTwitter}
-                    className="w-8 h-8 fill-current"
+                    className="w-6 h-6 fill-current"
                   />
                 </a>
               </li>

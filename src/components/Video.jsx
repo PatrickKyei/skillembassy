@@ -1,9 +1,9 @@
 import React from "react";
 
-const Collab = () => {
+const Video = () => {
   return (
-    <div className="container my-24 mx-auto md:px-6" style={{ width: "100%" }}>
-      <div className="relative w-full overflow-hidden" style={{ paddingTop: "56.25%" }}>
+    <div className="container my-24 mx-auto md:px-1">
+      <div className="relative w-full overflow-hidden">
         <iframe
           className="absolute bottom-0 left-0 right-0 top-0 h-full w-full"
           src="https://www.youtube.com/embed/oEj9ZiorBKk?si=oO6U6VwTf8jXeMLV?enablejsapi=1&origin=https%3"
@@ -17,4 +17,4 @@ const Collab = () => {
   );
 };
 
-export default Collab;
+export default Video;

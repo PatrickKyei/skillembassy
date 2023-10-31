@@ -63,7 +63,7 @@ const Faqs = () => {
             data-aos="fade-right"
             data-aos-duration="1000">
             <a href="https://wa.me/message/CFQ6VVR53WCBN1">
-              <button className="px-6 py-3 bg-neutral-50 text-neutral-950 font-bold rounded">
+              <button className="px-6 py-3 bg-neutral-50 text-neutral-950 font-bold rounded-sm">
                 Talk To A Learning Advisor
               </button>
             </a>
@@ -71,7 +71,7 @@ const Faqs = () => {
         </div>
         <div data-aos="fade-left">
           {faqData.map((faq) => (
-            <div key={faq.id} className="border rounded p-4 mb-4">
+            <div key={faq.id} className="border rounded-sm p-4 mb-4">
               <div
                 className="cursor-pointer"
                 onClick={() => handleCollapse(faq.id)}>

@@ -28,7 +28,7 @@ const testimonials = [
 function Testimonials() {
   return (
     <div className="min-w-screen min-h-screen flex items-center justify-center py-5">
-      <div className="w-full border-t border-b border-gray-200 px-5 py-16 md:py-24 text-neurtal-50">
+      <div className="w-full border-t border-b border-gray-200 px-1 py-16 md:py-24 text-neurtal-50">
         <div className="w-full max-w-6xl mx-auto">
           <div className="text-center max-w-xl mx-auto" data-aos="fade-up">
             <h1 className="text-3xl md:text-3xl font-bold mb-5 text-neutral-50">Don't take our word for it.</h1>
@@ -44,7 +44,7 @@ function Testimonials() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4" data-aos="fade-up" data-aos-duration="1000">
             {testimonials.map((testimonial) => (
-              <div key={testimonial.id} className="w-full mx-auto rounded-lg bg-neutral border border-neutral-100 p-5 text-neutral-50 mb-6">
+              <div key={testimonial.id} className="w-full mx-auto rounded-sm bg-neutral border border-neutral-100 p-5 text-neutral-50 mb-6">
                 <div className="flex mb-4 items-center">
                   <div className="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-neutral-100">
                     <img src={testimonial.image} alt="" />

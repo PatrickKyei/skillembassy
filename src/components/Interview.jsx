@@ -54,10 +54,10 @@ const ForBusiness = () => {
               Senior Software Engineer
             </p>
           </div>
-          <a href="#" className="inline-block pt-4">
+          <a href="https://youtu.be/oAPBFh9birk?si=PcWPKg0SA2aWAzJw" className="inline-block pt-4">
             <button
               type="button"
-              className="font-bold bg-neutral-100 text-sm text-purple-700 mx-[1px] py-[10px] px-[30px] rounded-md md:text-base hover:drop-shadow-xl">
+              className="font-bold bg-purple-100 text-sm text-purple-800 mx-[1px] py-[10px] px-[30px] rounded-sm md:text-base hover:drop-shadow-xl">
               Watch Live session
             </button>
           </a>

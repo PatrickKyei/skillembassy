@@ -7,7 +7,7 @@ import Home from "./pages/Home";
 import Business from "./pages/Business";
 import Inclusion from "./pages/Inclusion";
 import OurStory from "./pages/OurStory";
-// import Blog from "./pages/Blog";
+import Application from "./pages/Application";
 
 function App() {
   const location = useLocation();
@@ -37,7 +37,7 @@ function App() {
           <Route path="business" element={<Business />} />
           <Route path="inclusion" element={<Inclusion />} />
           <Route path="ourstory" element={<OurStory />} />
-          {/* <Route path="blog" element={<Blog />} /> */}
+          <Route path="application" element={<Application />} />
         </Routes>
       </div>
     </>
