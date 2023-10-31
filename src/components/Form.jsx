@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-
+import React, { useState, useEffect } from "react";
 const Form = () => {
   const [formData, setFormData] = useState({
     Name: "",
@@ -9,13 +8,32 @@ const Form = () => {
     CareerPath: "Select Career Path*",
     HavePC: "Do you have a computer?*",
     Phone: "",
-    Country: "Select country*",
-    State: "Select state*",
+    Country: "",
+    Timezone: "",
     Participation: "",
     OpportunitySource: "How did you hear about us?*",
     Newsletter: "Subscribe for more updates?*",
     Terms: false,
   });
+
+  const [countries, setCountries] = useState([]);
+  const [timezones, setTimezones] = useState([]);
+
+  useEffect(() => {
+    // Fetch the country data when the component mounts
+    fetch("/src/utils/countries.json")
+      .then((response) => response.json())
+      .then((data) => setCountries(data))
+      .catch((error) => console.error("Error fetching countries:", error));
+  }, []);
+
+  useEffect(() => {
+    // Fetch the timezone data when the component mounts
+    fetch("/src/utils/timezones.json")
+      .then((response) => response.json())
+      .then((data) => setTimezones(data))
+      .catch((error) => console.error("Error fetching timezones:", error));
+  }, []);
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
@@ -25,28 +43,44 @@ const Form = () => {
     }));
   };
 
+  const getCountries = () => {
+    return countries.map((country) => (
+      <option key={country.code} value={country.name}>
+        {country.name}
+      </option>
+    ));
+  };
+
+  const getTimezones = () => {
+    return timezones.map((timezone) => (
+      <option key={country.abbreviation} value={timezone.name}>
+        {timezone.name}
+      </option>
+    ));
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbyXJNFPnmQxSFJYPbVJN2N7sL2leqi3skoqESbhbNTR93XwDQ9VsGbhWTE8fKgG7Y8y3g/exec';
+    const scriptURL =
+      "https://script.google.com/macros/s/AKfycbyXJNFPnmQxSFJYPbVJN2N7sL2leqi3skoqESbhbNTR93XwDQ9VsGbhWTE8fKgG7Y8y3g/exec";
     const formDataToSend = new FormData();
-  
+
     for (let key in formData) {
       formDataToSend.append(key, formData[key]);
     }
-  
+
     // Log the form data
     // console.log('Form Data:', formData);
-  
-    fetch(scriptURL, { method: 'POST', body: formDataToSend })
-      .then(response => {
+
+    fetch(scriptURL, { method: "POST", body: formDataToSend })
+      .then((response) => {
         alert("Thank you! your form is submitted successfully.");
         window.location.reload();
       })
-      .catch(error => {
-        console.error('Error!', error.message);
+      .catch((error) => {
+        console.error("Error!", error.message);
       });
   };
-  
 
   return (
     <form className="mt-12 p-4 bg-neutral-100" onSubmit={handleSubmit}>
@@ -89,10 +123,10 @@ const Form = () => {
           <select
             name="Gender"
             id="gender"
+            required
             className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
             value={formData.Gender}
-            onChange={handleChange}
-          >
+            onChange={handleChange}>
             <option value="Choose Gender*">Choose Gender*</option>
             <option value="Male">Male</option>
             <option value="Female">Female</option>
@@ -103,11 +137,13 @@ const Form = () => {
           <select
             name="Experience"
             id="experience"
+            required
             className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
             value={formData.Experience}
-            onChange={handleChange}
-          >
-            <option value="What is your experience level*">What is your experience level*</option>
+            onChange={handleChange}>
+            <option value="What is your experience level*">
+              What is your experience level*
+            </option>
             <option value="Novice">Novice</option>
             <option value="Beginner">Beginner</option>
             <option value="Intermediate">Intermediate</option>
@@ -118,10 +154,10 @@ const Form = () => {
           <select
             name="CareerPath"
             id="career"
+            required
             className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
             value={formData.CareerPath}
-            onChange={handleChange}
-          >
+            onChange={handleChange}>
             <option value="Select Career Path*">Select Career Path*</option>
             <option value="Product School">Product School</option>
             <option value="Software Development">Software Development</option>
@@ -132,11 +168,13 @@ const Form = () => {
           <select
             name="HavePC"
             id="pc"
+            required
             className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
             value={formData.HavePC}
-            onChange={handleChange}
-          >
-            <option value="Do you have a computer?*">Do you have a computer?*</option>
+            onChange={handleChange}>
+            <option value="Do you have a computer?*">
+              Do you have a computer?*
+            </option>
             <option value="Yes">Yes</option>
             <option value="No">No</option>
           </select>
@@ -157,26 +195,23 @@ const Form = () => {
           <select
             name="Country"
             id="country"
+            required
             className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
             value={formData.Country}
-            onChange={handleChange}
-          >
-            <option value="Select country*">Select country*</option>
-            <option value="Yes">Yes</option>
-            <option value="No">No</option>
+            onChange={handleChange}>
+            <option value="">Select country*</option>
+            {getCountries()}
           </select>
         </div>
         <div>
           <select
-            name="State"
-            id="state"
+            name="Timezone"
+            id="timezone"
             className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-            value={formData.State}
-            onChange={handleChange}
-          >
-            <option value="Select state*">Select state*</option>
-            <option value="Yes">Yes</option>
-            <option value="No">No</option>
+            value={formData.Timezone}
+            onChange={handleChange}>
+            <option value="">Select timezone*</option>
+            {getTimezones()}
           </select>
         </div>
         <div>
@@ -197,9 +232,10 @@ const Form = () => {
             id="social"
             className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
             value={formData.OpportunitySource}
-            onChange={handleChange}
-          >
-            <option value="How did you hear about us?*">How did you hear about us?*</option>
+            onChange={handleChange}>
+            <option value="How did you hear about us?*">
+              How did you hear about us?*
+            </option>
             <option value="email">Email</option>
             <option value="website">Website</option>
             <option value="social">Social media</option>
@@ -210,11 +246,13 @@ const Form = () => {
           <select
             name="Newsletter"
             id="subscribe"
+            required
             className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
             value={formData.Newsletter}
-            onChange={handleChange}
-          >
-            <option value="Subscribe for more updates?*">Subscribe for more updates?*</option>
+            onChange={handleChange}>
+            <option value="Subscribe for more updates?*">
+              Subscribe for more updates?*
+            </option>
             <option value="Yes">Yes</option>
             <option value="No">No</option>
           </select>
@@ -234,13 +272,11 @@ const Form = () => {
         </div>
         <label
           htmlFor="terms"
-          className="ml-2 text-sm font-medium text-neutral-800"
-        >
+          className="ml-2 text-sm font-medium text-neutral-800">
           I agree with the{" "}
           <a
             href="#"
-            className="text-blue-600 hover:underline dark:text-blue-500"
-          >
+            className="text-blue-600 hover:underline dark:text-blue-500">
             terms and conditions
           </a>
           .
@@ -248,10 +284,8 @@ const Form = () => {
       </div>
       <div className="flex items-center px-4">
         <button
-
           type="submit"
-          className="text-neutral-100 bg-neutral-900 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-sm text-sm w-full sm:w-auto px-5 py-2.5 text-center"
-        >
+          className="text-neutral-100 bg-neutral-900 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-sm text-sm w-full sm:w-auto px-5 py-2.5 text-center">
           Submit
         </button>
       </div>

@@ -1,0 +1,153 @@
+[
+    {
+      "name": "International Date Line West",
+      "abbreviation": "IDLW",
+      "offset": "-12:00"
+    },
+    {
+      "name": "Midway Island, Samoa",
+      "abbreviation": "SST",
+      "offset": "-11:00"
+    },
+    {
+      "name": "Hawaii",
+      "abbreviation": "HST",
+      "offset": "-10:00"
+    },
+    {
+      "name": "Alaska",
+      "abbreviation": "AKST",
+      "offset": "-09:00"
+    },
+    {
+      "name": "Pacific Time (US & Canada)",
+      "abbreviation": "PST",
+      "offset": "-08:00"
+    },
+    {
+      "name": "Mountain Time (US & Canada)",
+      "abbreviation": "MST",
+      "offset": "-07:00"
+    },
+    {
+      "name": "Central Time (US & Canada)",
+      "abbreviation": "CST",
+      "offset": "-06:00"
+    },
+    {
+      "name": "Eastern Time (US & Canada)",
+      "abbreviation": "EST",
+      "offset": "-05:00"
+    },
+    {
+      "name": "Atlantic Time (Canada)",
+      "abbreviation": "AST",
+      "offset": "-04:00"
+    },
+    {
+      "name": "Newfoundland",
+      "abbreviation": "NST",
+      "offset": "-03:30"
+    },
+    {
+      "name": "Greenland",
+      "abbreviation": "GST",
+      "offset": "-03:00"
+    },
+    {
+      "name": "Azores",
+      "abbreviation": "AZOT",
+      "offset": "-01:00"
+    },
+    {
+      "name": "London, Dublin",
+      "abbreviation": "GMT",
+      "offset": "+00:00"
+    },
+    {
+      "name": "Paris, Berlin, Rome",
+      "abbreviation": "CET",
+      "offset": "+01:00"
+    },
+    {
+      "name": "Athens, Istanbul",
+      "abbreviation": "EET",
+      "offset": "+02:00"
+    },
+    {
+      "name": "Moscow, St. Petersburg",
+      "abbreviation": "MSK",
+      "offset": "+03:00"
+    },
+    {
+      "name": "Tehran",
+      "abbreviation": "IRST",
+      "offset": "+03:30"
+    },
+    {
+      "name": "Dubai, Abu Dhabi",
+      "abbreviation": "GST",
+      "offset": "+04:00"
+    },
+    {
+      "name": "Kabul",
+      "abbreviation": "AFT",
+      "offset": "+04:30"
+    },
+    {
+      "name": "Karachi",
+      "abbreviation": "PKT",
+      "offset": "+05:00"
+    },
+    {
+      "name": "Delhi, Mumbai",
+      "abbreviation": "IST",
+      "offset": "+05:30"
+    },
+    {
+      "name": "Kathmandu",
+      "abbreviation": "NPT",
+      "offset": "+05:45"
+    },
+    {
+      "name": "Almaty",
+      "abbreviation": "ALMT",
+      "offset": "+06:00"
+    },
+    {
+      "name": "Dhaka",
+      "abbreviation": "BDT",
+      "offset": "+06:00"
+    },
+    {
+      "name": "Yangon",
+      "abbreviation": "MMT",
+      "offset": "+06:30"
+    },
+    {
+      "name": "Bangkok, Hanoi",
+      "abbreviation": "ICT",
+      "offset": "+07:00"
+    },
+    {
+      "name": "Beijing, Shanghai",
+      "abbreviation": "CST",
+      "offset": "+08:00"
+    },
+    {
+      "name": "Tokyo",
+      "abbreviation": "JST",
+      "offset": "+09:00"
+    },
+    {
+      "name": "Sydney, Melbourne",
+      "abbreviation": "AEDT",
+      "offset": "+11:00"
+    },
+    {
+      "name": "Suva",
+      "abbreviation": "FJT",
+      "offset": "+12:00"
+    }
+  ]
+  
