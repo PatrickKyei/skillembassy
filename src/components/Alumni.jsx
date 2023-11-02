@@ -1,29 +1,40 @@
 import React from "react";
+import GDG from "../assets/gdgmeetup.jpg";
+import ATTARA from "../assets/alcattara.jpg";
+import WHC from "../assets/womencode.jpg";
+import ADJ from "../assets/adjoa.jpg";
+import WM from "../assets/women.jpg";
+import NT from "../assets/interact.jpg";
+// import NT from "../assets/interact.jpg";
+// import NT from "../assets/interact.jpg";
+
+
+
 
 // Define the image data as an array
 const alumniImages = [
   {
-    src: "https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(70).webp",
+    src: WM,
     padding: 1,
   },
   {
-    src: "https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(72).webp",
+    src: NT,
     padding: 4,
   },
   {
-    src: "https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp",
+    src: WHC,
     padding: 4,
   },
   {
-    src: "https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(74).webp",
+    src: ADJ,
     padding: 1,
   },
   {
-    src: "https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(75).webp",
+    src: ATTARA,
     padding: 0,
   },
   {
-    src: "https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(77).webp",
+    src: GDG,
     padding: 4,
   },
 ];

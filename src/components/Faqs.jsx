@@ -88,7 +88,7 @@ const Faqs = () => {
                 </div>
               </div>
               {activeItem === faq.id && (
-                <div className="mt-4 text-lg font-normal text-neutral-500">
+                <div className="mt-4 text-md font-normal text-neutral-400">
                   {faq.answer}
                 </div>
               )}

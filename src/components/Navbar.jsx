@@ -17,7 +17,7 @@ const Navbar = () => {
           </Link>
         </div>
         
-        <div>
+        {/* <div>
           <ul className="hidden text-neutral-50 w-full flex-row justify-center gap-5 md:flex">
             <li>
               <Link to="/careers">Careers</Link>
@@ -35,7 +35,7 @@ const Navbar = () => {
               <Link to="/application">Application</Link>
             </li>
           </ul>
-        </div>
+        </div> */}
         <div>
       
             <Link to="application">
@@ -67,9 +67,16 @@ const Navbar = () => {
             : "fixed bottom-[-100%]"
         }>
         <div className="text-center bg-gray-900 bg-opacity-10 rounded w-[40%] shadow-black px-2 py-2.5">
-          <a href="https://nas.io/skillembassy">Join Cohort</a>
-        </div>
-        <ul className="w-full flex text-neutral-950 flex-col py-6 px-4">
+        <Link to="application">
+            <button
+              type="button"
+              className="hidden text-purple-800 font-semibold bg-purple-100 text-base py-[10px] px-[30px] rounded-sm hover:drop-shadow-xl md:flex">
+              Join Cohort
+            </button>
+            </Link>
+            
+            </div>
+        {/* <ul className="w-full flex text-neutral-950 flex-col py-6 px-4">
           <li>
             <Link to="/careers">Careers</Link>
           </li>
@@ -85,7 +92,7 @@ const Navbar = () => {
           <li>
             <Link to="/application">Application</Link>
           </li>
-        </ul>
+        </ul> */}
       </div>
     </div>
   );

@@ -18,7 +18,7 @@ const ForBusiness = () => {
         <div className="flex flex-col justify-center sm:p-8 pl-1 pt-8">
           <div>
             <a
-              href="#"
+              href="https://www.youtube.com/@skillembassy_"
               className="bg-purple-100 text-purple-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md mb-2">
               <svg
                 className="w-2.5 h-2.5 mr-1.5"
