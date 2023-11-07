@@ -1,4 +1,5 @@
 import React from "react";
+import { Link, Route, Routes } from "react-router-dom";
 
 const CallToAction = () => {
   return (
@@ -8,15 +9,16 @@ const CallToAction = () => {
           Ready to Change Your Life?
         </h5>
         <p class="mb-5 text-base text-neutral-100 sm:text-lg dark:text-gray-400">
-        Try these next steps:        </p>
+          Try these next steps:{" "}
+        </p>
         <div class="items-center justify-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4">
-          <a
-            href="https://nas.io/skillembassy"
-            class="w-full sm:w-auto bg-neutral-100 hover:bg-neutral-200 rounded-sm inline-flex items-center justify-center px-12 py-4">
-            <div class="text-left">
-              <div class="-mt-1 font-sans text-sm text-neutral-900 font-semibold">Start Now</div>
-            </div>
-          </a>
+        <Link to="application">
+            <button
+              type="button"
+              className="font-bold bg-neutral-50 text-sm text-neutral-950 mx-[5px] py-[10px] px-[30px] rounded-sm md:text-base">
+              Start Here
+            </button>
+          </Link>
         </div>
       </div>
     </div>
