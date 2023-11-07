@@ -71,7 +71,7 @@ const Faqs = () => {
         </div>
         <div data-aos="fade-left">
           {faqData.map((faq) => (
-            <div key={faq.id} className="border rounded-sm p-4 mb-4">
+            <div key={faq.id} className="border border-neutral-700 rounded-sm p-4 mb-4">
               <div
                 className="cursor-pointer"
                 onClick={() => handleCollapse(faq.id)}>

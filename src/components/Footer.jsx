@@ -27,7 +27,7 @@ function Footer() {
             <div className="md:col-span-8 lg:col-span-7 grid sm:grid-cols-3 gap-8">
               {/* 2nd block */}
               <div className="text-sm">
-                <h6 className="text-neutral-50 font-medium mb-1">Careers</h6>
+                <h6 className="text-purple-300 font-medium mb-1">Careers</h6>
                 <ul>
                   <li className="mb-1">
                     <a
@@ -76,7 +76,7 @@ function Footer() {
 
               {/* 3rd block */}
               <div className="text-sm">
-                <h6 className="text-neutral-50 font-medium mb-1">Quick Links</h6>
+                <h6 className="text-purple-300 font-medium mb-1">Quick Links</h6>
                 <ul>
                   <li className="mb-1">
                     <a
@@ -111,7 +111,7 @@ function Footer() {
 
               {/* 4th block */}
               <div className="text-sm">
-                <h6 className="text-neutral-50 font-medium mb-1">Contact Us</h6>
+                <h6 className="text-purple-300 font-medium mb-1">Contact Us</h6>
                 <ul>
                   <li className="mb-1">
                     <a

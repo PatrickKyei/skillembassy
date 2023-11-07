@@ -1,5 +1,5 @@
 // import React from 'react'
-import {Link, Route, Routes} from 'react-router-dom';
+import { Link, Route, Routes } from "react-router-dom";
 
 // const Hero = () => {
 //   return (
@@ -34,8 +34,6 @@ import {Link, Route, Routes} from 'react-router-dom';
 // }
 
 // export default Hero
-
-
 
 import React, { useState, useEffect } from "react";
 import ClassesDesktop from "../assets/classes-desktop.png";
@@ -90,28 +88,24 @@ const Hero = () => {
               How it works?
             </button>
           </a>
-        </div> */}
-
-<div className="flex justify-left mb-8 md:mb-[10px]">
-//   <Link to="application">
-//             <button
+  </div> */}
+        <div className="flex justify-left mb-8 md:mb-[10px]">
+          <Link to="application">
+            <button
               type="button"
-              className="font-bold bg-neutral-50 text-sm text-neutral-950 mx-[5px] py-[10px] px-[30px] rounded-sm md:text-base hover:drop-shadow-xl"
-            >
+              className="font-bold bg-neutral-50 text-sm text-neutral-950 mx-[5px] py-[10px] px-[30px] rounded-sm md:text-base hover:drop-shadow-xl">
               Start Today
             </button>
-      </Link>
+          </Link>
 
           <a href="https://calendly.com/skillembassy-advisor">
-           <button
+            <button
               type="button"
-              className="font-bold text-sm text-neutral-50 border-[1px] border-gray-200 rounded-sm underline-offset-auto py-[10px] px-[20px] md:text-base hover:drop-shadow-xl"
-            >
+              className="font-bold text-sm text-neutral-50 border-[1px] border-gray-200 rounded-sm underline-offset-auto py-[10px] px-[20px] md:text-base hover:drop-shadow-xl">
               How it works?
             </button>
           </a>
         </div>
-
       </div>
 
       {/* Right Column (Image) */}

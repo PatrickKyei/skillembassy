@@ -73,13 +73,14 @@ const Form = () => {
     // console.log('Form Data:', formData);
 
     fetch(scriptURL, { method: "POST", body: formDataToSend })
-      .then((response) => {
-        alert("Thank you! your form is submitted successfully.");
-        window.location.reload();
-      })
-      .catch((error) => {
-        console.error("Error!", error.message);
-      });
+    .then((response) => {
+      alert("Thank you! your form is submitted successfully.");
+      // Redirect to the homepage after a successful submission
+      window.location.href = "https://skillembassy.org"; // Replace with your homepage URL
+    })
+    .catch((error) => {
+      console.error("Error!", error.message);
+    });
   };
 
   return (
@@ -203,6 +204,20 @@ const Form = () => {
             {getCountries()}
           </select>
         </div>
+
+{/* <div>
+          <input
+            name="Country"
+            type="textarea"
+            id="country"
+            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            placeholder="Enter your country*"
+            required
+            value={formData.Country}
+            onChange={handleChange}
+          />
+        </div> */}
+
         <div>
           <select
             name="Timezone"
@@ -214,6 +229,20 @@ const Form = () => {
             {getTimezones()}
           </select>
         </div>
+
+        {/* <div>
+          <input
+            name="Timezone"
+            type="textarea"
+            id="timezone"
+            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            placeholder="Enter your timezone*"
+            required
+            value={formData.Timezone}
+            onChange={handleChange}
+          />
+        </div> */}
+
         <div>
           <input
             name="Participation"
@@ -264,10 +293,10 @@ const Form = () => {
             name="Terms"
             id="terms"
             type="checkbox"
+            required
             checked={formData.Terms}
             onChange={handleChange}
             className="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800"
-            required
           />
         </div>
         <label

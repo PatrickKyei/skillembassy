@@ -1,8 +1,8 @@
 import React from "react";
+import UX from "../assets/ux.png";
+import Eng from "../assets/eng.png";
 import Product from "../assets/product.png";
-import Engineering from "../assets/devops.png";
-import DevOps from "../assets/devops.png";
-import Branding from "../assets/product.png";
+// import Branding from "../assets/product.png";
 
 
 const Careers = () => {
@@ -15,17 +15,12 @@ const Careers = () => {
     {
       title: "School of Engineering",
       description: "Experience working with your own designer and product manager to develop and launch a societal or human problem from inception to completion?",
-      imageUrl: Engineering,
+      imageUrl: Eng,
     },
     {
-      title: "DevOps School",
-      description: "Collaborate with a Product Manager and Designer and software developer, branstorm as well as translate mockups and specs into working code",
-      imageUrl: DevOps,
-    },
-    {
-      title: "Branding & Marketing",
-      description: "Be responsible for buidling and maintaining relationship with customers as well as generate ROI to the organization.",
-      imageUrl: Branding,
+      title: "UX School",
+      description: "Want to know what it's like to take a product from conception to launch? Are you creating user personas, journeys, mockups, and other things?",
+      imageUrl: UX,
     },
    
   ];
@@ -33,11 +28,11 @@ const Careers = () => {
   return (
     <div className="text-center">
       <h2 className="text-5xl font-semibold text-neutral-100 mb-8">Our Career Change Courses</h2>
-      <div className="grid grid-cols-1 gap-8 lg:grid-cols-4">
+      <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
         {careerData.map((career, index) => (
           <div
             key={index}
-            className="block bg-neutral-900"
+            className="block border border-neutral-700 bg-neutral-900"
           >
             <div
               className="relative overflow-hidden bg-cover bg-no-repeat"

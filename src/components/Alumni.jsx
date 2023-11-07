@@ -43,7 +43,7 @@ const ImageWrapper = ({ src, padding }) => (
   <div className={`w-full p-${padding} md:p-${2 * padding} sm:w-1/2 sm:p-${padding} md:w-1/2`}>
     <img
       alt="gallery"
-      className="block h-full w-full rounded-md object-cover object-center"
+      className="block h-full w-full object-cover object-center transition-all duration-300 rounded-lg blur-sm hover:blur-none filter grayscale hover:grayscale-0"
       src={src}
     />
   </div>

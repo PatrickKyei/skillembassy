@@ -37,9 +37,9 @@ const Partners = () => {
       <section className="mb-32 text-center">
         <h2 className="text-neutral-100 mb-16 text-4xl font-semibold">Powered by</h2>
 
-        <div className="grid items-center gap-6 md:grid-cols-2 lg:grid-cols-6">
+        <div className="grid items-center gap-2 grid-cols-2 md:grid-cols-2 lg:grid-cols-6">
           {partnerData.map((partner, index) => (
-            <div key={index} className="mb-12 lg:mb-0">
+            <div key={index} className="mb-0 lg:mb-0">
               <img
                 src={partner.src}
                 className="px-6 md:px-12"
