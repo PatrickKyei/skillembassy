@@ -34,7 +34,7 @@ const partnerData = [
 const Partners = () => {
   return (
     <div className="container my-24 mx-auto md:px-6">
-      <section className="mb-32 text-center">
+      <section className="mb-24 text-center">
         <h2 className="text-neutral-100 mb-16 text-4xl font-semibold">Powered by</h2>
 
         <div className="grid items-center gap-2 grid-cols-2 md:grid-cols-2 lg:grid-cols-6">
@@ -42,7 +42,7 @@ const Partners = () => {
             <div key={index} className="mb-0 lg:mb-0">
               <img
                 src={partner.src}
-                className="px-6 md:px-12"
+                className="px-6 md:px-12 transition-all duration-300 filter grayscale hover:grayscale-0"
                 alt={partner.alt}
               />
             </div>

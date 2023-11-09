@@ -12,8 +12,8 @@ const Navbar = () => {
     <div className="w-full flex justify-center">
       <div className="w-full flex justify-between items-center bg-neutral-950 fixed top-0 py-4 z-50 px-12 bg-opacity-200">
         <div>
-          <Link to="/" className="font-bold text-3xl text-neutral-50">
-            Skill Embassy
+          <Link to="/" className="font-bold text-xl text-neutral-50">
+            SKILLEMBASSY
           </Link>
         </div>
         

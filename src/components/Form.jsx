@@ -1,4 +1,10 @@
 import React, { useState, useEffect } from "react";
+import countriesData from "../utils/countries.json";
+import timezonesData from "../utils/timezones.json";
+
+
+
+
 const Form = () => {
   const [formData, setFormData] = useState({
     Name: "",
@@ -16,25 +22,6 @@ const Form = () => {
     Terms: false,
   });
 
-  const [countries, setCountries] = useState([]);
-  const [timezones, setTimezones] = useState([]);
-
-  useEffect(() => {
-    // Fetch the country data when the component mounts
-    fetch("/src/utils/countries.json")
-      .then((response) => response.json())
-      .then((data) => setCountries(data))
-      .catch((error) => console.error("Error fetching countries:", error));
-  }, []);
-
-  useEffect(() => {
-    // Fetch the timezone data when the component mounts
-    fetch("/src/utils/timezones.json")
-      .then((response) => response.json())
-      .then((data) => setTimezones(data))
-      .catch((error) => console.error("Error fetching timezones:", error));
-  }, []);
-
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
     setFormData((prevData) => ({
@@ -44,16 +31,18 @@ const Form = () => {
   };
 
   const getCountries = () => {
-    return countries.map((country) => (
+    return countriesData.map((country) => (
       <option key={country.code} value={country.name}>
         {country.name}
       </option>
     ));
   };
 
+
+
   const getTimezones = () => {
-    return timezones.map((timezone) => (
-      <option key={country.abbreviation} value={timezone.name}>
+    return timezonesData.map((timezone) => (
+      <option key={timezone.abbreviation} value={timezone.name}>
         {timezone.name}
       </option>
     ));

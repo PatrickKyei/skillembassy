@@ -35,33 +35,32 @@ const careerData = [
   {
     imgUrl: MVP,
     careerTitle: "MVP",
-    text: "Launch a real impactful project with real customers",
+    text: "Launch a real impactful project with real customers.",
   },
 ];
 
 const Benefits = () => {
   return (
     <div className="container my-20 lg:my-[150px]">
-              <h2 className="text-center mb-20 text-4xl font-bold text-neutral-100">Why is it so great?</h2>
+              <h2 className="text-left mb-20 text-4xl font-bold text-neutral-100">Why is it so great?</h2>
 
       <div className="grid grid-cols-1 gap-4 lg:grid-cols-3">
         {careerData.map((career) => (
           <div
-            className="align-center text-center border border-neutral-700 bg-neutral-900 text-neutral-100 hover:bg-gradient-to-r from-neutral-900 to-neutral-800 hover:text-white p-6 rounded-sm shadow-md">
+            className="text-left border border-neutral-700 bg-neutral-900 text-neutral-100 hover:bg-gradient-to-r from-neutral-900 to-neutral-800 hover:text-white p-6 rounded-sm shadow-md">
 
-            <div className="justify-content-center mb-6">
+            <div className="text-left mb-6">
               <img
                 src={career.imgUrl}
                 alt={career.careerTitle}
-                style={{ width: '40px', height: '40px' }}
-                className="mx-auto"
+                className="h-6 w-6"
               />
             </div>
 
-            <div className="text-center">
+            <div className="text-left">
               <h1 className="font-bold text-xl">{career.careerTitle}</h1>
             </div>
-            <p className="text-md font-normal text-neutral-100 my-6">
+            <p className="text-md font-normal text-neutral-100 my-2">
               {career.text}
             </p>
           </div>

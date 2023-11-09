@@ -27,7 +27,7 @@ const Careers = () => {
 
   return (
     <div className="text-center">
-      <h2 className="text-5xl font-semibold text-neutral-100 mb-8">Our Career Change Courses</h2>
+      <h2 className="text-3xl font-semibold text-neutral-100 mb-12">Our Career Change Courses</h2>
       <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
         {careerData.map((career, index) => (
           <div

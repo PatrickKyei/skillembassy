@@ -7,7 +7,7 @@ const Solution = () => {
         <div
           className="bg-neutral-900 hover:bg-gradient-to-r from-neutral-900 to-neutral-800 border border-neutral-700 rounded-sm p-8 md:p-12 mb-8"
           data-aos="fade-up">
-          <h1 className="text-neutral-100 text-3xl font-bold mb-2">
+          <h1 className="text-neutral-100 text-2xl font-bold mb-2">
             We combine technology and creative problem solving
           </h1>
           <p className="text-lg font-normal text-neutral-500 mb-6">
@@ -23,7 +23,7 @@ const Solution = () => {
           <div className="bg-neutral-900 hover:bg-gradient-to-r from-neutral-900 to-neutral-800 border border-neutral-700 rounded-sm p-8 md:p-12">
             <a
               href="#"
-              className="bg-purple-100 text-rose-500 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md mb-2">
+              className="bg-rose-200 text-neutral-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md mb-2">
               <svg
                 className="w-2.5 h-2.5 mr-1.5"
                 aria-hidden="true"
@@ -34,13 +34,13 @@ const Solution = () => {
               </svg>
               Problem
             </a>
-            <h2 className="text-neutral-100 text-3xl font-bold mb-2">
+            <h2 className="text-neutral-100 text-2xl font-bold mb-2">
               We inspire motivated individuals
             </h2>
             <p className="text-lg font-normal text-neutral-500 mb-4">
               It is difficult to break into and excel in technology. It's even
               more challenging if you're changing careers or don't have a
-              traditional graduate degree. Our mission is to inspire motivated
+              traditional computer science degree. Our mission is to inspire motivated
               individuals to solve real-world problems by utilizing technology
               to develop new solutions that address social issues.
             </p>
@@ -69,10 +69,10 @@ const Solution = () => {
               </svg>
               Solution
             </a>
-            <h2 className="text-neutral-100 text-3xl font-bold mb-2">
+            <h2 className="text-neutral-100 text-2xl font-bold mb-2">
               Our approach is hands-on.
             </h2>
-            <p className="text-lg font-normal text-gray-500 mb-4">
+            <p className="text-lg font-normal text-neutral-500 mb-4">
               The never-ending pursuit of better solutions is central to all we
               do. We believe in the power of collaboration, hands-on learning,
               and creating a community where everyone can develop together. Our

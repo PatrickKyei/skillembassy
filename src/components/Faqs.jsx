@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleUp, faAngleDown } from "@fortawesome/free-solid-svg-icons";
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 
 const Faqs = () => {
   const [activeItem, setActiveItem] = useState("");
@@ -59,11 +60,15 @@ const Faqs = () => {
             skills and how to leverage them in your journey into tech?
           </p>
           <div
-            className="flex flex-col sm:flex-row py-4"
+            className="flex flex-row sm:flex-row py-4"
             data-aos="fade-right"
             data-aos-duration="1000">
             <a href="https://wa.me/message/CFQ6VVR53WCBN1">
-              <button className="px-6 py-3 bg-neutral-50 text-neutral-950 font-bold rounded-sm">
+              <button className="flex flex-row px-6 py-3 bg-neutral-50 text-neutral-950 font-bold gap-2 rounded-sm">
+                <FontAwesomeIcon
+                  icon={faWhatsapp}
+                  style={{ color: "green", fontSize: "1.5em" }} // Adjust color and size as needed
+                />
                 Talk To A Learning Advisor
               </button>
             </a>
@@ -71,7 +76,9 @@ const Faqs = () => {
         </div>
         <div data-aos="fade-left">
           {faqData.map((faq) => (
-            <div key={faq.id} className="border border-neutral-700 rounded-sm p-4 mb-4">
+            <div
+              key={faq.id}
+              className="border border-neutral-700 rounded-sm p-4 mb-4">
               <div
                 className="cursor-pointer"
                 onClick={() => handleCollapse(faq.id)}>
@@ -82,7 +89,9 @@ const Faqs = () => {
                   <FontAwesomeIcon
                     icon={activeItem === faq.id ? faAngleUp : faAngleDown}
                     className={
-                      activeItem === faq.id ? "text-neutral-50" : "text-neutral-400"
+                      activeItem === faq.id
+                        ? "text-neutral-50"
+                        : "text-neutral-400"
                     }
                   />
                 </div>
