@@ -6,9 +6,11 @@ const Hero = () => {
     <div className="flex flex-col items-center my-20 font-poppins lg:my-[100px]">
       <div className="flex flex-col text-center gap-[5px] md:w-[700px]">
           <div>
-            <a
-              href="https//nas.io/skillembassy"
+           <a
+              href="https://nas.io/skillembassy"
+              target="_blank"
               className="bg-neutral-800 text-neutral-400 text-xs font-medium inline-flex items-center px-2.5 py-0.4 rounded-md mb-2">
+                
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
