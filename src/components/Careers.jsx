@@ -8,17 +8,17 @@ import Product from "../assets/product.png";
 const Careers = () => {
   const careerData = [
     {
-      title: "Product School",
+      title: "Product Management",
       description: "Develop critical thinking and repertoire to define a long-term strategy and engage all business stakeholders.",
       imageUrl: Product,
     },
     {
-      title: "School of Engineering",
-      description: "Experience working with your own designer and product manager to develop and launch a societal or human problem from inception to completion?",
+      title: "Software Engineering",
+      description: "Experience working with your own designer and product manager to develop and launch a societal or human problem from inception to completion.",
       imageUrl: Eng,
     },
     {
-      title: "UX School",
+      title: "UX/UI Design",
       description: "Want to know what it's like to take a product from conception to launch? Are you creating user personas, journeys, mockups, and other things?",
       imageUrl: UX,
     },

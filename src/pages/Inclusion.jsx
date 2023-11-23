@@ -2,8 +2,8 @@ import React from "react";
 
 import Navbar from "../components/Navbar";
 
-import IncludeJumbo from "../components/IncludeJumbo";
-import IncludeMission from "../components/IncludeMission";
+import IncludeJumbo from "../components/CommunityHero";
+import IncludeMission from "../components/CommMission";
 import Volunteer from "../components/Volunteer";
 import InclusionStory from "../components/InclusionStory";
 

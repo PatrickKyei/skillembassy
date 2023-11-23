@@ -1,4 +1,4 @@
-// import React from 'react'
+import React from 'react'
 import { Link, Route, Routes } from "react-router-dom";
 
 const Hero = () => {
@@ -41,6 +41,8 @@ const Hero = () => {
         <p className="text-lg text-neutral-100 mb-[40px]">
           Learn, build and launch an impactful product with your own product
           designer, product manager, software engineer and cloud engineer.
+
+          {/* Gain REAL - WORLD EXPERIENCE!! - No boring case studies or theory */}
         </p>
       </div>
 
@@ -65,9 +67,12 @@ const Hero = () => {
   );
 };
 
+// Hero 2
+
 export default Hero;
 
-import React, { useState, useEffect } from "react";
+// import React, { useState, useEffect } from "react";
+// import { Link, Route, Routes } from "react-router-dom";
 // import ClassesDesktop from "../assets/classes-desktop.png";
 // import ClassesMobile from "../assets/classes-mobile.png";
 

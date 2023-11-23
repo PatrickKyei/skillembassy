@@ -1,87 +1,41 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import { MdViewHeadline, MdClose } from "react-icons/md";
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { MdMenu, MdClose } from 'react-icons/md';
 
 const Navbar = () => {
-  const [nav, setNav] = useState(true);
-  const handleNav = () => {
-    setNav(!nav);
+  const [isNavOpen, setNavOpen] = useState(false);
+
+  const handleToggleNav = () => {
+    setNavOpen(!isNavOpen);
   };
 
   return (
-    <div className="w-full flex justify-center">
-      <div className="w-full flex justify-between items-center bg-neutral-950 fixed top-0 py-4 z-50 px-12 bg-opacity-200">
-        <div>
-          <Link to="/" className="font-bold text-xl text-neutral-50">
+    <div className="bg-neutral-950 border-b border-neutral-900 text-white p-4 fixed top-0 left-0 right-0 z-50">
+      {/* Flex container for logo, hamburger, and button */}
+      <div className="flex flex-col md:flex-row items-center justify-between md:space-x-4">
+        {/* Logo and Hamburger menu icon for small screens */}
+        <div className="flex items-center">
+          <Link to="/" className="block text-xl font-bold mr-32 mb-0 mr-2 md:mr-0">
             SKILLEMBASSY
           </Link>
+          
+          {/* Hamburger menu icon for small screens */}
+          <div className="md:hidden cursor-pointer">
+            {isNavOpen ? (
+              <MdClose onClick={handleToggleNav} className="text-white" size={30} />
+            ) : (
+              <MdMenu onClick={handleToggleNav} className="text-white" size={30} />
+            )}
+          </div>
         </div>
-        
-        {/* <div>
-          <ul className="hidden text-neutral-50 w-full flex-row justify-center gap-5 md:flex">
-            <li>
-              <Link to="/careers">Careers</Link>
-            </li>
-            <li>
-              <Link to="/business">Business</Link>
-            </li>
-            <li>
-              <Link to="/inclusion">Inclusion</Link>
-            </li>
-            <li>
-              <Link to="/ourstory">Our Story</Link>
-            </li>
-            <li>
-              <Link to="/application">Application</Link>
-            </li>
-          </ul>
-        </div> */}
-        <div>
-      
-            <Link to="application">
-            <button
-              type="button"
-              className="hidden text-purple-800 font-semibold bg-purple-100 text-base py-[10px] px-[30px] rounded-sm hover:drop-shadow-xl md:flex">
-              Join Cohort
-            </button>
-            </Link>
-        </div>
-      </div>
 
-      <div
-        onClick={handleNav}
-        className="flex items-center cursor-pointer md:hidden">
-        {!nav ? (
-          <MdClose className="text-white" size={30} />
-        ) : (
-          <MdViewHeadline className="text-white" size={30} />
-        )}
-      </div>
-
-      {/*Mobie View*/}
-
-      <div
-        className={
-          !nav
-            ? "fixed flex flex-col items-center p-4 top-16 top-16 w-[100%] border-b-2 bg-wblue h-[250px] ease-in-out duration-300 z-10 md:hidden"
-            : "fixed bottom-[-100%]"
-        }>
-        <div className="text-center bg-gray-900 bg-opacity-10 rounded w-[40%] shadow-black px-2 py-2.5">
-        <Link to="application">
-            <button
-              type="button"
-              className="hidden text-purple-800 font-semibold bg-purple-100 text-base py-[10px] px-[30px] rounded-sm hover:drop-shadow-xl md:flex">
-              Join Cohort
-            </button>
-            </Link>
-            
-            </div>
-        {/* <ul className="w-full flex text-neutral-950 flex-col py-6 px-4">
+        {/* List of elements (visible on smaller screens) */}
+        <ul className={`flex flex-col ${isNavOpen ? 'block' : 'hidden'} md:flex md:flex-row md:space-x-4 md:items-center`}>
           <li>
-            <Link to="/careers">Careers</Link>
+            <Link to="/courses">Courses</Link>
           </li>
           <li>
-            <Link to="/business">Business</Link>
+            <Link to="/business">For Business</Link>
           </li>
           <li>
             <Link to="/inclusion">Inclusion</Link>
@@ -90,9 +44,18 @@ const Navbar = () => {
             <Link to="/ourstory">Our Story</Link>
           </li>
           <li>
-            <Link to="/application">Application</Link>
+            <Link to="/community">Community</Link>
           </li>
-        </ul> */}
+        </ul>
+
+        {/* Button (visible on larger screens) */}
+        <Link to="/application">
+          <button
+            className={`font-semibold rounded-sm bg-purple-100 text-purple-800 px-4 py-2 rounded-full mt-4 hidden md:block`}
+          >
+            Join Cohort
+          </button>
+        </Link>
       </div>
     </div>
   );

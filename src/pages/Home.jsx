@@ -7,7 +7,7 @@ import CTA from "../components/CTA";
 import Stats from "../components/Stats";
 import Values from "../components/Values";
 import Careers from "../components/Careers";
-import Alumni from "../components/Alumni";
+import Impacts from "../components/Impacts";
 import Solution from "../components/Solution";
 import Video from "../components/Video";
 import Testimonials from "../components/Testimonials";
@@ -35,9 +35,8 @@ function Home() {
         <Video />
         <Benefits />
         <Careers />
-        {/* <Alumni/> */}
+        <Impacts/>
         <Testimonials />
-        {/* <Solution/> */}
         <Interview />
         <Faqs />
         <Values/>

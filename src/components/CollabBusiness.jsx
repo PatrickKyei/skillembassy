@@ -25,18 +25,9 @@ const posts = [
 
 const CollabBusiness = () => {
   return (
-    <div className="container mx-auto px-4 border-t border-gray-200">
+    <div className="container mx-auto px-4">
       {/* First Row */}
-      <div className="my-10 text-center">
-        <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-900 mb-4">
-          How to Collaborate
-        </h2>
-        <p className="text-lg text-gray-700 dark:text-gray-700">
-          You can help the excellent cause we're working on in a variety of
-          ways. Join us as we develop excellent talent to drive innovation
-          forward.{" "}
-        </p>
-      </div>
+     
 
       {/* Second Row */}
 
@@ -45,12 +36,12 @@ const CollabBusiness = () => {
           {posts.map((post) => (
             <article
               key={post.id}
-              className="flex max-w-xl flex-col items-start justify-between bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-8 md:p-8 mb-8">
+              className="flex max-w-xl flex-col items-start justify-between bg-neutral-900 border border-gray-300 rounded-md p-8 md:p-8 mb-8">
               <div className="group relative">
-                <h3 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                <h3 className="mb-2 text-2xl font-bold tracking-tight text-neutral-100">
                   {post.title}
                 </h3>
-                <p className="mt-5 text-lg font-normal text-gray-700 dark:text-gray-200">
+                <p className="mt-5 text-lg font-normal text-neutral-300">
                   {post.description}
                 </p>
               </div>
@@ -58,7 +49,7 @@ const CollabBusiness = () => {
               <div className="py-3"></div>
 <a
             href="#"
-            className="text-gray-500 border border-gray-500 inline-flex justify-center items-center py-2.5 px-5  font-medium text-center rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+            className="text-neutral-100 border border-gray-500 inline-flex justify-center items-center py-2.5 px-5  font-medium text-center rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
             Collaborate
             <svg
               className="w-3.5 h-3.5 ml-2"

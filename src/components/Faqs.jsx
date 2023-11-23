@@ -57,7 +57,7 @@ const Faqs = () => {
             data-aos="fade-right"
             data-aos-duration="1000">
             Not sure how Skill Embassy can help you? Wonder why you need tech
-            skills and how to leverage them in your journey into tech?
+            skills and how to leverage them in your career?
           </p>
           <div
             className="flex flex-row sm:flex-row py-4"

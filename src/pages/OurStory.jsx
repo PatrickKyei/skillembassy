@@ -3,12 +3,8 @@ import React from "react";
 import Navbar from "../components/Navbar";
 
 import OurStoryJumbo from "../components/OurStoryJumbo";
-import Community from "../components/Community";
-import OurstorySolution from "../components/OurstorySolution";
-import Timeline from "../components/Timeline";
 import Team from "../components/Team";
 
-import CallToAction from "../components/CallToAction";
 
 import Newsletter from "../components/Newsletter";
 import Footer from "../components/Footer";
@@ -26,13 +22,12 @@ function OurStory() {
      
         {/*  Page sections */}
         <OurStoryJumbo/>
-        <Community />
-        <OurstorySolution />
+       
+       
         <Team/>
-        <Timeline />
+        
 {/* <Identity /> */}
        
-        <CallToAction />
         <Newsletter />
       </main>
 

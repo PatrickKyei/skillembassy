@@ -2,9 +2,6 @@ import React, { useState, useEffect } from "react";
 import countriesData from "../utils/countries.json";
 import timezonesData from "../utils/timezones.json";
 
-
-
-
 const Form = () => {
   const [formData, setFormData] = useState({
     Name: "",
@@ -38,8 +35,6 @@ const Form = () => {
     ));
   };
 
-
-
   const getTimezones = () => {
     return timezonesData.map((timezone) => (
       <option key={timezone.abbreviation} value={timezone.name}>
@@ -50,6 +45,14 @@ const Form = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    // Check if the "Terms" checkbox is checked
+    if (!formData.Terms) {
+      // If not checked, show an alert or handle the error as needed
+      alert("Please agree to the terms and conditions.");
+      return; // Prevent further execution of the form submission
+    }
+
     const scriptURL =
       "https://script.google.com/macros/s/AKfycbyXJNFPnmQxSFJYPbVJN2N7sL2leqi3skoqESbhbNTR93XwDQ9VsGbhWTE8fKgG7Y8y3g/exec";
     const formDataToSend = new FormData();
@@ -62,14 +65,14 @@ const Form = () => {
     // console.log('Form Data:', formData);
 
     fetch(scriptURL, { method: "POST", body: formDataToSend })
-    .then((response) => {
-      alert("Thank you! your form is submitted successfully.");
-      // Redirect to the homepage after a successful submission
-      window.location.href = "https://skillembassy.org"; // Replace with your homepage URL
-    })
-    .catch((error) => {
-      console.error("Error!", error.message);
-    });
+      .then((response) => {
+        alert("Thank you! your form is submitted successfully.");
+        // Redirect to the homepage after a successful submission
+        window.location.href = "https://skillembassy.org"; // Replace with your homepage URL
+      })
+      .catch((error) => {
+        console.error("Error!", error.message);
+      });
   };
 
   return (
@@ -123,6 +126,22 @@ const Form = () => {
             <option value="Undisclosed">Do not Disclose</option>
           </select>
         </div>
+
+        <div>
+          <select
+            name="CareerPath"
+            id="career"
+            required
+            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            value={formData.CareerPath}
+            onChange={handleChange}>
+            <option value="Select Career Path*">Select Career Path*</option>
+            <option value="Product Management">Product Management</option>
+            <option value="Soft Development">Software Engeneering</option>
+            <option value="UX Design">UX/UI Design</option>
+          </select>
+        </div>
+
         <div>
           <select
             name="Experience"
@@ -140,20 +159,7 @@ const Form = () => {
             <option value="Advanced">Advanced</option>
           </select>
         </div>
-        <div>
-          <select
-            name="CareerPath"
-            id="career"
-            required
-            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-            value={formData.CareerPath}
-            onChange={handleChange}>
-            <option value="Select Career Path*">Select Career Path*</option>
-            <option value="Product School">Product School</option>
-            <option value="Software Development">Software Development</option>
-            <option value="Cloud Engineering">Cloud Engineering</option>
-          </select>
-        </div>
+
         <div>
           <select
             name="HavePC"
@@ -169,6 +175,7 @@ const Form = () => {
             <option value="No">No</option>
           </select>
         </div>
+
         <div>
           <input
             name="Phone"
@@ -181,6 +188,7 @@ const Form = () => {
             onChange={handleChange}
           />
         </div>
+
         <div>
           <select
             name="Country"
@@ -194,19 +202,6 @@ const Form = () => {
           </select>
         </div>
 
-{/* <div>
-          <input
-            name="Country"
-            type="textarea"
-            id="country"
-            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-            placeholder="Enter your country*"
-            required
-            value={formData.Country}
-            onChange={handleChange}
-          />
-        </div> */}
-
         <div>
           <select
             name="Timezone"
@@ -218,19 +213,6 @@ const Form = () => {
             {getTimezones()}
           </select>
         </div>
-
-        {/* <div>
-          <input
-            name="Timezone"
-            type="textarea"
-            id="timezone"
-            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-            placeholder="Enter your timezone*"
-            required
-            value={formData.Timezone}
-            onChange={handleChange}
-          />
-        </div> */}
 
         <div>
           <input
@@ -294,10 +276,12 @@ const Form = () => {
           I agree with the{" "}
           <a
             href="#"
-            className="text-blue-600 hover:underline dark:text-blue-500">
+            data-te-toggle="tooltip"
+            title="We use your information to provide you with our services, to communicate with you, and to improve our website and services. We may also use your information to provide you with marketing and promotional materials if you have given us your consent to do so. We do not sell or rent your information to third parties for their marketing purposes. However, we may share your information with our trusted partners and service providers who help us provide our services."
+            className="text-blue-600 hover:underline">
             terms and conditions
           </a>
-          .
+          .{" "}
         </label>
       </div>
       <div className="flex items-center px-4">
