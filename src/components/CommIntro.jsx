@@ -34,7 +34,7 @@ const CommIntro = () => {
               className="font-bold bg-neutral-50 text-sm text-neutral-950 mx-[5px] py-[10px] px-[30px] rounded-sm md:text-base hover:drop-shadow-xl"
                 data-te-ripple-init
                 data-te-ripple-color="light"
-                href="#!"
+                href="https://paystack.com/pay/skillembassy"
                 role="button">
                 Pledge Support
               </a>

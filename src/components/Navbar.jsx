@@ -32,16 +32,16 @@ const Navbar = () => {
         {/* List of elements (visible on smaller screens) */}
         <ul className={`flex flex-col ${isNavOpen ? 'block' : 'hidden'} md:flex md:flex-row md:space-x-4 md:items-center`}>
           <li>
-            <Link to="/courses">Courses</Link>
+            {/* <Link to="/courses">Courses</Link> */}
           </li>
           <li>
-            <Link to="/business">For Business</Link>
+            {/* <Link to="/business">For Business</Link> */}
           </li>
           <li>
-            <Link to="/inclusion">Inclusion</Link>
+            {/* <Link to="/inclusion">Inclusion</Link> */}
           </li>
           <li>
-            <Link to="/ourstory">Our Story</Link>
+            {/* <Link to="/ourstory">Our Story</Link> */}
           </li>
           <li>
             <Link to="/community">Community</Link>

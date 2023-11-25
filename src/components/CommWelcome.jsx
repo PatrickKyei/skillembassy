@@ -1,18 +1,22 @@
 import React from "react";
+import Commintro from "../assets/commintro.png";
+import Grow from "../assets/grow.png";
+import Innovate from "../assets/innovate.png";
+
 
 // Project data array containing individual project details
 const projectsData = [
   {
-    imageUrl: "https://mdbcdn.b-cdn.net/img/new/standard/city/041.jpg",
-    projectName: "Hollywood exhibition",
+    imageUrl: Innovate,
+    projectName: "Innovate",
   },
   {
-    imageUrl: "https://mdbcdn.b-cdn.net/img/new/standard/city/044.jpg",
-    projectName: "Genius Loci",
+    imageUrl: Commintro,
+    projectName: "Empower",
   },
   {
-    imageUrl: "https://mdbcdn.b-cdn.net/img/new/standard/city/041.jpg",
-    projectName: "Hollywood exhibition",
+    imageUrl: Grow,
+    projectName: "Grow",
   },
   // Add more projects here in the same format
 ];
@@ -28,13 +32,11 @@ const CommWelcome = () => {
         </style>
         <div>
           <h2 className="text-neutral-100 mb-8 text-center text-3xl font-bold">
-            Innnovate. Empower. Grow
+            Now that you are here at Skill Embassy, you are part of us.
           </h2>
-          <p className="text-neutral-100 mb-12 text-center font-semibold">
-            Now that you're here at Skill Embassy, you are part of us. This
-            booklet will introduce you to the important inside story of the
-            brand so you can keep 'em in mind while you work. Now go forth and do us proud. 
-          </p>
+          {/* <p className="text-neutral-100 mb-12 text-center font-semibold">
+            Now that you're here at Skill Embassy, you are part of us.
+          </p> */}
         </div>
 
         <div className="grid gap-6 lg:grid-cols-3">
@@ -55,9 +57,6 @@ const CommWelcome = () => {
                       {project.projectName}
                     </h5>
                   </div>
-                </div>
-                <div>
-                  <div className="mask absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 bg-[hsla(0,0%,99.2%,0.15)]"></div>
                 </div>
               </a>
             </div>

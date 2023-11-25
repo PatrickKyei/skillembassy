@@ -22,9 +22,11 @@ const Conduct = () => {
             disability, ethnicity, sex characteristics, gender identity and
             expression, level of experience, education, socio-economic status,
             nationality, personal appearance, race, caste, color, religion, or
-            sexual identity and orientation. We pledge to act and interact in
-            ways that contribute to an open, welcoming, diverse, inclusive, and
-            healthy community.
+            sexual identity and orientation.
+            <p className="py-4">
+              We pledge to act and interact in ways that contribute to an open,
+              welcoming, diverse, inclusive, and healthy community.
+            </p>
           </p>
         </div>
         <div>
@@ -109,11 +111,13 @@ const Conduct = () => {
           Community leaders are responsible for clarifying and enforcing our
           standards of acceptable behavior and will take appropriate and fair
           corrective action in response to any behavior that they deem
-          inappropriate, threatening, offensive, or harmful. Community leaders
-          have the right and responsibility to remove, edit, or reject comments,
-          commits, code, wiki edits, issues, and other contributions that are
-          not aligned to this Code of Conduct, and will communicate reasons for
-          moderation decisions when appropriate.
+          inappropriate, threatening, offensive, or harmful.
+          <p className="py-4">
+            Community leaders have the right and responsibility to remove, edit,
+            or reject comments, commits, code, wiki edits, issues, and other
+            contributions that are not aligned to this Code of Conduct, and will
+            communicate reasons for moderation decisions when appropriate.
+          </p>
         </p>
       </div>
       <div
@@ -138,35 +142,40 @@ const Conduct = () => {
         <p className="text-lg font-normal text-neutral-500 mb-6 break-words">
           Instances of abusive, harassing, or otherwise unacceptable behavior
           may be reported to the community leaders responsible for enforcement
-          at [INSERT CONTACT METHOD]. All complaints will be reviewed and
-          investigated promptly and fairly. All community leaders are obligated
-          to respect the privacy and security of the reporter of any incident.
+          at various community channels. All complaints will be reviewed and
+          investigated promptly and fairly.
+          <p className="py-4">
+            All community leaders are obligated to respect the privacy and
+            security of the reporter of any incident.
+          </p>
         </p>
       </div>
-      
+
       <div>
         <h2 className="text-neutral-100 text-3xl font-bold mb-2 max-w-xl">
           Enforcement Guidelines{" "}
         </h2>
-        <p>
+
+        <p className="text-neutral-500 text-xl py-4">
           Community leaders will follow these Community Impact Guidelines in
           determining the consequences for any action they deem in violation of
           this Code of Conduct:
         </p>
-
         <div className="grid md:grid-cols-2 gap-4" data-aos="fade-right">
           <div className="bg-neutral-900 hover:bg-gradient-to-r from-neutral-900 to-neutral-800 border border-neutral-700 rounded-sm p-8 md:p-12">
-            
             <h2 className="text-neutral-100 text-2xl font-bold mb-2">
-             1. Correction{" "}
+              1. Correction{" "}
             </h2>
+            <p className="text-lg font-normal text-neutral-500 py-2">
+              <u>Community Impact:</u> Use of inappropriate language or other
+              behavior deemed unprofessional or unwelcome in the community.
+            </p>
+
             <p className="text-lg font-normal text-neutral-500 mb-4">
-              Community Impact: Use of inappropriate language or other behavior
-              deemed unprofessional or unwelcome in the community. Consequence:
-              A private, written warning from community leaders, providing
-              clarity around the nature of the violation and an explanation of
-              why the behavior was inappropriate. A public apology may be
-              requested.
+              <u>Consequence:</u> A private, written warning from community
+              leaders, providing clarity around the nature of the violation and
+              an explanation of why the behavior was inappropriate. A public
+              apology may be requested.
             </p>
           </div>
 
@@ -174,21 +183,21 @@ const Conduct = () => {
             className="bg-neutral-900 hover:bg-gradient-to-l from-neutral-900 to-neutral-800 border border-neutral-700 rounded-sm p-8 md:p-12"
             data-aos="fade-left"
             data-aos-duration="1000">
-            
-            <h2 className="text-neutral-100 text-2xl font-bold mb-2">
+            <h2 className="text-neutral-100 text-2xl font-bold">
               2. Warning{" "}
             </h2>
-            <p className="text-lg font-normal text-neutral-500 mb-4">
-              Community Impact: A violation through a single incident or series
+            <p className="text-lg font-normal text-neutral-500 py-2">
+              <u>Community Impact:</u> A violation through a single incident or series
               of actions.
             </p>
-            <p className="text-lg font-normal text-neutral-500 mb-4">
-              Consequence: A warning with consequences for continued behavior.
-              No interaction with the people involved, including unsolicited
-              interaction with those enforcing the Code of Conduct, for a
-              specified period of time. This includes avoiding interactions in
-              community spaces as well as external channels like social media.
-              Violating these terms may lead to a temporary or permanent ban.
+            <p className="text-lg font-normal text-neutral-500 py-2">
+              <u>Consequence:</u> A warning with consequences for continued
+              behavior. No interaction with the people involved, including
+              unsolicited interaction with those enforcing the Code of Conduct,
+              for a specified period of time. This includes avoiding
+              interactions in community spaces as well as external channels like
+              social media. Violating these terms may lead to a temporary or
+              permanent ban.
             </p>
           </div>
         </div>
@@ -196,19 +205,22 @@ const Conduct = () => {
 
       <div className="grid md:grid-cols-2  my-8 gap-4" data-aos="fade-right">
         <div className="bg-neutral-900 hover:bg-gradient-to-r from-neutral-900 to-neutral-800 border border-neutral-700 rounded-sm p-8 md:p-12">
-          
           <h2 className="text-neutral-100 text-2xl font-bold mb-2">
             3. Temporary Ban{" "}
           </h2>
           <p className="text-lg font-normal text-neutral-500 mb-4">
-            Community Impact: A serious violation of community standards,
-            including sustained inappropriate behavior. Consequence: A temporary
-            ban from any sort of interaction or public communication with the
-            community for a specified period of time. No public or private
-            interaction with the people involved, including unsolicited
-            interaction with those enforcing the Code of Conduct, is allowed
-            during this period. Violating these terms may lead to a permanent
-            ban.
+            <u>Community Impact:</u> A serious violation of community standards,
+            including sustained inappropriate behavior.{" "}
+          </p>
+
+          <p className="text-lg font-normal text-neutral-500">
+            {" "}
+            <u>Consequence:</u> A temporary ban from any sort of interaction or
+            public communication with the community for a specified period of
+            time. No public or private interaction with the people involved,
+            including unsolicited interaction with those enforcing the Code of
+            Conduct, is allowed during this period. Violating these terms may
+            lead to a permanent ban.
           </p>
         </div>
 
@@ -216,20 +228,18 @@ const Conduct = () => {
           className="bg-neutral-900 hover:bg-gradient-to-l from-neutral-900 to-neutral-800 border border-neutral-700 rounded-sm p-8 md:p-12"
           data-aos="fade-left"
           data-aos-duration="1000">
-        
-          <h2 className="text-neutral-100 text-2xl font-bold mb-2">
+          <h2 className="text-neutral-100 text-2xl font-bold">
             4. Permanent Ban{" "}
           </h2>
-          <p className="text-lg font-normal text-neutral-500 mb-4">
-            Community Impact: A violation through a single incident or series of
-            actions.
+          <p className="text-lg font-normal text-neutral-500 py-2">
+            <u>Community Impact:</u> Demonstrating a pattern of violation of
+            community standards, including sustained inappropriate behavior,
+            harassment of an individual, or aggression toward or disparagement
+            of classes of individuals.
           </p>
           <p className="text-lg font-normal text-neutral-500 mb-4">
-            Community Impact: Demonstrating a pattern of violation of community
-            standards, including sustained inappropriate behavior, harassment of
-            an individual, or aggression toward or disparagement of classes of
-            individuals. Consequence: A permanent ban from any sort of public
-            interaction within the community.
+            <u>Consequence:</u> A permanent ban from any sort of public interaction
+            within the community.
           </p>
         </div>
       </div>
@@ -241,14 +251,16 @@ const Conduct = () => {
           Attribution{" "}
         </h2>
         <p className="text-lg font-normal text-neutral-500 mb-6 break-words">
-          This Code of Conduct is adapted from the Contributor Covenant, version
+          This Code of Conduct is adapted from the <a className="text-green-100" href="https://www.contributor-covenant.org/">Contributor Covenant,</a> version
           2.1, available at
-          https://www.contributor-covenant.org/version/2/1/code_of_conduct.html.
-          Community Impact Guidelines were inspired by Mozilla’s code of conduct
-          enforcement ladder. For answers to common questions about this code of
+          <a className="text-green-100" href="https://www.contributor-covenant.org/version/2/1/code_of_conduct.html">https://www.contributor-covenant.org/version/2/1/code_of_conduct.html.</a>
+          
+          <p className="text-lg font-normal text-neutral-500 py-2">Community Impact Guidelines were inspired by <a className="text-green-100" href="https://github.com/mozilla/diversity">Mozilla’s code of conduct
+          enforcement ladder</a>.</p>
+          
+          <p>For answers to common questions about this code of
           conduct, see the FAQ at https://www.contributor-covenant.org/faq.
-          Translations are available at
-          https://www.contributor-covenant.org/translations.
+          Translations are available at <a className="text-green-100" href="https://www.contributor-covenant.org/translations.">https://www.contributor-covenant.org/translations.</a></p>
         </p>
       </div>
     </section>

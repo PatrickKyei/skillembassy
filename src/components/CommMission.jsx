@@ -4,20 +4,20 @@ import COMM from "../assets/comm.png";
 
 const features = [
   {
-    name: "Upcoming Events",
+    name: "Upcoming Events:",
     description:
-      "This year, ForbesBLK will host the very first ForbesBLK Summit along with various in-person and virtual events locally. From ForbesTalks to 1:1 mentoring opportunities - this community fosters professional growth that help exceptional leaders of color (like you) who are breaking down barriers, creating more equitable economies, and driving a new culture of connection, collaborate and change.",
+      "Stay Tuned for our upcoming Events.",
   },
-  {
-    name: "Community",
-    description:
-      "Over-communicate, ask for input, share ideas, give everyone ownership.",
-  },
-  {
-    name: "Diversity.",
-    description:
-      "We embrace diverse cultures and backgrounds, removing geographical and physical boundaries to fuel creativity and problem-solving, resulting in more successful groundbreaking solutions.",
-  },
+  // {
+  //   name: "Community",
+  //   description:
+  //     "Over-communicate, ask for input, share ideas, give everyone ownership.",
+  // },
+  // {
+  //   name: "Diversity.",
+  //   description:
+  //     "We embrace diverse cultures and backgrounds, removing geographical and physical boundaries to fuel creativity and problem-solving, resulting in more successful groundbreaking solutions.",
+  // },
 ];
 
 export default function CommMission() {
