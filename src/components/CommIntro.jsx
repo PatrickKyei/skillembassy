@@ -14,7 +14,7 @@ const CommIntro = () => {
         <div className="embed-responsive embed-responsive-16by9 relative w-full overflow-hidden" style={{ paddingTop: "56.25%" }}>
       <iframe
         className="embed-responsive-item absolute bottom-0 left-0 right-0 top-0 h-full w-full"
-        src="https://www.youtube.com/embed/oEj9ZiorBKk?si=oO6U6VwTf8jXeMLV?enablejsapi=1&origin=https%3"
+        src="https://www.youtube.com/embed/QXP5GallbCc?si=pgHyHAd_Miy_wJLX"
         allowFullScreen
         // data-gtm-yt-inspected-2340190_699="true"
         id="240632615"
@@ -25,7 +25,7 @@ const CommIntro = () => {
           <div className="text-center">
             <div className="mt-[-170px] block rounded-lg px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] backdrop-blur-[30px] dark:bg-[hsla(0,0%,5%,0.55)] md:py-16 md:px-12">
               <h1 className="text-neutral-100 mb-16 text-xs tracking-tight md:text-3xl xl:text-3xl">
-                The platfrom thrives on the power on community! We
+                The platfrom thrives on the power of community! We
                 are committed to nurting and empowering your success. Your
                 support enables us to keep the momentum going. Join us in building a brighter future for Aspiring
                 Product Teams!

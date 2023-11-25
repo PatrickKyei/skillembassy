@@ -12,8 +12,8 @@ const Donate = () => {
 
         <p class="mb-5 text-base text-neutral-300 sm:text-lg">
           When you donate to Skill Embassy you help people learn new skills and
-          provide for thier families. You also help us create new resources for
-          you to use to expand your own technology skills. Your $50 donation will
+          provide for thier families. You also help us create new resources to
+          expand the scope of education and awareness. Your $50 donation will
           provide 250 hours of learning to people around the world each month.{" "}
         </p>
         <div class="items-center justify-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4">

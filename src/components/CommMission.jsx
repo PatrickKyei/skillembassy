@@ -32,7 +32,7 @@ export default function CommMission() {
               </p>
               <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-neutral-400 lg:max-w-none">
                 {features.map((feature) => (
-                  <div key={feature.name} className="relative pl-8">
+                  <div key={feature.name} className="text-neutral-100 relative pl-8">
                     <dt className="inline font-semibold">
                       {feature.url ? (
                         <a
