@@ -1,23 +1,17 @@
 import React from "react";
 import COMM from "../assets/comm.png";
 
-
 const features = [
   {
     name: "Upcoming Events:",
-    description:
-      "Stay Tuned for our upcoming Events.",
+    description: "Stay Tuned for our upcoming Events.",
   },
-  // {
-  //   name: "Community",
-  //   description:
-  //     "Over-communicate, ask for input, share ideas, give everyone ownership.",
-  // },
-  // {
-  //   name: "Diversity.",
-  //   description:
-  //     "We embrace diverse cultures and backgrounds, removing geographical and physical boundaries to fuel creativity and problem-solving, resulting in more successful groundbreaking solutions.",
-  // },
+  {
+    name: "Join our Community",
+    description:
+      "",
+    url: "https://nas.io/skillembassy", // Add URL for "Join our Community"
+  },
 ];
 
 export default function CommMission() {
@@ -39,9 +33,17 @@ export default function CommMission() {
               <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-neutral-400 lg:max-w-none">
                 {features.map((feature) => (
                   <div key={feature.name} className="relative pl-8">
-                    <dt className="inline font-semibold text-purple-300">
-                      {/* <feature.icon className="absolute left-1 top-1 h-5 w-5 text-indigo-600" aria-hidden="true" /> */}
-                      {feature.name}
+                    <dt className="inline font-semibold">
+                      {feature.url ? (
+                        <a
+                          href={feature.url}
+                          className="text-purple-300 underline hover:text-purple-400"
+                        >
+                          {feature.name}
+                        </a>
+                      ) : (
+                        feature.name
+                      )}
                     </dt>{" "}
                     <dd className="inline">{feature.description}</dd>
                   </div>
@@ -50,11 +52,9 @@ export default function CommMission() {
             </div>
           </div>
           <img
-            src= {COMM}
+            src={COMM}
             alt="Community Photo"
             className="w-[28rem] max-w-none rounded-md sm:w-[42rem] md:-ml-4 lg:-ml-0"
-            // width={2432}
-            // height={1442}
           />
         </div>
       </div>
