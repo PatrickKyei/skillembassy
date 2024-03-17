@@ -9,6 +9,11 @@ const Navbar = () => {
     setNavOpen(!isNavOpen);
   };
 
+  const handleScrollToNewsletter = () => {
+    const newsletterSection = document.getElementById('newsletter-section');
+    newsletterSection.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <div className="bg-neutral-950 border-b border-neutral-900 text-white p-4 fixed top-0 left-0 right-0 z-50">
       {/* Flex container for logo, hamburger, and button */}
@@ -49,8 +54,8 @@ const Navbar = () => {
         </ul>
 
         {/* Button (visible on larger screens) */}
-        <Link to="/application">
-          <button
+        <Link to="#">
+          <button onClick={handleScrollToNewsletter}
             className={`font-semibold rounded-sm bg-purple-100 text-purple-800 px-4 py-2 rounded-full mt-4 hidden md:block`}
           >
             Join Cohort

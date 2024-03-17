@@ -35,7 +35,7 @@ function Newsletter() {
   };
 
   return (
-    <div>
+    <div id="newsletter-section">
       <div className="mx-auto px-0 sm:px-0">
         {/* CTA box */}
         <div
