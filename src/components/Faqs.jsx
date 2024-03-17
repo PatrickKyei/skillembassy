@@ -9,33 +9,33 @@ const Faqs = () => {
   const faqData = [
     {
       id: 1,
-      question: "What is Skill Embassy Product Accelerator?",
+      question: "What is Skillembassy Product Accelerator?",
       answer:
-        "Skill Embassy is a 10-week program of hands-on learning. Based on your work styles and interests, you will gain real-world experience working on projects with a team of professionals including Product Designers, Developers, and more.",
+        "Skillembassy is a 10-week program of hands-on learning. Based on your work styles and interests, you will gain real-world experience working on projects with a team of professionals including Product Designers, Developers, and more.",
     },
     {
       id: 2,
-      question: "What will I gain from Skill Embassy Product Accelerator?",
+      question: "What will I gain from Skillembassy Product Accelerator?",
       answer:
         "You will gain valuable skills and experience, learn industry best practices, and build a portfolio of real-world projects. Additionally, you will have the opportunity to collaborate with professionals and expand your network in the tech industry.",
     },
     {
       id: 3,
-      question: "What is the cost of Skill Embassy Product Accelerator?",
+      question: "What is the cost of Skillembassy Product Accelerator?",
       answer:
-        "The entire 10-week product accelerator is on **scholarship** basis. Please contact us for more information!",
+        "The entire 10-week product accelerator is on **GHC 300**. Please contact us for more information!",
     },
     {
       id: 4,
       question: "Can I apply without a college/university degree?",
       answer:
-        "Yes, you can apply to Skill Embassy Product Accelerator even if you do not have a college or university degree. We value diversity and believe that passion, dedication, and a willingness to learn are more important than formal education.",
+        "Yes, you can apply to Skillembassy Product Accelerator even if you do not have a college or university degree. We value diversity and believe that passion, dedication, and a willingness to learn are more important than formal education.",
     },
     {
       id: 5,
-      question: "Will Skill Embassy Product Accelerator help me find work?",
+      question: "Will Skillembassy Product Accelerator help me find work?",
       answer:
-        "While Skill Embassy does not guarantee job placement, the program is designed to equip you with the skills, knowledge, and experience that are highly sought after by employers in the tech industry. We provide support, guidance, and networking opportunities to enhance your chances of finding work in the field.",
+        "While Skillembassy does not guarantee job placement, the program is designed to equip you with the skills, knowledge, and experience that are highly sought after by employers. We support and empower you to start your own business.",
     },
   ];
 
@@ -56,8 +56,8 @@ const Faqs = () => {
             className="mt-12 text-lg font-normal text-neutral-50"
             data-aos="fade-right"
             data-aos-duration="1000">
-            Not sure how Skill Embassy can help you? Wonder why you need tech
-            skills and how to leverage them in your career?
+            Not sure how Skillembassy can help you? Wonder why you need tech
+            skills and how to leverage them in your one person business?
           </p>
           <div
             className="flex flex-row sm:flex-row py-4"

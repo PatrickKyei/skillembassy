@@ -203,7 +203,7 @@ const Conduct = () => {
         </div>
       </div>
 
-      <div className="grid md:grid-cols-2  my-8 gap-4" data-aos="fade-right">
+      <div className="grid md:grid-cols-2  py-4 gap-4" data-aos="fade-right">
         <div className="bg-neutral-900 hover:bg-gradient-to-r from-neutral-900 to-neutral-800 border border-neutral-700 rounded-sm p-8 md:p-12">
           <h2 className="text-neutral-100 text-2xl font-bold mb-2">
             3. Temporary Ban{" "}

@@ -1,67 +1,67 @@
-import React from 'react'
-import { Link, Route, Routes } from "react-router-dom";
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
-  return (
-    <div className="flex flex-col items-center my-20 font-poppins lg:my-[100px]">
-      <div className="flex flex-col text-center gap-[5px] md:w-[700px]">
-          <div>
-           <a
-              href="https://nas.io/skillembassy"
-              target="_blank"
-              className="bg-neutral-800 text-neutral-400 text-xs font-medium inline-flex items-center px-2.5 py-0.4 rounded-md mb-2">
-                
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth="2"
-                stroke="currentColor"
-                className="w-4 h-7 text-neutral-400">
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M12 2a5 5 0 0 0-5 5 5 5 0 0 0 5 5 5 5 0 0 0 5-5 5 5 0 0 0-5-5z"
-                />
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M20 15v2a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3v-2"
-                />
-              </svg>
-              3,000+ Community Members
-            </a>
-          </div>
-          <h1 className="font-semibold text-3xl text-neutral-100 md:text-5xl">
+  const scrollToBenefits = () => {
+    const benefitsSection = document.getElementById('benefits-section');
+    if (benefitsSection) {
+      benefitsSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
-          Kickstart Your Lucrative Tech Career
+  return (
+    <div className="flex flex-col items-center my-20 font-poppins lg:my-[130px]">
+      <div className="flex flex-col text-center gap-[5px] md:w-[800px]">
+        <div>
+          <a
+            href="https://nas.io/skillembassy"
+            target="_blank"
+            className="bg-neutral-800 text-neutral-400 text-xs font-medium inline-flex items-center px-2.5 py-0.4 rounded-md mb-4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth="2"
+              stroke="currentColor"
+              className="w-4 h-7 text-neutral-400">
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M12 2a5 5 0 0 0-5 5 5 5 0 0 0 5 5 5 5 0 0 0 5-5 5 5 0 0 0-5-5z"
+              />
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M20 15v2a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3v-2"
+              />
+            </svg>
+            500+ Community Members
+          </a>
+        </div>
+        <h1 className="font-semibold text-3xl text-neutral-100 md:text-5xl my-8">
+          Pioneering The Future Of Work
         </h1>
         <p className="text-lg text-neutral-100 mb-[40px]">
-          Learn, build and launch an impactful product with your own product
-          designer, product manager, software engineer and cloud engineer.
-
-          {/* Gain REAL - WORLD EXPERIENCE!! - No boring case studies or theory */}
+          Learn, build and launch an impactful product. You will never work less if you don’t create your own way of doing so.
         </p>
       </div>
 
       <div className="flex justify-left mb-8 md:mb-[10px]">
-        <Link to="application">
+        <Link to="#">
           <button
             type="button"
             className="font-bold bg-neutral-50 text-sm text-neutral-950 mx-[5px] py-[10px] px-[30px] rounded-sm md:text-base hover:drop-shadow-xl">
-            Start Today
+            Cohort 3.0
           </button>
         </Link>
-
-        <a href="https://calendly.com/skillembassy-advisor">
-          <button
-            type="button"
-            className="font-bold text-sm text-neutral-50 border-[1px] border-neutral-500 rounded-sm py-[10px] px-[20px] md:text-base">
-            How it works?
-          </button>
-        </a>
+        <button
+          type="button"
+          className="font-bold text-sm text-neutral-50 border-[1px] border-neutral-500 rounded-sm py-[10px] px-[20px] md:text-base"
+          onClick={scrollToBenefits}>
+          How it works?
+        </button>
       </div>
     </div>
   );

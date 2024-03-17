@@ -1,6 +1,39 @@
-import React from "react";
+import React, { useState } from "react";
 
 function Newsletter() {
+  const [email, setEmail] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // Your Google Sheets script URL
+    const scriptURL =
+      "https://script.google.com/macros/s/AKfycbyrTkM30X7TVqCa6RgK-HiP-cGgdT__brMW6lbxNNX1hAk74lVC-dP-AlgQHQ5s2rs7/exec";
+    
+    // Prepare data to send to Google Sheets
+    const formDataToSend = new FormData();
+    formDataToSend.append("Email", email);
+
+    // Submit the form data
+    fetch(scriptURL, { method: "POST", body: formDataToSend })
+      .then((response) => {
+        if (response.ok) {
+          alert("Thank you for subscribing!");
+          setEmail(""); // Clear the email input field after successful submission
+        } else {
+          throw new Error("Network response was not ok");
+        }
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+        alert("An error occurred. Please try again later.");
+      });
+  };
+
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+  };
+
   return (
     <div>
       <div className="mx-auto px-0 sm:px-0">
@@ -23,13 +56,15 @@ function Newsletter() {
             </div>
 
             {/* CTA form */}
-            <form className="w-full lg:w-1/2">
+            <form className="w-full lg:w-1/2" onSubmit={handleSubmit}>
               <div className="flex flex-col sm:flex-row justify-center max-w-xs mx-auto sm:max-w-md lg:max-w-none">
                 <input
                   type="email"
                   className="w-full appearance-none border border-blue-500 focus:border-blue-300 rounded-sm px-4 py-3 mb-2 sm:mb-0 sm:mr-2 text-neutral-900 placeholder-blue-400"
                   placeholder="Your best email…"
                   aria-label="Your best email…"
+                  value={email}
+                  onChange={handleEmailChange}
                 />
                 <button
                   type="submit"
@@ -37,8 +72,6 @@ function Newsletter() {
                   Subscribe
                 </button>
               </div>
-              {/* Success message */}
-              {/* <p className="text-center lg:text-left lg:absolute mt-2 opacity-75 text-sm">Thanks for subscribing!</p> */}
             </form>
           </div>
         </div>

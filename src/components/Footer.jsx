@@ -17,56 +17,54 @@ function Footer() {
             {/* 1st block */}
             <div className="md:col-span-4 lg:col-span-5">
               <div className="text-neutral-50">
-                Skill Embassy empowers and prepares product managers, product
-                designers, and software developers for success within the tech
-                industry.
+                Skillembassy empowers and prepares creators and builders in the digital economy.
               </div>
             </div>
 
             {/* 2nd, 3rd and 4th blocks */}
             <div className="md:col-span-8 lg:col-span-7 grid sm:grid-cols-3 gap-8">
               {/* 2nd block */}
-              <div className="text-sm">
+              {/* <div className="text-sm">
                 <h6 className="text-purple-300 font-medium mb-1">Careers</h6>
                 <ul>
                   <li className="mb-1">
                     <a
-                      href="#"
+                      href="https://nas.io/skillembassy"
                       className="text-neutral-200 hover:text-neutral-50 transition duration-150 ease-in-out">
                       Software Development
                     </a>
                   </li>
                   <li className="mb-1">
                     <a
-                      href="#"
+                      href="https://nas.io/skillembassy"
                       className="text-neutral-200 hover:text-neutral-50 transition duration-150 ease-in-out">
                       Product Management
                     </a>
                   </li>
                   <li className="mb-1">
                     <a
-                      href="#"
+                      href="https://nas.io/skillembassy"
                       className="text-neutral-200 hover:text-neutral-50 transition duration-150 ease-in-out">
                       Product Design
                     </a>
                   </li>
                   <li className="mb-1">
                     <a
-                      href="#"
+                      href="https://nas.io/skillembassy"
                       className="text-neutral-200 hover:text-neutral-50 transition duration-150 ease-in-out">
                       Cybersecurity
                     </a>
                   </li>
                   <li className="mb-1">
                     <a
-                      href="#"
+                      href="https://nas.io/skillembassy"
                       className="text-neutral-200 hover:text-neutral-50 transition duration-150 ease-in-out">
                       Data Science
                     </a>
                   </li>
                   <li className="mb-1">
                     <a
-                      href="#"
+                      href="https://nas.io/skillembassy"
                       className="text-neutral-200 hover:text-neutral-50 transition duration-150 ease-in-out">
                       DevOps
                     </a>
@@ -75,7 +73,7 @@ function Footer() {
               </div>
 
               {/* 3rd block */}
-              <div className="text-sm">
+              {/* <div className="text-sm">
                 <h6 className="text-purple-300 font-medium mb-1">Quick Links</h6>
                 <ul>
                   <li className="mb-1">
@@ -107,10 +105,10 @@ function Footer() {
                     </a>
                   </li>
                 </ul>
-              </div>
+              </div> */}
 
               {/* 4th block */}
-              <div className="text-sm">
+              {/* <div className="text-sm">
                 <h6 className="text-purple-300 font-medium mb-1">Contact Us</h6>
                 <ul>
                   <li className="mb-1">
@@ -135,8 +133,9 @@ function Footer() {
                     </a>
                   </li>
                 </ul>
-              </div>
-            </div>
+              </div> */}
+            </div> */}
+
           </div>
 
           {/* Bottom area */}
@@ -191,7 +190,7 @@ function Footer() {
 
             {/* Attribution */}
             <div className="text-sm text-neutral-50">
-              <p>© 2023 Skill Embassy. All rights reserved.</p>
+              <p>© 2023 Skillembassy. All rights reserved.</p>
               <p>
                 Privacy and 
                 <a

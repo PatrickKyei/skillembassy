@@ -2,6 +2,8 @@ import React from "react";
 import UX from "../assets/ux.png";
 import Eng from "../assets/eng.png";
 import Product from "../assets/product.png";
+import Digital from "../assets/digital.png";
+import Graphic from "../assets/graphic.png";
 // import Branding from "../assets/product.png";
 
 
@@ -9,26 +11,36 @@ const Careers = () => {
   const careerData = [
     {
       title: "Product Management",
-      description: "Develop critical thinking and repertoire to define a long-term strategy and engage all business stakeholders.",
+      description: "What you choose to do defines your place in this world. Develop critical thinking and repertoire to define a long-term strategy to launch digital businesses.",
       imageUrl: Product,
     },
-    {
-      title: "Software Engineering",
-      description: "Experience working with your own designer and product manager to develop and launch a societal or human problem from inception to completion.",
-      imageUrl: Eng,
-    },
-    {
-      title: "UX/UI Design",
-      description: "Want to know what it's like to take a product from conception to launch? Are you creating user personas, journeys, mockups, and other things?",
-      imageUrl: UX,
-    },
+    // {
+    //   title: "Software Engineering",
+    //   description: "Experience working with your own designer and product manager to develop and launch a societal or human problem from inception to completion.",
+    //   imageUrl: Eng,
+    // },
+    // {
+    //   title: "UX/UI Design",
+    //   description: "Want to know what it's like to take a product from conception to launch? Are you creating user personas, journeys, mockups, and other things?",
+    //   imageUrl: UX,
+    // },
+    //  {
+    //   title: "Digital Marketing",
+    //   description: "Entrepreneurship is your vessel – so you are in full control of your future. Marketing and sales are your message – so you can inspire people to care about what you do.",
+    //   imageUrl: Digital,
+    // },
+    //  {
+    //   title: "Communication Design",
+    //   description: "Learn the psychology in design to attract and persuade customers to see the value in what you offer so that you can get what you want.",
+    //   imageUrl: Graphic,
+    // },
    
   ];
 
   return (
     <div className="text-center">
       <h2 className="text-3xl font-semibold text-neutral-100 mb-12">Our Career Change Courses</h2>
-      <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
+      <div className="grid grid-cols-1 gap-8 lg:grid-cols-1">
         {careerData.map((career, index) => (
           <div
             key={index}

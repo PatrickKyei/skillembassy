@@ -41,14 +41,14 @@ const careerData = [
 
 const Benefits = () => {
   return (
-    <div className="container my-20 lg:my-[150px]">
-              <h2 className="text-left mb-20 text-4xl font-bold text-neutral-100">Why is it so great?</h2>
-
+    <div id="benefits-section" className="container my-20 lg:my-[150px]">
+      {" "}
+      <h2 className="text-left mb-20 text-4xl font-bold text-neutral-100">
+        Why is it so great?
+      </h2>
       <div className="grid grid-cols-1 gap-4 lg:grid-cols-3">
         {careerData.map((career) => (
-          <div
-            className="text-left border border-neutral-700 bg-neutral-900 text-neutral-100 hover:bg-gradient-to-r from-neutral-900 to-neutral-800 hover:text-white p-6 rounded-sm shadow-md">
-
+          <div className="text-left border border-neutral-700 bg-neutral-900 text-neutral-100 hover:bg-gradient-to-r from-neutral-900 to-neutral-800 hover:text-white p-6 rounded-sm shadow-md">
             <div className="text-left mb-6">
               <img
                 src={career.imgUrl}

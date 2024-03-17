@@ -30,7 +30,7 @@ const Testimonials = () => {
       role: "UX Designer",
       image: Hakeem,
       text:
-        "I enjoyed the service and the opportunity Skill Embassy offers.",
+        "I enjoyed the service and the opportunity Skillembassy offers.",
     },
   ];
 

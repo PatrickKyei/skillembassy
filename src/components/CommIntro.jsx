@@ -1,5 +1,5 @@
 import React from "react";
-import Commintro from "../assets/commintro.png";
+// import Commintro from "../assets/commintro.png";
 
 const CommIntro = () => {
   return (
@@ -23,7 +23,7 @@ const CommIntro = () => {
     </div>
         <div className="container mx-auto px-6 md:px-12 xl:px-32">
           <div className="text-center">
-            <div className="mt-[-170px] block rounded-lg px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] backdrop-blur-[30px] dark:bg-[hsla(0,0%,5%,0.55)] md:py-16 md:px-12">
+            <div className="mt-[-30px] block rounded-lg px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] backdrop-blur-[30px] dark:bg-[hsla(0,0%,5%,0.55)] md:py-16 md:px-12">
               <h1 className="text-neutral-100 mb-16 text-xs tracking-tight md:text-3xl xl:text-3xl">
                 The platfrom thrives on the power of community! We
                 are committed to nurting and empowering your success. Your

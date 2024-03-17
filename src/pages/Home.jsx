@@ -3,6 +3,7 @@ import Banner from "../components/Banner";
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import Benefits from "../components/Benefits";
+import PainPoints from "../components/PainPoints";
 import CTA from "../components/CTA";
 import Stats from "../components/Stats";
 import Values from "../components/Values";
@@ -25,13 +26,14 @@ function Home() {
       {/*  Site header */}
       <main className="p-8 md:mx[100px] grow">
         <Navbar />
-        {/* <Banner/> */}
+        <Banner/>
 
         {/*  Page content */}
         <Hero />
         <Partners />
         {/* <CTA /> */}
         <Solution />
+        <PainPoints/>
         <Video />
         <Benefits />
         <Careers />

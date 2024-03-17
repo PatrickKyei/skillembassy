@@ -50,7 +50,6 @@ const CommWelcome = () => {
                 src={project.imageUrl}
                 className="w-full align-middle transition duration-300 ease-linear"
               />
-              <a href="#!">
                 <div className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed bg-[hsla(0,0%,0%,0.3)]">
                   <div className="flex h-full items-end justify-start">
                     <h5 className="m-6 text-lg font-bold text-white">
@@ -58,7 +57,6 @@ const CommWelcome = () => {
                     </h5>
                   </div>
                 </div>
-              </a>
             </div>
           ))}
         </div>

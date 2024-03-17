@@ -22,7 +22,7 @@ export default function CommMission() {
           <div className="lg:pr-8 lg:pt-4">
             <div className="lg:max-w-lg">
               <p className="mt-2 text-3xl font-bold tracking-tight text-neutral-100 sm:text-4xl">
-                Join the Community
+                Join Our Community
               </p>
               <p className="mt-6 text-lg leading-8 text-neutral-400">
                 We are advocates for Diversity. We recognise that innovation can only be advanced if we have

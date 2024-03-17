@@ -15,9 +15,9 @@ const Solution = () => {
             else does, just better. Learners are able to grasp and solve
             modern-day problems, break down futile societal constructs, and
             evolve towards a sustainable future by combining technology and
-            creative problem solving. Upgrade yourself by learning a tech skill.
-            Your skill will land you a high paying job, or even enable you to
-            start a business.
+            creative problem solving. Upgrade yourself by learning a creative
+            skill. Your skill will land you a high paying job, or even enable
+            you to start a business.
           </p>
         </div>
 
@@ -40,11 +40,12 @@ const Solution = () => {
               We inspire motivated individuals
             </h2>
             <p className="text-lg font-normal text-neutral-500 mb-4">
-              It is difficult to break into and excel in technology. It's even
-              more challenging if you're changing careers or don't have a
-              traditional computer science degree. Our mission is to inspire
-              motivated individuals to solve real-world problems by utilizing
-              technology to develop new solutions that address social issues.
+              You feel overwhelmed by too much information and lack clear
+              guidance. You find it hard to make quality decisions to create a
+              roadmap for a successful online business. Our mission is to
+              inspire motivated individuals to solve real-world problems by
+              utilizing technology to develop new solutions that address social
+              issues.
             </p>
           </div>
 
