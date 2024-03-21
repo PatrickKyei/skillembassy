@@ -52,7 +52,7 @@ const ForBusiness = () => {
             <button
               type="button"
               className="font-bold bg-purple-100 text-sm text-purple-800 mx-[1px] py-[10px] px-[30px] rounded-sm md:text-base hover:drop-shadow-xl">
-              Watch Live session
+              Watch Live workshops
             </button>
           </a>
         </div>

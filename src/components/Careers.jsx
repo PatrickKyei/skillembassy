@@ -10,15 +10,15 @@ import Graphic from "../assets/graphic.png";
 const Careers = () => {
   const careerData = [
     {
-      title: "Product Management",
+      title: "Product School",
       description: "What you choose to do defines your place in this world. Develop critical thinking and repertoire to define a long-term strategy to launch digital businesses.",
       imageUrl: Product,
     },
-    // {
-    //   title: "Software Engineering",
-    //   description: "Experience working with your own designer and product manager to develop and launch a societal or human problem from inception to completion.",
-    //   imageUrl: Eng,
-    // },
+    {
+      title: "Digital Mastery",
+      description: "Experience working with your own designer and product manager to develop and launch a societal or human problem from inception to completion.",
+      imageUrl: Eng,
+    },
     // {
     //   title: "UX/UI Design",
     //   description: "Want to know what it's like to take a product from conception to launch? Are you creating user personas, journeys, mockups, and other things?",
@@ -39,8 +39,8 @@ const Careers = () => {
 
   return (
     <div className="text-center">
-      <h2 className="text-3xl font-semibold text-neutral-100 mb-12">Our Career Change Courses</h2>
-      <div className="grid grid-cols-1 gap-8 lg:grid-cols-1">
+      <h2 className="text-3xl font-semibold text-neutral-100 mb-12">Our Career Change Programs</h2>
+      <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
         {careerData.map((career, index) => (
           <div
             key={index}

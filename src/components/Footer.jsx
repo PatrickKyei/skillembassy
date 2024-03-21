@@ -17,7 +17,7 @@ function Footer() {
             {/* 1st block */}
             <div className="md:col-span-4 lg:col-span-5">
               <div className="text-neutral-50">
-                Skillembassy empowers and prepares creators and builders in the digital economy.
+                Skillembassy empowers and prepares creators and builders in the digital economy for the future of work.
               </div>
             </div>
 

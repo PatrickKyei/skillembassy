@@ -1,86 +1,298 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import countriesData from "../utils/countries.json";
+import timezonesData from "../utils/timezones.json";
 
-function Newsletter() {
-  const [email, setEmail] = useState("");
-  const [error, setError] = useState(null);
+const Form = () => {
+  const [formData, setFormData] = useState({
+    Name: "",
+    Email: "",
+    Gender: "Choose Gender*",
+    Experience: "What is your experience level*",
+    CareerPath: "Select Career Path*",
+    HavePC: "Do you have a computer?*",
+    Phone: "",
+    Country: "",
+    Timezone: "",
+    Participation: "",
+    OpportunitySource: "How did you hear about us?*",
+    Newsletter: "Subscribe for more updates?*",
+    Terms: false,
+  });
+
+  const handleChange = (e) => {
+    const { name, value, type, checked } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: type === "checkbox" ? checked : value,
+    }));
+  };
+
+  const getCountries = () => {
+    return countriesData.map((country) => (
+      <option key={country.code} value={country.name}>
+        {country.name}
+      </option>
+    ));
+  };
+
+  const getTimezones = () => {
+    return timezonesData.map((timezone) => (
+      <option key={timezone.abbreviation} value={timezone.name}>
+        {timezone.name}
+      </option>
+    ));
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Your Google Sheets script URL
-    const scriptURL =
-      "https://script.google.com/macros/s/AKfycbyrTkM30X7TVqCa6RgK-HiP-cGgdT__brMW6lbxNNX1hAk74lVC-dP-AlgQHQ5s2rs7/exec";
-    
-    // Prepare data to send to Google Sheets
-    const formDataToSend = new FormData();
-    formDataToSend.append("Email", email);
+    // Check if the "Terms" checkbox is checked
+    if (!formData.Terms) {
+      // If not checked, show an alert or handle the error as needed
+      alert("Please agree to the terms and conditions.");
+      return; // Prevent further execution of the form submission
+    }
 
-    // Submit the form data
+    const scriptURL =
+      "https://script.google.com/macros/s/AKfycbzwWdjhusW_FOqKDOyqDNEwncWmF8NcAY0uv-UduQ464kEtncCuGOCenDH_6vnoVfuz/exec";
+    const formDataToSend = new FormData();
+
+    for (let key in formData) {
+      formDataToSend.append(key, formData[key]);
+    }
+
+    // Log the form data
+    // console.log('Form Data:', formData);
+
     fetch(scriptURL, { method: "POST", body: formDataToSend })
       .then((response) => {
-        if (response.ok) {
-          alert("Thank you for subscribing!");
-          setEmail(""); // Clear the email input field after successful submission
-        } else {
-          throw new Error("Network response was not ok");
-        }
+        alert("Thank you! your form is submitted successfully.");
+        // Redirect to the homepage after a successful submission
+        window.location.href = "https://skillembassy.org"; // Replace with your homepage URL
       })
       .catch((error) => {
-        console.error("Error:", error);
-        setError(error); // Set error state for displaying to the user
-        alert("An error occurred. Please try again later.");
+        console.error("Error!", error.message);
       });
   };
 
-  const handleEmailChange = (e) => {
-    setEmail(e.target.value);
-  };
-
   return (
-    <div>
-      <div className="mx-auto px-0 sm:px-0">
-        {/* CTA box */}
-        <div
-          className="relative bg-neutral py-10 px-0 md:py-16 md:px-12"
-          data-aos="fade-up">
-          {/* Background illustration */}
-          <div
-            className="absolute right-0 top-0 -ml-40 pointer-events-none"
-            aria-hidden="true"></div>
-
-          <div className="relative flex flex-col lg:flex-row justify-between items-center">
-            {/* CTA content */}
-            <div className="mb-6 lg:mr-16 lg:mb-0 text-center lg:text-left lg:w-1/2">
-              <h3 className="h3 text-neutral-100 mb-2">Stay in the loop</h3>
-              <p className="text-neutral-300 text-lg">
-                Join our newsletter to get top news before anyone else.
-              </p>
-            </div>
-
-            {/* CTA form */}
-            <form className="w-full lg:w-1/2" onSubmit={handleSubmit}>
-              <div className="flex flex-col sm:flex-row justify-center max-w-xs mx-auto sm:max-w-md lg:max-w-none">
-                <input
-                  type="email"
-                  className="w-full appearance-none border border-blue-500 focus:border-blue-300 rounded-sm px-4 py-3 mb-2 sm:mb-0 sm:mr-2 text-neutral-900 placeholder-blue-400"
-                  placeholder="Your best email…"
-                  aria-label="Your best email…"
-                  value={email}
-                  onChange={handleEmailChange}
-                />
-                <button
-                  type="submit"
-                  className="btn text-black bg-white hover:bg-white shadow px-4 py-3 rounded-sm">
-                  Subscribe
-                </button>
-              </div>
-            </form>
-          </div>
+    <form className="mt-12 p-4 bg-neutral-100" onSubmit={handleSubmit}>
+      <div className="flex flex-col items-center my-2 font-poppins lg:my-[100px]">
+        <div className="flex flex-col text-center gap-[10px] md:w-[700px] mx-auto">
+          <h1 className="font-bold text-2xl text-neutral-900 md:text-5xl">
+            Join the next Cohort
+          </h1>
+          <p className="text-neutral-900 mb-[5px]">
+            Learn, build, and launch impactful products with industry experts.
+          </p>
         </div>
       </div>
-      {error && <p>An error occurred: {error.message}</p>} {/* Display error message if there is an error */}
-    </div>
-  );
-}
+      <div className="grid gap-6 mb-6 px-4 md:grid-cols-2">
+        <div>
+          <input
+            name="Name"
+            type="text"
+            id="name"
+            className="bg-gray-50 border border-gray-300 text-neutral-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+            placeholder="Name*"
+            required
+            value={formData.Name}
+            onChange={handleChange}
+          />
+        </div>
+        <div>
+          <input
+            name="Email"
+            type="email"
+            id="email"
+            className="bg-gray-50 border border-gray-300 text-neutral-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            placeholder="Email*"
+            required
+            value={formData.Email}
+            onChange={handleChange}
+          />
+        </div>
+        <div>
+          <select
+            name="Gender"
+            id="gender"
+            required
+            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            value={formData.Gender}
+            onChange={handleChange}>
+            <option value="Choose Gender*">Choose Gender*</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Undisclosed">Do not Disclose</option>
+          </select>
+        </div>
 
-export default Newsletter;
+        <div>
+          <select
+            name="CareerPath"
+            id="career"
+            required
+            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            value={formData.CareerPath}
+            onChange={handleChange}>
+            <option value="Select Career Path*">Select Career Path*</option>
+            <option value="Product Management">Product Management</option>
+            <option value="Soft Development">Software Engeneering</option>
+            <option value="UX Design">UX/UI Design</option>
+          </select>
+        </div>
+
+        <div>
+          <select
+            name="Experience"
+            id="experience"
+            required
+            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            value={formData.Experience}
+            onChange={handleChange}>
+            <option value="What is your experience level*">
+              What is your experience level*
+            </option>
+            <option value="Novice">Novice</option>
+            <option value="Beginner">Beginner</option>
+            <option value="Intermediate">Intermediate</option>
+            <option value="Advanced">Advanced</option>
+          </select>
+        </div>
+
+        <div>
+          <select
+            name="HavePC"
+            id="pc"
+            required
+            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            value={formData.HavePC}
+            onChange={handleChange}>
+            <option value="Do you have a computer?*">
+              Do you have a computer?*
+            </option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </div>
+
+        <div>
+          <input
+            name="Phone"
+            type="tel"
+            id="phone"
+            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            placeholder="Phone Number"
+            required
+            value={formData.Phone}
+            onChange={handleChange}
+          />
+        </div>
+
+        <div>
+          <select
+            name="Country"
+            id="country"
+            required
+            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            value={formData.Country}
+            onChange={handleChange}>
+            <option value="">Select country*</option>
+            {getCountries()}
+          </select>
+        </div>
+
+        <div>
+          <select
+            name="Timezone"
+            id="timezone"
+            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            value={formData.Timezone}
+            onChange={handleChange}>
+            <option value="">Select timezone*</option>
+            {getTimezones()}
+          </select>
+        </div>
+
+        <div>
+          <input
+            name="Participation"
+            type="textarea"
+            id="reason"
+            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            placeholder="Reason for participation"
+            required
+            value={formData.Participation}
+            onChange={handleChange}
+          />
+        </div>
+        <div>
+          <select
+            name="OpportunitySource"
+            id="social"
+            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            value={formData.OpportunitySource}
+            onChange={handleChange}>
+            <option value="How did you hear about us?*">
+              How did you hear about us?*
+            </option>
+            <option value="email">Email</option>
+            <option value="website">Website</option>
+            <option value="social">Social media</option>
+            <option value="family">Family or friend</option>
+          </select>
+        </div>
+        <div>
+          <select
+            name="Newsletter"
+            id="subscribe"
+            required
+            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            value={formData.Newsletter}
+            onChange={handleChange}>
+            <option value="Subscribe for more updates?*">
+              Subscribe for more updates?*
+            </option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </div>
+      </div>
+      <div className="px-4 flex items-start mb-6">
+        <div className="flex items-center h-5">
+          <input
+            name="Terms"
+            id="terms"
+            type="checkbox"
+            required
+            checked={formData.Terms}
+            onChange={handleChange}
+            className="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800"
+          />
+        </div>
+        <label
+          htmlFor="terms"
+          className="ml-2 text-sm font-medium text-neutral-800">
+          I agree with the{" "}
+          <a
+            href="#"
+            data-te-toggle="tooltip"
+            title="We use your information to provide you with our services, to communicate with you, and to improve our website and services. We may also use your information to provide you with marketing and promotional materials if you have given us your consent to do so. We do not sell or rent your information to third parties for their marketing purposes. However, we may share your information with our trusted partners and service providers who help us provide our services."
+            className="text-blue-600 hover:underline">
+            terms and conditions
+          </a>
+          .{" "}
+        </label>
+      </div>
+      <div className="flex items-center px-4">
+        <button
+          type="submit"
+          className="text-neutral-100 bg-neutral-900 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-sm text-sm w-full sm:w-auto px-5 py-2.5 text-center">
+          Submit
+        </button>
+      </div>
+    </form>
+  );
+};
+
+export default Form;

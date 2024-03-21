@@ -15,7 +15,7 @@ const Solution = () => {
             else does, just better. Learners are able to grasp and solve
             modern-day problems, break down futile societal constructs, and
             evolve towards a sustainable future by combining technology and
-            creative problem solving. Upgrade yourself by learning a creative
+            creative problem solving. Upgrade yourself by learning a high value
             skill. Your skill will land you a high paying job, or even enable
             you to start a business.
           </p>

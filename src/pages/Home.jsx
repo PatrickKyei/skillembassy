@@ -5,7 +5,6 @@ import Hero from "../components/Hero";
 import Benefits from "../components/Benefits";
 import PainPoints from "../components/PainPoints";
 import CTA from "../components/CTA";
-import Stats from "../components/Stats";
 import Values from "../components/Values";
 import Careers from "../components/Careers";
 import Impacts from "../components/Impacts";
@@ -13,6 +12,7 @@ import Solution from "../components/Solution";
 import Video from "../components/Video";
 import Testimonials from "../components/Testimonials";
 import Interview from "../components/Interview";
+import Teams from "../components/Teams";
 import Faqs from "../components/Faqs";
 import CallToAction from "../components/CallToAction";
 import Partners from "../components/Partners";
@@ -40,6 +40,7 @@ function Home() {
         <Impacts/>
         <Testimonials />
         <Interview />
+        <Teams />
         <Faqs />
         <Values/>
         <CallToAction />

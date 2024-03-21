@@ -44,7 +44,7 @@ const Faqs = () => {
   };
 
   return (
-    <div className="section">
+    <div className="section pt-12">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div>
           <h2
@@ -57,7 +57,7 @@ const Faqs = () => {
             data-aos="fade-right"
             data-aos-duration="1000">
             Not sure how Skillembassy can help you? Wonder why you need tech
-            skills and how to leverage them in your one person business?
+            skills and how to leverage them in your business?
           </p>
           <div
             className="flex flex-row sm:flex-row py-4"
