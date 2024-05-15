@@ -28,15 +28,15 @@ const CommIntro = () => {
                 The platfrom thrives on the power of community! We
                 are committed to nurting and empowering your success. Your
                 support enables us to keep the momentum going. Join us in building a brighter future for Aspiring
-                Product Teams!
+                Product Accelerators!
               </h1>
               <a
               className="font-bold bg-neutral-50 text-sm text-neutral-950 mx-[5px] py-[10px] px-[30px] rounded-sm md:text-base hover:drop-shadow-xl"
                 data-te-ripple-init
                 data-te-ripple-color="light"
-                href="https://paystack.com/pay/skillembassy"
+                href="https://nas.io/skillembassy"
                 role="button">
-                Pledge Support
+                Become A Member
               </a>
             </div>
           </div>

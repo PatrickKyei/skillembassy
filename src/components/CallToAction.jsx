@@ -16,7 +16,7 @@ const CallToAction = () => {
         <div className="flex flex-col items-center">
           {" "}
           {/* Center vertically */}
-          <Link to="application">
+          {/* <Link to="application"> */}
             <button
               type="button"
               className="bg-neutral-50 items-center rounded-md flex flex-row px-2 mx-[5px] py-2 drop-shadow-lg">
@@ -36,7 +36,7 @@ const CallToAction = () => {
                 </p>
               </div>
             </button>
-          </Link>
+          {/* </Link> */}
         </div>
       </div>
     </div>

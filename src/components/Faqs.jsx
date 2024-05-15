@@ -17,13 +17,13 @@ const Faqs = () => {
       id: 2,
       question: "What will I gain from Skillembassy Product Accelerator?",
       answer:
-        "You will gain valuable skills and experience, learn industry best practices, and build a portfolio of real-world projects. Additionally, you will have the opportunity to collaborate with professionals and expand your network in the tech industry.",
+        "You will gain valuable skills and experience, learn industry best practices, and build a portfolio of real-world projects. Additionally, you will have the opportunity to collaborate with professionals and expand your network in the digital economy.",
     },
     {
       id: 3,
       question: "What is the cost of Skillembassy Product Accelerator?",
       answer:
-        "The entire 10-week product accelerator is on **GHC 300**. Please contact us for more information!",
+        "The entire 10-week product accelerator is **GHC 550**. Please contact us for more information!",
     },
     {
       id: 4,
@@ -57,7 +57,7 @@ const Faqs = () => {
             data-aos="fade-right"
             data-aos-duration="1000">
             Not sure how Skillembassy can help you? Wonder why you need tech
-            skills and how to leverage them in your business?
+            skills and how to leverage them in your career?
           </p>
           <div
             className="flex flex-row sm:flex-row py-4"

@@ -4,17 +4,17 @@ import Navbar from "../components/Navbar";
 import CommMission from "../components/CommMission";
 import CommIntro from "../components/CommIntro";
 import InclusionStory from "../components/InclusionStory";
-import CollabBusiness from "../components/CollabBusiness";
-import Volunteer from "../components/Volunteer";
+// import CollabBusiness from "../components/CollabBusiness";
+// import Volunteer from "../components/Volunteer";
 import CommWelcome from "../components/CommWelcome";
-import Donate from "../components/Donate";
+// import Donate from "../components/Donate";
 import Values from "../components/Values";
 import Conduct from "../components/Conduct";
 import Footer from "../components/Footer";
 
 import "../App.css";
 
-function Application() {
+function Community() {
   return (
     <div className="mb-[0px] flex flex-col overflow-hidden">
       {/*  Site header */}
@@ -23,9 +23,9 @@ function Application() {
         <CommMission />
         <CommIntro/>
         {/* <Volunteer/> */}
-        <CollabBusiness />
+        {/* <CollabBusiness /> */}
         <CommWelcome />
-        <Donate/>
+        {/* <Donate/> */}
         <InclusionStory/>
         <Values />
         <Conduct />
@@ -39,4 +39,4 @@ function Application() {
   );
 }
 
-export default Application;
+export default Community;

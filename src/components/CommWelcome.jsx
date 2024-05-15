@@ -32,7 +32,7 @@ const CommWelcome = () => {
         </style>
         <div>
           <h2 className="text-neutral-100 mb-8 text-center text-3xl font-bold">
-            Now that you are here at Skill Embassy, you are part of us.
+            Now that you are here at Skillembassy, you are part of us.
           </h2>
           {/* <p className="text-neutral-100 mb-12 text-center font-semibold">
             Now that you're here at Skill Embassy, you are part of us.

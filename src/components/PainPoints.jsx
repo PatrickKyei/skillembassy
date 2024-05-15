@@ -10,7 +10,7 @@ const careerData = [
   {
     imgUrl: Struggle,
     careerTitle: "Teamwork",
-    text: "You struggle to find a structured and effective path to acquire the skills to start your online business.",
+    text: "You struggle to find a structured and effective path to acquire the skills to launch your career in the digital economy.",
   },
   {
     imgUrl: Gap,
@@ -30,12 +30,12 @@ const careerData = [
   {
     imgUrl: Inconsistent,
     careerTitle: "Accountability",
-    text: "You find inconsistency in the quality and relevance of online learning resources, making it difficult to find reliable and up-to-date information.",
+    text: "You know there are a lot other paid courses but feel like they are all the same (and aren't sure which you can confidently invest your money in).",
   },
   {
     imgUrl: Group,
     careerTitle: "MVP",
-    text: "You want a group of like-minded individuals to establish a strong network that provides support, insights, and collaboration opportunities.",
+    text: "You are looking for a community of like-minded individuals to establish a strong network that provides support, insights, and collaboration opportunities.",
   },
 ];
 
@@ -46,7 +46,7 @@ const PainPoints = () => {
         There's no substitute for doing your own work.
       </h2>
       <p className="text-lg text-neutral-100 text-center mb-[40px] lg:px-[240px]">
-        Say goodbye to 9 to 5 job. 
+        Self investment is the best gift you can give yourself. The ROI is high with dividend.
         {/* Gain REAL - WORLD EXPERIENCE!! - No boring case studies or theory */}
       </p>
       <div className="grid grid-cols-1 gap-0 lg:grid-cols-3">

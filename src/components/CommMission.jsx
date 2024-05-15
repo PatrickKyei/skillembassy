@@ -4,13 +4,13 @@ import COMM from "../assets/comm.png";
 const features = [
   {
     name: "Upcoming Events:",
-    description: "Stay Tuned for our upcoming Events.",
+    description: "The future of work: How to prepare yourself for the Digital Renaissance.",
   },
   {
-    name: "Join our Community",
+    name: "Register for the Event happeing on 22nd May",
     description:
       "",
-    url: "https://nas.io/skillembassy", // Add URL for "Join our Community"
+    url: "https://www.linkedin.com/events/thefutureofwork-howtoprepareyou7188490977651605505", // Add URL for "Join our Community"
   },
 ];
 

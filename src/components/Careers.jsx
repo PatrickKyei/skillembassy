@@ -1,6 +1,6 @@
 import React from "react";
 import UX from "../assets/ux.png";
-import Eng from "../assets/eng.png";
+import Brand from "../assets/mastery.png";
 import Product from "../assets/product.png";
 import Digital from "../assets/digital.png";
 import Graphic from "../assets/graphic.png";
@@ -10,14 +10,14 @@ import Graphic from "../assets/graphic.png";
 const Careers = () => {
   const careerData = [
     {
-      title: "Product School",
-      description: "What you choose to do defines your place in this world. Develop critical thinking and repertoire to define a long-term strategy to launch digital businesses.",
+      title: "Product Accelerator",
+      // description: "What you choose to do defines your place in this world. Develop critical thinking and repertoire to define a long-term strategy to launch digital businesses.",
       imageUrl: Product,
     },
     {
       title: "Digital Mastery",
-      description: "Experience working with your own designer and product manager to develop and launch a societal or human problem from inception to completion.",
-      imageUrl: Eng,
+      // description: "Experience working with your own designer and product manager to develop and launch a societal or human problem from inception to completion.",
+      imageUrl: Brand,
     },
     // {
     //   title: "UX/UI Design",
@@ -50,11 +50,12 @@ const Careers = () => {
               className="relative overflow-hidden bg-cover bg-no-repeat"
             >
               <img className="" src={career.imageUrl} alt={career.title} />
-              <a href="#!">
+              {/* <a href="#!"> */}
+        
                 <div
                   className="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-[hsla(0,0%,98%,0.15)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"
                 ></div>
-              </a>
+              {/* </a> */}
             </div>
             <div className="pt-4 pl-2">
               <h5 className="my-4 mx-2 font-medium leading-tight text-purple-300 text-left">

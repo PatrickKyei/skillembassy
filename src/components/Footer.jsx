@@ -164,7 +164,7 @@ function Footer() {
                   />
                 </a>
               </li>
-              <li className="ml-4">
+              {/* <li className="ml-4">
                 <a
                   href="https://instagram.com/skillembassy/"
                   className="flex justify-center items-center text-neutral-100  hover:text-neutral-50 hover:bg-neutral-800 rounded-full transition duration-150 ease-in-out"
@@ -174,8 +174,8 @@ function Footer() {
                     className="w-6 h-6 fill-current"
                   />
                 </a>
-              </li>
-              <li className="ml-4">
+              </li> */}
+              {/* <li className="ml-4">
                 <a
                   href="https://twitter.com/skillembassy"
                   className="flex justify-center items-center text-neutral-100 hover:text-neutral-50 hover:bg-neutral-800 rounded-full transition duration-150 ease-in-out"
@@ -185,7 +185,7 @@ function Footer() {
                     className="w-6 h-6 fill-current"
                   />
                 </a>
-              </li>
+              </li> */}
             </ul>
 
             {/* Attribution */}

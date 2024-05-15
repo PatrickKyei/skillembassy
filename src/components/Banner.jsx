@@ -16,9 +16,9 @@ const Banner = () => {
           <div className="py-2 text-center text-neutral-100">
             
             <div className="flex items-center justify-center">
-              <Link to="#" className="font-bold text-sm text-neutral-100 mx-[5px] py-[10px] px-[30px] rounded-sm">
+              <div className="font-bold text-sm text-neutral-100 mx-[5px] py-[10px] px-[30px] rounded-sm">
                 We are launching to the public soon
-              </Link>
+              </div>
               <button className="bg-neutral-600 p-1 rounded-full" onClick={handleDismiss}>
                 <MdClose className="text-white" />
               </button>

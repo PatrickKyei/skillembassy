@@ -1,13 +1,7 @@
-// import React, { useState } from "react";
-// import AliceCarousel from "react-alice-carousel";
-// import "react-alice-carousel/lib/alice-carousel.css";
+import React from "react";
 import Hakeem from "../assets/hakeem.jpg";
 import Christiana from "../assets/christiana.png";
 import Emmanuel from "../assets/eunit.png";
-
-
-
-import React from "react";
 
 const Testimonials = () => {
   const testimonialsData = [
@@ -17,6 +11,7 @@ const Testimonials = () => {
       image: Emmanuel,
       text:
         "Nice coaching, good mentors and all round focused people at work. I am enjoying the journey.",
+      url: "https://www.linkedin.com/in/eunit99/"
     },
     {
       name: "Christiana Sunbabaara",
@@ -24,6 +19,7 @@ const Testimonials = () => {
       image: Christiana,
       text:
         "This is the best learning platform I have ever worked with. Everything is professional and done at ease.",
+      url: "https://www.linkedin.com/in/christiana-sunbabaara-9a0769201/"
     },
     {
       name: "Hakeem Adjei",
@@ -31,6 +27,7 @@ const Testimonials = () => {
       image: Hakeem,
       text:
         "I enjoyed the service and the opportunity Skillembassy offers.",
+      url: "https://www.linkedin.com/in/hfadjei/"
     },
   ];
 
@@ -45,10 +42,8 @@ const Testimonials = () => {
               <div className="relative block rounded-md border border-neutral-700 bg-neutral-900 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
                 <div className="flex">
                   <div className="relative mx-4 -mt-4 w-full overflow-hidden rounded-md bg-cover bg-no-repeat shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
-                    <img src={testimonial.image} className="w-full" alt={testimonial.name} />
-                    <a href="#!">
-                      <div className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-[hsl(0,0%,98.4%,0.15)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100">
-                      </div>
+                    <a href={testimonial.url} target="_blank" rel="noopener noreferrer">
+                      <img src={testimonial.image} className="w-full" alt={testimonial.name} />
                     </a>
                   </div>
                 </div>
@@ -69,4 +64,3 @@ const Testimonials = () => {
 };
 
 export default Testimonials;
-
