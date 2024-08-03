@@ -44,7 +44,7 @@ const Hero = () => {
           Pioneering The Future Of Work
         </h1>
         <p className="text-lg text-neutral-100 mb-[40px]">
-          Learn, build and launch an impactful product. Earn with your Mind not with your Time. You will never work less if you don’t create your own way of doing so.
+          Learn, build and launch an impactful product. Earn with your Mind not with your Time.
         </p>
       </div>
 

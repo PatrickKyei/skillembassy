@@ -23,7 +23,7 @@ const Faqs = () => {
       id: 3,
       question: "What is the cost of Skillembassy Product Accelerator?",
       answer:
-        "The entire 10-week product accelerator is **GHC 550**. Please contact us for more information!",
+        "The entire 10-week product accelerator is **GHC 2550**. Please contact us for more information!",
     },
     {
       id: 4,

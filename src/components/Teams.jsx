@@ -68,7 +68,7 @@ const Teams = () => {
       ],
     },
     {
-      name: "Martin Busas",
+      name: "Martin Bussas",
       role: "Brussels, Germany",
       // bio: "Patrick is a product development manager who has served on other teams as a project manager.",
       avatarSrc: Martin,

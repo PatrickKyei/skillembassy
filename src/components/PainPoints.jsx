@@ -46,7 +46,7 @@ const PainPoints = () => {
         There's no substitute for doing your own work.
       </h2>
       <p className="text-lg text-neutral-100 text-center mb-[40px] lg:px-[240px]">
-        Self investment is the best gift you can give yourself. The ROI is high with dividend.
+        You will never work less if you don’t create your own way of doing so.
         {/* Gain REAL - WORLD EXPERIENCE!! - No boring case studies or theory */}
       </p>
       <div className="grid grid-cols-1 gap-0 lg:grid-cols-3">

@@ -44,7 +44,7 @@ const TeamSection = ({ sectionTitle, teamMembers }) => {
 const Team = () => {
   const advisoryTeamMembers = [
     {
-      name: 'Martin Busas',
+      name: 'Martin Bussas',
       role: 'Advisory Member',
       imageUrl: 'https://mdbcdn.b-cdn.net/img/new/avatars/2.jpg',
       company: 'Snr Consultant - Trout',
