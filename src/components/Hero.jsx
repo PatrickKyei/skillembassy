@@ -37,7 +37,7 @@ const Hero = () => {
                 d="M20 15v2a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3v-2"
               />
             </svg>
-            500+ Community Members
+            2000+ Community Members
           </a>
         </div>
         <h1 className="font-semibold text-3xl text-neutral-100 md:text-5xl my-8">
@@ -53,7 +53,7 @@ const Hero = () => {
           <button
             type="button"
             className="font-bold bg-neutral-50 text-sm text-neutral-950 mx-[5px] py-[10px] px-[30px] rounded-sm md:text-base hover:drop-shadow-xl">
-            Cohort 3.0
+            Programmes
           </button>
         </Link>
         <button

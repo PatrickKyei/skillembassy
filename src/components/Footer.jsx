@@ -8,6 +8,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 function Footer() {
+  const currentYear = new Date().getFullYear();
   return (
     <footer>
       <div className="py-12 md:py-16 border-t border-gray-200">
@@ -133,8 +134,8 @@ function Footer() {
                     </a>
                   </li>
                 </ul>
-              </div> */}
-            </div> */}
+              </div> }*/}
+            </div>
 
           </div>
 
@@ -190,7 +191,7 @@ function Footer() {
 
             {/* Attribution */}
             <div className="text-sm text-neutral-50">
-              <p>© 2023 Skillembassy. All rights reserved.</p>
+              <p>©  {currentYear} Skillembassy. All rights reserved.</p>
               <p>
                 Privacy and 
                 <a
@@ -202,6 +203,16 @@ function Footer() {
                   Terms
                 </a> {" "}of use
               </p>
+
+           {/* Imprints */}
+           <div className="mt-4">
+                <p>Skillembassy, Schenkendorfstrasse 7</p>
+                <p>34119 KASSEL, GERMANY</p>
+                <p>Phone: +49 561 810497-11</p>
+                <p>E-mail: martin@skillembassy.de</p>
+                <p>Authorised to represent: Patrick Kyei, Martin Bussas</p>
+                <p>Data Protection Officer: Reuben Frimpong</p>
+              </div>
             </div>
           </div>
         </div>
