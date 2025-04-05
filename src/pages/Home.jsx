@@ -1,5 +1,5 @@
 import React from "react";
-// import Banner from "../components/Banner";
+import Banner from "../components/Banner";
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import Benefits from "../components/Benefits";
@@ -26,7 +26,7 @@ function Home() {
       {/*  Site header */}
       <main className="p-8 md:mx[100px] grow">
         <Navbar />
-        {/* <Banner/> */}
+        <Banner/>
 
         {/*  Page content */}
         <Hero />
