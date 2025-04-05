@@ -1,30 +1,6 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 const Newsletter = () => {
-  useEffect(() => {
-    window.CustomSubstackWidget = {
-      substackUrl: "skillembassy.substack.com",
-      placeholder: "Your email",
-      buttonText: "Subscribe",
-      theme: "custom",
-      colors: {
-        primary: "#FFFFFF",
-        input: "#000000",
-        email: "#FFFFFF",
-        text: "#000000",
-      },
-    };
-
-    const script = document.createElement("script");
-    script.src = "https://substackapi.com/widget.js";
-    script.async = true;
-    document.body.appendChild(script);
-
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
-
   return (
     <div id="newsletter-section">
       <div className="mx-auto px-0 sm:px-0">
@@ -44,13 +20,19 @@ const Newsletter = () => {
 
             {/* CTA form */}
             <div className="column is-left">
-              <div id="custom-substack-embed"></div>
+              <iframe
+                src="https://patrickkyei.substack.com/embed"
+                width="480"
+                height="150"
+                style={{ border: "1px solid #000000", background: "black" }}
+                frameBorder="0"
+              ></iframe>
             </div>
           </div>
         </div>
       </div>
     </div>
   );
-}
+};
 
 export default Newsletter;
