@@ -1,7 +1,7 @@
 import React from "react";
-import UX from "../assets/ux.png";
-import Brand from "../assets/mastery.png";
-import Product from "../assets/product.png";
+import UX from "../assets/careers/modernEntrepreneur.png";
+import Brand from "../assets/careers/digitalMastery.png";
+import Product from "../assets/careers/modernEntrepreneur.png";
 import Digital from "../assets/digital.png";
 import Graphic from "../assets/graphic.png";
 // import Branding from "../assets/product.png";
@@ -10,7 +10,7 @@ import Graphic from "../assets/graphic.png";
 const Careers = () => {
   const careerData = [
     {
-      title: "Product Accelerator",
+      title: "The Modern Enterpreneur",
       // description: "What you choose to do defines your place in this world. Develop critical thinking and repertoire to define a long-term strategy to launch digital businesses.",
       imageUrl: Product,
     },
