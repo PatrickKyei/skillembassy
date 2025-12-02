@@ -14,7 +14,7 @@ const Hero = () => {
       <div className="flex flex-col text-center gap-[5px] md:w-[800px]">
         <div>
           <a
-            href="https://nas.io/skillembassy"
+            href="https://t.me/+ZsN7Vniy77UwMTY0"
             target="_blank"
             className="bg-neutral-800 text-neutral-400 text-xs font-medium inline-flex items-center px-2.5 py-0.4 rounded-md mb-4">
             <svg
