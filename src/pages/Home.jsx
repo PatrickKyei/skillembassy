@@ -1,6 +1,6 @@
 import React from "react";
 import Banner from "../components/Banner";
-import Navbar from "../components/Navbar";
+// import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 // import Benefits from "../components/Benefits";
 // import PainPoints from "../components/PainPoints";
@@ -16,8 +16,8 @@ import Hero from "../components/Hero";
 // import Faqs from "../components/Faqs";
 // import CallToAction from "../components/CallToAction";
 // import Partners from "../components/Partners";
-import Newsletter from "../components/Newsletter";
-import Footer from "../components/Footer";
+// import Newsletter from "../components/Newsletter";
+// import Footer from "../components/Footer";
 import "../App.css";
 
 function Home() {
@@ -25,7 +25,7 @@ function Home() {
     <div className="mb-[0px] flex flex-col overflow-hidden">
       {/*  Site header */}
       <main className="p-8 md:mx[100px] grow">
-        <Navbar />
+        {/* <Navbar /> */}
         <Banner/>
 
         {/*  Page content */}
@@ -44,11 +44,11 @@ function Home() {
         <Faqs />
         <Values/> */}
         {/* <CallToAction /> */}
-        <Newsletter />
+        {/* <Newsletter /> */}
       </main>
 
       {/*  Site footer */}
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
