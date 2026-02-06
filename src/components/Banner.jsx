@@ -17,7 +17,7 @@ const Banner = () => {
             
             <div className="flex items-center justify-center">
               <div className="font-bold text-sm text-neutral-100 mx-[5px] py-[10px] px-[30px] rounded-sm">
-                We are rolling out Admissions in August
+                We are rolling out Admissions in April
               </div>
               <button className="bg-neutral-600 p-1 rounded-full" onClick={handleDismiss}>
                 <MdClose className="text-white" />

@@ -14,7 +14,7 @@ const Hero = () => {
       <div className="flex flex-col text-center gap-[5px] md:w-[800px]">
         <div>
           <a
-            href="https://t.me/+ZsN7Vniy77UwMTY0"
+           href='https://nas.io/skillembassy' // href="https://t.me/+ZsN7Vniy77UwMTY0"
             target="_blank"
             className="bg-neutral-800 text-neutral-400 text-xs font-medium inline-flex items-center px-2.5 py-0.4 rounded-md mb-4">
             <svg
@@ -41,7 +41,7 @@ const Hero = () => {
           </a>
         </div>
         <h1 className="font-semibold text-3xl text-neutral-100 md:text-5xl my-8">
-          Pioneering The Future Of Work
+          Build once. Earn More. Enjoy Life.
         </h1>
         <p className="text-lg text-neutral-100 mb-[40px]">
           Learn, build and launch an impactful product. Earn with your Mind not with your Time.

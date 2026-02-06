@@ -25,6 +25,11 @@ Created and maintained with [React](/), HTML, [Tailwindcss](/)
 npm install
 ```
 
+### Browser Not Roading Content
+```
+npx update-browserslist-db@latest
+```
+
 #### Compiles and hot-reloads for development
 ```
 npm run dev
