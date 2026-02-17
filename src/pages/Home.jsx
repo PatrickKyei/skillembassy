@@ -15,7 +15,7 @@ import Hero from "../components/Hero";
 // import Teams from "../components/Teams";
 // import Faqs from "../components/Faqs";
 // import CallToAction from "../components/CallToAction";
-// import Partners from "../components/Partners";
+import Partners from "../components/Partners";
 // import Newsletter from "../components/Newsletter";
 // import Footer from "../components/Footer";
 import "../App.css";
@@ -30,7 +30,7 @@ function Home() {
 
         {/*  Page content */}
         <Hero />
-        {/* <Partners /> */}
+        <Partners />
         {/* <CTA /> */}
         {/* <Solution />
         <PainPoints/>
