@@ -1,11 +1,17 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 const Hero = () => {
   const scrollToBenefits = () => {
     const benefitsSection = document.getElementById('benefits-section');
     if (benefitsSection) {
       benefitsSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const scrollToCareers = () => {
+    const careersSection = document.getElementById('careers-section');
+    if (careersSection) {
+      careersSection.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
@@ -49,13 +55,12 @@ const Hero = () => {
       </div>
 
       <div className="flex justify-left mb-8 md:mb-[10px]">
-        <Link to="#">
-          <button
-            type="button"
-            className="font-bold bg-neutral-50 text-sm text-neutral-950 mx-[5px] py-[10px] px-[30px] rounded-sm md:text-base hover:drop-shadow-xl">
-            Programmes
-          </button>
-        </Link>
+        <button
+          type="button"
+          className="font-bold bg-neutral-50 text-sm text-neutral-950 mx-[5px] py-[10px] px-[30px] rounded-sm md:text-base hover:drop-shadow-xl"
+          onClick={scrollToCareers}>
+          Programmes
+        </button>
         <button
           type="button"
           className="font-bold text-sm text-neutral-50 border-[1px] border-neutral-500 rounded-sm py-[10px] px-[20px] md:text-base"

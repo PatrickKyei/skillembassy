@@ -1,23 +1,23 @@
 import React from "react";
+import Navbar from "../components/Navbar";
 import Banner from "../components/Banner";
-// import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
-// import Benefits from "../components/Benefits";
-// import PainPoints from "../components/PainPoints";
+import Partners from "../components/Partners";
+import Benefits from "../components/Benefits";
+import PainPoints from "../components/PainPoints";
 // import CTA from "../components/CTA";
 // import Values from "../components/Values";
-// import Careers from "../components/Careers";
+import Careers from "../components/Careers";
 // import Impacts from "../components/Impacts";
-// import Solution from "../components/Solution";
-// import Video from "../components/Video";
-// import Testimonials from "../components/Testimonials";
-// import Interview from "../components/Interview";
-// import Teams from "../components/Teams";
-// import Faqs from "../components/Faqs";
-// import CallToAction from "../components/CallToAction";
-import Partners from "../components/Partners";
-// import Newsletter from "../components/Newsletter";
-// import Footer from "../components/Footer";
+import Solution from "../components/Solution";
+import Video from "../components/Video";
+import Testimonials from "../components/Testimonials";
+import Interview from "../components/Interview";
+import Teams from "../components/Teams";
+import Faqs from "../components/Faqs";
+import CallToAction from "../components/CallToAction";
+import Newsletter from "../components/Newsletter";
+import Footer from "../components/Footer";
 import "../App.css";
 
 function Home() {
@@ -25,30 +25,30 @@ function Home() {
     <div className="mb-[0px] flex flex-col overflow-hidden">
       {/*  Site header */}
       <main className="p-8 md:mx[100px] grow">
-        {/* <Navbar /> */}
+        <Navbar />
         <Banner/>
 
         {/*  Page content */}
         <Hero />
         <Partners />
         {/* <CTA /> */}
-        {/* <Solution />
+        <Solution />
         <PainPoints/>
         <Video />
         <Benefits />
         <Careers />
-        <Impacts/>
+        {/* <Impacts/> */}
         <Testimonials />
         <Interview />
         <Teams />
         <Faqs />
-        <Values/> */}
-        {/* <CallToAction /> */}
-        {/* <Newsletter /> */}
+        {/* <Values/>  */}
+        <CallToAction />
+        <Newsletter />
       </main>
 
       {/*  Site footer */}
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

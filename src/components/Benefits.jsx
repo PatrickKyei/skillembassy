@@ -15,7 +15,7 @@ const careerData = [
   {
     imgUrl: Network,
     careerTitle: "Network",
-    text: "Gather professional references and meet like-minded folks from various backgrounds. Network with industry leaders and professionals.",
+    text: "Gather professional references and meet like-minded folks from various backgrounds. Network with likeminded and business people.",
   },
   {
     imgUrl: Projects,
