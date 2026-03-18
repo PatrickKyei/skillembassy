@@ -49,8 +49,8 @@ const Hero = () => {
         <h1 className="font-semibold text-3xl text-neutral-100 md:text-5xl my-8">
           Build once. Earn More. Enjoy Life.
         </h1>
-        <p className="text-lg text-neutral-100 mb-[40px]">
-          Learn, build and launch an impactful product. Earn with your Mind not with your Time.
+        <p className="text-2xl text-neutral-100 mb-[40px]">
+          Learn, build and launch an impactful product.
         </p>
       </div>
 

@@ -24,7 +24,7 @@ const Solution = () => {
             <h2 className="text-neutral-100 text-2xl font-bold mb-2">
               The Reality of employment
             </h2>
-            <p className="text-md font-normal text-neutral-500 mb-4">
+            <p className="text-md font-normal text-neutral-200 mb-4">
               Layoff and unemployment are increasingly common in today's economy. Traditional employment can no longer be the primary pathway to economic security for ambitious individuals. Population growth continues to outpace job creation. Automation steadily reduces labor demand. Public sector expansion is financially unsustainable. The gap between ambition and opportunity keeps widening.
             </p>
 
@@ -48,20 +48,12 @@ const Solution = () => {
             The Opportunity
           </a>
           <h1 className="text-neutral-100 text-2xl font-bold mb-2">
-            Earn with your mind not with your time
+            Ai, Automation & Social Media
           </h1>
-          <p className="text-md font-normal text-neutral-500 mb-6">
-            You live in a time where you can create your own career, rather than
-            be assigned one. It means that you are in charge of the problems you choose to solve, the career path
-            you launch yourself into, the skills you learn to earn a creative
-            income. This gives you the responsibility to quit your 9-5, do what
-            you love, build and monetize your skills, make new friends and
-            connections, grow a brand with a paying audience, spend more time
-            with family and friends, work from anywhere with no locations
-            barrier. Upgrade yourself by learning a high value skill. Your skill will land you a
-            high paying job, or even enable you to start a business.
-          </p>
-          
+          <p className="text-md font-normal text-neutral-200 mb-6">
+            Technology, Ai and automation has democratized wealth creation for the individual. 
+            With the right skills and mindset, individuals can solve real-world problems, 
+            create value and build sustainable income to raise their standard of living.</p>
           </div>
 
           <div
@@ -90,7 +82,7 @@ const Solution = () => {
             <h2 className="text-neutral-100 text-2xl font-bold mb-2">
               Our approach is hands-on.
             </h2>
-            <p className="text-md font-normal text-neutral-500 mb-4">
+            <p className="text-md font-normal text-neutral-200 mb-4">
               Our mission is to inspire motivated individuals to solve
               real-world problems by utilizing technology to develop new
               solutions that address social issues. Our approach is hands-on.
