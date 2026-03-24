@@ -15,7 +15,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="bg-neutral-950 border-b border-neutral-900 text-white p-4 fixed top-0 left-0 right-0 z-50">
+    <div className="bg-white border-b border-gray-200 text-gray-900 p-4 fixed top-0 left-0 right-0 z-50">
       {/* Flex container for logo, hamburger, and button */}
       <div className="flex flex-col md:flex-row items-center justify-between md:space-x-4">
         {/* Logo and Hamburger menu icon for small screens */}
@@ -27,9 +27,9 @@ const Navbar = () => {
           {/* Hamburger menu icon for small screens */}
           <div className="md:hidden cursor-pointer">
             {isNavOpen ? (
-              <MdClose onClick={handleToggleNav} className="text-white" size={30} />
+              <MdClose onClick={handleToggleNav} className="text-gray-900" size={30} />
             ) : (
-              <MdMenu onClick={handleToggleNav} className="text-white" size={30} />
+              <MdMenu onClick={handleToggleNav} className="text-gray-900" size={30} />
             )}
           </div>
         </div>
@@ -49,16 +49,16 @@ const Navbar = () => {
             {/* <Link to="/ourstory">Our Story</Link> */}
           </li>
           <li>
-            <Link to="/community">Community</Link>
+            {/* <Link to="/community">Community</Link> */}
           </li>
         </ul>
 
         {/* Button (visible on larger screens) */}
-        <Link to="#">
+        <Link to="https://paystack.com/pay/skillembassy-membership" target="_blank" rel="noopener noreferrer">
           <button onClick={handleScrollToNewsletter}
-            className={`font-semibold rounded-sm bg-purple-100 text-purple-800 px-4 py-2 rounded-full mt-4 hidden md:block`}
+            className={`font-semibold rounded-sm bg-emerald-100 text-emerald-800 px-4 py-2 rounded-full mt-4 hidden md:block`}
           >
-            Join Cohort
+            Start Earning
           </button>
         </Link>
       </div>

@@ -9,33 +9,40 @@ const Faqs = () => {
   const faqData = [
     {
       id: 1,
-      question: "What is Skillembassy Product Accelerator?",
+      question: "What is Skillembassy all about?",
       answer:
-        "Skillembassy is a 10-week program of hands-on learning. Based on your work styles and interests, you will gain real-world experience working on projects with a team of professionals including Product Designers, Developers, and more.",
+        "Skillembassy is a learning platform that gives you the opportunity to learn highly in-demand skills while you earn. Based on your work styles and interests, you will choose from a variety of earnable digital skills.",
     },
     {
       id: 2,
-      question: "What will I gain from Skillembassy Product Accelerator?",
+      question: "What will I gain from being part of Skillembassy?",
       answer:
-        "You will gain valuable skills and experience, learn industry best practices, and build a portfolio of real-world projects. Additionally, you will have the opportunity to collaborate with professionals and expand your network in the digital economy.",
+        "Your membership includes access to our comprehensive learning resources, workshops, challenges, templates, live sessions, and a supportive community of like-minded individuals. Opportunity to create an independent source of income through our referal program.",
     },
+    // {
+    //   id: 3,
+    //   question: "What is the cost of Skillembassy Product Accelerator?",
+    //   answer:
+    //     "The entire 10-week product accelerator is **GHC 2550**. Please contact us for more information!",
+    // },
     {
       id: 3,
-      question: "What is the cost of Skillembassy Product Accelerator?",
+      question: "What will I learn from Skillembassy?",
       answer:
-        "The entire 10-week product accelerator is **GHC 2550**. Please contact us for more information!",
+        "Our courses include but not limited to digital marketing, sales, mini importation, affiliate marketing, social media branding, online business creation etc.",
     },
-    {
+    // {
+    //   id: 5,
+    //   question: "Will Skillembassy Product Accelerator help me find work?",
+    //   answer:
+    //     "While Skillembassy does not guarantee job placement, the program is designed to equip you with the skills, knowledge, and experience that are highly sought after by employers. We support and empower you to start your own business.",
+    // },
+
+        {
       id: 4,
       question: "Can I apply without a college/university degree?",
       answer:
-        "Yes, you can apply to Skillembassy Product Accelerator even if you do not have a college or university degree. We value diversity and believe that passion, dedication, and a willingness to learn are more important than formal education.",
-    },
-    {
-      id: 5,
-      question: "Will Skillembassy Product Accelerator help me find work?",
-      answer:
-        "While Skillembassy does not guarantee job placement, the program is designed to equip you with the skills, knowledge, and experience that are highly sought after by employers. We support and empower you to start your own business.",
+        "Yes, you can apply to Skillembassy even if you do not have a college or university degree. We value diversity and believe that passion, dedication, and a willingness to learn are more important than formal education.",
     },
   ];
 
@@ -52,7 +59,7 @@ const Faqs = () => {
             data-aos="fade-right">
             Frequently Asked Questions
           </h2>
-          <p
+          {/* <p
             className="mt-12 text-lg font-normal text-neutral-50"
             data-aos="fade-right"
             data-aos-duration="1000">
@@ -72,7 +79,7 @@ const Faqs = () => {
                 Talk To A Learning Advisor
               </button>
             </a>
-          </div>
+          </div> */}
         </div>
         <div data-aos="fade-left">
           {faqData.map((faq) => (

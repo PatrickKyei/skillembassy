@@ -2,18 +2,21 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Banner from "../components/Banner";
 import Hero from "../components/Hero";
-import Partners from "../components/Partners";
+import HeroImage from "../components/HeroImage";
+import KeyFeatures from "../components/KeyFeatures";
+import Users from "../components/Users";
+// import Partners from "../components/Partners";
 import Benefits from "../components/Benefits";
 import PainPoints from "../components/PainPoints";
 // import CTA from "../components/CTA";
 // import Values from "../components/Values";
-import Careers from "../components/Careers";
+// import Careers from "../components/Careers";
 // import Impacts from "../components/Impacts";
-import Solution from "../components/Solution";
-import Video from "../components/Video";
-import Testimonials from "../components/Testimonials";
-import Interview from "../components/Interview";
-import Teams from "../components/Teams";
+// import Solution from "../components/Solution";
+// import Video from "../components/Video";
+// import Testimonials from "../components/Testimonials";
+// import Interview from "../components/Interview";
+// import Teams from "../components/Teams";
 import Faqs from "../components/Faqs";
 import CallToAction from "../components/CallToAction";
 import Newsletter from "../components/Newsletter";
@@ -30,25 +33,28 @@ function Home() {
 
         {/*  Page content */}
         <Hero />
-        <Partners />
+        {/* <HeroImage /> */}
+        <KeyFeatures />
+        {/* <Users /> */}
+        {/* <Partners /> */}
         {/* <CTA /> */}
-        <Solution />
-        <PainPoints/>
-        <Video />
-        <Benefits />
-        <Careers />
+        {/* <Solution /> */}
+        {/* <PainPoints/> */}
+        {/* <Video /> */}
+        {/* <Benefits /> */}
+        {/* <Careers /> */}
         {/* <Impacts/> */}
-        <Testimonials />
-        <Interview />
-        <Teams />
-        <Faqs />
+        {/* <Testimonials /> */}
+        {/* <Interview /> */}
+        {/* <Teams /> */}
+        {/* <Faqs /> */}
         {/* <Values/>  */}
-        <CallToAction />
-        <Newsletter />
+        {/* <CallToAction /> */}
+        {/* <Newsletter /> */}
       </main>
 
       {/*  Site footer */}
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

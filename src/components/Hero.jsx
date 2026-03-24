@@ -1,6 +1,29 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Hero = () => {
+  const [activeCategory, setActiveCategory] = useState('all');
+
+  const categories = [
+        { id: 'ai', label: 'Ai', icon: '📚' },
+    { id: 'sales', label: 'Sales', icon: '💻' },
+    { id: 'digital marketing', label: 'Digital Marketing', icon: '🌐' },
+    { id: 'branding', label: 'Branding', icon: '🗄️' },
+    { id: 'networking', label: 'Networking', icon: '🔗' },
+    { id: 'writing', label: 'Writing', icon: '🔐' },
+    { id: 'mini', label: 'Mini Importation', icon: '⚙️' },
+    { id: 'speaking', label: 'Public Speaking', icon: '🤖' },
+    { id: 'design', label: 'Graphic Design', icon: '⚡' },
+    { id: 'affiliate marketing', label: 'Affiliate Marketing', icon: '💾' },
+    { id: 'monetization', label: 'Monetization', icon: '📱' },
+  ];
+
+  const stats = [
+    { number: '100+', label: 'Contents' },
+    { number: '∞', label: 'Templates' },
+    { number: 'Free', label: 'Cost' },
+    { number: 'Zero', label: 'Ads' },
+  ];
+
   const scrollToBenefits = () => {
     const benefitsSection = document.getElementById('benefits-section');
     if (benefitsSection) {
@@ -8,71 +31,97 @@ const Hero = () => {
     }
   };
 
-  const scrollToCareers = () => {
-    const careersSection = document.getElementById('careers-section');
-    if (careersSection) {
-      careersSection.scrollIntoView({ behavior: 'smooth' });
-    }
+  const handleDiscover = () => {
+    console.log(`Discovering articles in category: ${activeCategory}`);
+    scrollToBenefits();
   };
 
   return (
-    <div className="flex flex-col items-center my-20 font-poppins lg:my-[130px]">
-      <div className="flex flex-col text-center gap-[5px] md:w-[800px]">
-        <div>
-          <a
-           href='https://nas.io/skillembassy' // href="https://t.me/+ZsN7Vniy77UwMTY0"
-            target="_blank"
-            className="bg-neutral-800 text-neutral-400 text-xs font-medium inline-flex items-center px-2.5 py-0.4 rounded-md mb-4">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth="2"
-              stroke="currentColor"
-              className="w-4 h-7 text-neutral-400">
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M12 2a5 5 0 0 0-5 5 5 5 0 0 0 5 5 5 5 0 0 0 5-5 5 5 0 0 0-5-5z"
-              />
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M20 15v2a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3v-2"
-              />
-            </svg>
-            2000+ Community Members
-          </a>
-        </div>
-        <h1 className="font-semibold text-3xl text-neutral-100 md:text-5xl my-8">
-          Build once. Earn More. Enjoy Life.
-        </h1>
-        <p className="text-2xl text-neutral-100 mb-[40px]">
-          Learn, build and launch an impactful product.
-        </p>
+    <div className="flex flex-col items-center py-16 md:py-32 px-4 font-poppins">
+      {/* Curated Badge */}
+      <div className="mb-8">
+        <a
+          href="https://paystack.shop/pay/skillembassy-membership"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 bg-emerald-500/10 text-emerald-400 text-xs font-medium px-3 py-1.5 rounded-full border border-emerald-500/20 hover:text-white transition-colors duration-200"
+        >
+          <span className="relative w-2 h-2">
+            <span className="absolute inset-0 block rounded-full bg-emerald-400 opacity-70 animate-ping"></span>
+            <span className="relative block w-2 h-2 rounded-full bg-emerald-400"></span>
+          </span>
+          200+ Community Members
+        </a>
       </div>
 
-      <div className="flex justify-left mb-8 md:mb-[10px]">
-        <button
-          type="button"
-          className="font-bold bg-neutral-50 text-sm text-neutral-950 mx-[5px] py-[10px] px-[30px] rounded-sm md:text-base hover:drop-shadow-xl"
-          onClick={scrollToCareers}>
-          Programmes
-        </button>
-        <button
-          type="button"
-          className="font-bold text-sm text-neutral-50 border-[1px] border-neutral-500 rounded-sm py-[10px] px-[20px] md:text-base"
-          onClick={scrollToBenefits}>
-          How it works?
-        </button>
+      {/* Main Heading */}
+      <div className="text-center max-w-4xl mb-12">
+        <h1 className="text-4xl md:text-6xl font-bold text-neutral-100 mb-4">
+          Work Less. Earn More.
+        </h1>
+        <h2 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+          Enjoy Life.
+        </h2>
+      </div>
+
+      {/* Subtitle */}
+      <p className="text-center text-neutral-300 text-lg md:text-xl max-w-2xl mb-16">
+        Earn While You Learn. Earn With Your Mind.
+      </p>
+
+      {/* Category Filters */}
+      <div className="flex flex-wrap justify-center gap-3 mb-12 max-w-5xl">
+        {categories.map((category) => (
+          <button
+            key={category.id}
+            onClick={() => setActiveCategory(category.id)}
+            className={`px-4 py-2 rounded-lg font-medium text-sm transition-all duration-200 ${
+              activeCategory === category.id
+                ? 'bg-neutral-100 text-neutral-900'
+                : 'bg-neutral-800 text-neutral-300 hover:bg-neutral-700'
+            }`}>
+            {category.label}
+          </button>
+        ))}
+      </div>
+
+      
+
+      {/* Stats */}
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        {stats.map((stat, index) => (
+          <div key={index}>
+            <p className="text-3xl md:text-4xl font-bold text-neutral-100 mb-1">
+              {stat.number}
+            </p>
+            <p className="text-neutral-400 text-sm md:text-base">
+              {stat.label}
+            </p>
+          </div>
+        ))}
+      </div>
+
+      {/* How it works hint */}
+      <div className="mt-16 pt-16 border-t border-neutral-700 text-center">
+        <p className="text-neutral-400 text-sm mb-4">How it works</p>
+        <div className="flex justify-center gap-2">
+          <svg
+            className="w-5 h-5 text-neutral-500 animate-bounce"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24">
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M19 14l-7 7m0 0l-7-7m7 7V3"
+            />
+          </svg>
+        </div>
       </div>
     </div>
   );
 };
-
-// Hero 2
 
 export default Hero;
 

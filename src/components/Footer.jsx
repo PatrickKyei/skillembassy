@@ -18,7 +18,7 @@ function Footer() {
             {/* 1st block */}
             <div className="md:col-span-4 lg:col-span-5">
               <div className="text-neutral-50">
-                Empowering you with relevant digital skills to solve immediate problems to create an independent source of income to increase the standard of living.
+                Empowering you with relevant digital skills to solve immediate social problems to create an independent source of income and increase the standard of living.
               </div>
             </div>
 

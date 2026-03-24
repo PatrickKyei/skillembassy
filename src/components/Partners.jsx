@@ -7,7 +7,7 @@ import Canva from "../assets/canva.png";
 import Miro from "../assets/miro.png";
 import Trello from "../assets/trello.png";
 import Facebook from "../assets/facebook.png";
-
+import Trout from "../assets/trout.jpg";
 
 
 const partnerData = [
@@ -23,14 +23,26 @@ const partnerData = [
     src: Github,
     alt: 'Github - logo',
   },
-  { src: Canva,
-  alt: 'Canva-logo'},
-  {src: Trello,
-  alt: 'Trello-logo'},
-  {src: Miro,
-  alt: 'Miro-logo'},
-    {src: Facebook,
-  alt: 'Facebook-logo'},
+  {
+    src: Canva,
+    alt: 'Canva-logo'
+  },
+  {
+    src: Trello,
+    alt: 'Trello-logo'
+  },
+  {
+    src: Miro,
+    alt: 'Miro-logo'
+  },
+  {
+    src: Facebook,
+    alt: 'Facebook-logo'
+  },
+  {
+    src: Trout,
+    alt: 'Trout-logo'
+  },
   // Add more partner data as needed
 ];
 
