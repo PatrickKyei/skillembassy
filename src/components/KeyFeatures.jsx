@@ -12,13 +12,13 @@ const featureItems = [
     emoji: '🖥️',
   },
   {
-    title: 'Link Shortener',
-    description: 'Shorten your affiliate or product links from your dashboard using our in-built product link shortener.',
+    title: 'Unique Link',
+    description: 'Get a unique link for your affiliate products from your dashboard using our in-built unique link generator.',
     emoji: '🔗',
   },
   {
     title: 'Live Feed',
-    description: 'Engage, network and connect with like-minded individuals.',
+    description: 'Get real time feedback, engage, network and connect with like-minded individuals.',
     emoji: '💬',
   },
 ];

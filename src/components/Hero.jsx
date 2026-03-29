@@ -18,10 +18,10 @@ const Hero = () => {
   ];
 
   const stats = [
-    { number: '100+', label: 'Contents' },
-    { number: '∞', label: 'Templates' },
-    { number: 'Free', label: 'Cost' },
-    { number: 'Zero', label: 'Ads' },
+    { number: '100+', label: 'Templates' },
+    { number: '∞', label: 'Contents' },
+    { number: 'Community', label: 'Support' },
+    { number: 'Earn', label: '$$' },
   ];
 
   const scrollToBenefits = () => {
@@ -50,14 +50,14 @@ const Hero = () => {
             <span className="absolute inset-0 block rounded-full bg-emerald-400 opacity-70 animate-ping"></span>
             <span className="relative block w-2 h-2 rounded-full bg-emerald-400"></span>
           </span>
-          200+ Community Members
+          2000+ Community Members
         </a>
       </div>
 
       {/* Main Heading */}
       <div className="text-center max-w-4xl mb-12">
         <h1 className="text-4xl md:text-6xl font-bold text-neutral-100 mb-4">
-          Work Less. Earn More.
+          Build Once. Earn More.
         </h1>
         <h2 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
           Enjoy Life.
@@ -66,8 +66,7 @@ const Hero = () => {
 
       {/* Subtitle */}
       <p className="text-center text-neutral-300 text-lg md:text-xl max-w-2xl mb-16">
-        Earn While You Learn. Earn With Your Mind.
-      </p>
+Build And Earn With The Creative Ability Of Your Mind      </p>
 
       {/* Category Filters */}
       <div className="flex flex-wrap justify-center gap-3 mb-12 max-w-5xl">
@@ -103,7 +102,7 @@ const Hero = () => {
 
       {/* How it works hint */}
       <div className="mt-16 pt-16 border-t border-neutral-700 text-center">
-        <p className="text-neutral-400 text-sm mb-4">How it works</p>
+        <p className="text-neutral-400 text-sm mb-4">Become A Member</p>
         <div className="flex justify-center gap-2">
           <svg
             className="w-5 h-5 text-neutral-500 animate-bounce"

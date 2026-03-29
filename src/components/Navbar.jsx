@@ -37,20 +37,14 @@ const Navbar = () => {
         {/* List of elements (visible on smaller screens) */}
         <ul className={`flex flex-col ${isNavOpen ? 'block' : 'hidden'} md:flex md:flex-row md:space-x-4 md:items-center`}>
           <li>
-            {/* <Link to="/courses">Courses</Link> */}
+            <Link to="/" onClick={() => setNavOpen(false)} className="hover:text-emerald-600">Home</Link>
           </li>
           <li>
-            {/* <Link to="/business">For Business</Link> */}
+            <Link to="/about" onClick={() => setNavOpen(false)} className="hover:text-emerald-600">About</Link>
           </li>
-          <li>
-            {/* <Link to="/inclusion">Inclusion</Link> */}
-          </li>
-          <li>
-            {/* <Link to="/ourstory">Our Story</Link> */}
-          </li>
-          <li>
-            {/* <Link to="/community">Community</Link> */}
-          </li>
+          {/* <li>
+            <Link to="/community" onClick={() => setNavOpen(false)} className="hover:text-emerald-600">Community</Link>
+          </li> */}
         </ul>
 
         {/* Button (visible on larger screens) */}
@@ -58,7 +52,7 @@ const Navbar = () => {
           <button onClick={handleScrollToNewsletter}
             className={`font-semibold rounded-sm bg-emerald-100 text-emerald-800 px-4 py-2 rounded-full mt-4 hidden md:block`}
           >
-            Start Earning
+            Start L-Earning
           </button>
         </Link>
       </div>

@@ -5,6 +5,7 @@ import Hero from "../components/Hero";
 import HeroImage from "../components/HeroImage";
 import KeyFeatures from "../components/KeyFeatures";
 import Users from "../components/Users";
+// import About from "../components/About";
 // import Partners from "../components/Partners";
 import Benefits from "../components/Benefits";
 import PainPoints from "../components/PainPoints";
@@ -12,7 +13,7 @@ import PainPoints from "../components/PainPoints";
 // import Values from "../components/Values";
 // import Careers from "../components/Careers";
 // import Impacts from "../components/Impacts";
-// import Solution from "../components/Solution";
+import Solution from "../components/Solution";
 // import Video from "../components/Video";
 // import Testimonials from "../components/Testimonials";
 // import Interview from "../components/Interview";
@@ -33,12 +34,14 @@ function Home() {
 
         {/*  Page content */}
         <Hero />
+
+        <Solution/>
+        {/* <About /> */}
         {/* <HeroImage /> */}
-        <KeyFeatures />
+        {/* <KeyFeatures /> */}
         {/* <Users /> */}
         {/* <Partners /> */}
         {/* <CTA /> */}
-        {/* <Solution /> */}
         {/* <PainPoints/> */}
         {/* <Video /> */}
         {/* <Benefits /> */}

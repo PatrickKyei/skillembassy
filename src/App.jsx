@@ -7,7 +7,8 @@ import Home from "./pages/Home";
 // import Business from "./pages/Business";
 // import Inclusion from "./pages/Inclusion";
 // import OurStory from "./pages/OurStory";
-import Community from "./pages/Community";
+// import Community from "./pages/Community";
+import About from "./pages/About";
 
 function App() {
   const location = useLocation();
@@ -32,12 +33,13 @@ function App() {
       <div className="container-main">
         <Routes>
           <Route exact path="/" element={<Home />} />
+          <Route path="about" element={<About />} />
           {/* <Route path="careers" element={<Courses />} /> */}
 
           {/* <Route path="business" element={<Business />} /> */}
           {/* <Route path="inclusion" element={<Inclusion />} /> */}
           {/* <Route path="ourstory" element={<OurStory />} /> */}
-          <Route path="community" element={<Community />} />
+          {/* <Route path="community" element={<Community />} /> */}
         </Routes>
       </div>
     </>
