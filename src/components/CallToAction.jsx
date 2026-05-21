@@ -1,45 +1,32 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 const CallToAction = () => {
   return (
-    <div className="pb-12 mb-8 mt-24">
-      <div
-        className="w-full text-center bg-neutral p-4 sm:p-8"
-        data-aos="fade-up">
-        <h5 className="mb-2 text-3xl font-bold text-neutral-100">
-          Ready to Change Your Life?
-        </h5>
-        <p className="mb-5 text-base text-neutral-100 sm:text-lg">
-          Try these next steps:{" "}
-        </p>
-        <div className="flex flex-col items-center">
-          {" "}
-          {/* Center vertically */}
-          {/* <Link to="application"> */}
-            <button
-              type="button"
-              className="bg-neutral-50 items-center rounded-md flex flex-row px-2 mx-[5px] py-2 drop-shadow-lg">
-              <svg className="pr-4"
-                xmlns="http://www.w3.org/2000/svg"
-                height="2em"
-                viewBox="0 0 448 512">
-                <path d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464H398.7c-8.9-63.3-63.3-112-129-112H178.3c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z" />
-              </svg>
-
-              <div className="grid grid-rows-2">
-                <p className="text-left font-bold text-sm text-neutral-950 py-[2px] rounded-sm md:text-base">
-                  Fill the form
-                </p>
-                <p className="font text-left text-sm text-neutral-950 py-[2px] rounded-sm md:text-base">
-                  Join our community forum
-                </p>
-              </div>
-            </button>
-          {/* </Link> */}
+    <section className="py-20 px-6 sm:px-8 lg:px-16">
+      <div className="mx-auto flex max-w-4xl flex-col items-center rounded-[2rem] border border-white/10 bg-neutral-950/90 p-10 text-center shadow-[0_40px_120px_rgba(0,0,0,0.45)] backdrop-blur-xl">
+        <div className="mb-8 inline-flex h-16 w-16 items-center justify-center rounded-3xl border border-white/10 bg-white/5 shadow-sm">
+          <svg viewBox="0 0 64 64" className="h-8 w-8 text-white" fill="none" stroke="currentColor" strokeWidth="2">
+            <path d="M20 24l12-12 12 12M32 12v40" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
         </div>
+
+        <h2 className="max-w-3xl text-4xl font-semibold leading-tight text-neutral-100 sm:text-5xl">
+          AI made everyone sound the same. Eden makes you sound unmistakably you.
+        </h2>
+
+        <p className="mt-6 max-w-2xl text-base leading-8 text-neutral-400 sm:text-lg">
+          Free for 7 days. No card. Downgrades to a free boards plan if you don't upgrade.
+        </p>
+
+        <button
+          type="button"
+          className="mt-10 inline-flex items-center justify-center rounded-full bg-gradient-to-r from-emerald-500 to-slate-700 px-8 py-4 text-base font-semibold text-white shadow-[0_20px_60px_rgba(16,185,129,0.22)] transition duration-300 hover:-translate-y-0.5 hover:shadow-[0_25px_90px_rgba(16,185,129,0.18)]"
+        >
+          Start Today
+          <span className="ml-3 text-xl">→</span>
+        </button>
       </div>
-    </div>
+    </section>
   );
 };
 

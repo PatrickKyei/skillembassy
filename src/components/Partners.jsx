@@ -51,7 +51,7 @@ const Partners = () => {
   const doubled = [...partnerData, ...partnerData];
 
   return (
-    <div className="container my-24 mx-auto md:px-6">
+    <div className="container my-16 mx-auto md:px-6">
       <section className="mb-24 text-center">
         <h2 className="text-neutral-100 mb-8 text-4xl font-semibold">Powered by</h2>
 
@@ -66,7 +66,7 @@ const Partners = () => {
                 <img
                   src={partner.src}
                   alt={partner.alt}
-                  className="h-20 md:h-24 lg:h-28 px-6 md:px-8 transition-all duration-300 filter grayscale hover:grayscale-0 object-contain max-w-full"
+                  className="h-20 md:h-24 lg:h-28 px-6 md:px-2 transition-all duration-300 filter grayscale hover:grayscale-0 object-contain max-w-full"
                 />
               </div>
             ))}

@@ -1,36 +1,38 @@
 import React from "react";
-import Navbar from "../components/Navbar";
 import Banner from "../components/Banner";
+import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
-import HeroImage from "../components/HeroImage";
-import KeyFeatures from "../components/KeyFeatures";
-import Users from "../components/Users";
+// import HeroImage from "../components/HeroImage";
+// import KeyFeatures from "../components/KeyFeatures";
+// import Users from "../components/Users";
 // import About from "../components/About";
-// import Partners from "../components/Partners";
+import Partners from "../components/Partners";
 import Benefits from "../components/Benefits";
-import PainPoints from "../components/PainPoints";
+// import PainPoints from "../components/PainPoints";
 // import CTA from "../components/CTA";
-// import Values from "../components/Values";
-// import Careers from "../components/Careers";
-// import Impacts from "../components/Impacts";
+import Values from "../components/Values";
+import Careers from "../components/Careers";
+import Impacts from "../components/Impacts";
+import Strategies from "../components/Strategies";
 import Solution from "../components/Solution";
-// import Video from "../components/Video";
+import Video from "../components/Video";
+import Message from "../components/Message";
 // import Testimonials from "../components/Testimonials";
 // import Interview from "../components/Interview";
 // import Teams from "../components/Teams";
-import Faqs from "../components/Faqs";
+// import Faqs from "../components/Faqs";
 import CallToAction from "../components/CallToAction";
-import Newsletter from "../components/Newsletter";
-import Footer from "../components/Footer";
+// import Newsletter from "../components/Newsletter";
+// import Footer from "../components/Footer";
 import "../App.css";
 
 function Home() {
   return (
-    <div className="mb-[0px] flex flex-col overflow-hidden">
+    <div className="mb-[0px] flex flex-col">
       {/*  Site header */}
-      <main className="p-8 md:mx[100px] grow">
+      <main className="pt-0 px-8 md:mx[100px] grow">
+        <Banner />
         <Navbar />
-        <Banner/>
 
         {/*  Page content */}
         <Hero />
@@ -40,19 +42,21 @@ function Home() {
         {/* <HeroImage /> */}
         {/* <KeyFeatures /> */}
         {/* <Users /> */}
-        {/* <Partners /> */}
         {/* <CTA /> */}
         {/* <PainPoints/> */}
-        {/* <Video /> */}
-        {/* <Benefits /> */}
-        {/* <Careers /> */}
-        {/* <Impacts/> */}
+        <Partners />
+        <Benefits />
+        <Video />
+        <Values />
+        <Careers />
+        <Impacts />
+        <Strategies />
+        <Message />
         {/* <Testimonials /> */}
         {/* <Interview /> */}
         {/* <Teams /> */}
         {/* <Faqs /> */}
-        {/* <Values/>  */}
-        {/* <CallToAction /> */}
+        <CallToAction />
         {/* <Newsletter /> */}
       </main>
 

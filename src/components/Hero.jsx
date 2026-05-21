@@ -1,213 +1,191 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+
+const stats = [
+
+{ number: '13,500+', label: 'Total Members' },
+
+{ number: '4,500+', label: 'Discord Members' },
+
+{ number: '85%', label: 'Confidence Boost' },
+
+{ number: '90%', label: 'Satisfaction Rate' },
+
+];
+
+const programs = ['_Ai', '_Sales', '_Marketing', '_Writing'];
 
 const Hero = () => {
-  const [activeCategory, setActiveCategory] = useState('all');
+  const [text, setText] = useState('');
+  const [programIndex, setProgramIndex] = useState(0);
+  const [phase, setPhase] = useState('waiting');
+  const [showCursor, setShowCursor] = useState(true);
 
-  const categories = [
-        { id: 'ai', label: 'Ai', icon: '📚' },
-    { id: 'sales', label: 'Sales', icon: '💻' },
-    { id: 'digital marketing', label: 'Digital Marketing', icon: '🌐' },
-    { id: 'branding', label: 'Branding', icon: '🗄️' },
-    { id: 'networking', label: 'Networking', icon: '🔗' },
-    { id: 'writing', label: 'Writing', icon: '🔐' },
-    { id: 'mini', label: 'Mini Importation', icon: '⚙️' },
-    { id: 'speaking', label: 'Public Speaking', icon: '🤖' },
-    { id: 'design', label: 'Graphic Design', icon: '⚡' },
-    { id: 'affiliate marketing', label: 'Affiliate Marketing', icon: '💾' },
-    { id: 'monetization', label: 'Monetization', icon: '📱' },
-  ];
+  useEffect(() => {
+    const cursorInterval = setInterval(() => {
+      setShowCursor((value) => !value);
+    }, 500);
 
-  const stats = [
-    { number: '100+', label: 'Templates' },
-    { number: '∞', label: 'Contents' },
-    { number: 'Community', label: 'Support' },
-    { number: 'Earn', label: '$$' },
-  ];
+    return () => clearInterval(cursorInterval);
+  }, []);
 
-  const scrollToBenefits = () => {
-    const benefitsSection = document.getElementById('benefits-section');
-    if (benefitsSection) {
-      benefitsSection.scrollIntoView({ behavior: 'smooth' });
+  useEffect(() => {
+    const currentProgram = programs[programIndex];
+    let timeout = null;
+
+    if (phase === 'waiting') {
+      timeout = setTimeout(() => setPhase('typing'), 1400);
+    } else if (phase === 'typing') {
+      if (text === currentProgram) {
+        setPhase('waitingDelete');
+      } else {
+        timeout = setTimeout(() => {
+          setText(currentProgram.substring(0, text.length + 1));
+        }, 120);
+      }
+    } else if (phase === 'waitingDelete') {
+      timeout = setTimeout(() => setPhase('deleting'), 1400);
+    } else if (phase === 'deleting') {
+      if (text === '') {
+        setProgramIndex((prev) => (prev + 1) % programs.length);
+        setPhase('waiting');
+      } else {
+        timeout = setTimeout(() => {
+          setText(currentProgram.substring(0, text.length - 1));
+        }, 80);
+      }
     }
-  };
 
-  const handleDiscover = () => {
-    console.log(`Discovering articles in category: ${activeCategory}`);
-    scrollToBenefits();
-  };
+    return () => clearTimeout(timeout);
+  }, [text, phase, programIndex]);
 
-  return (
-    <div className="flex flex-col items-center py-16 md:py-32 px-4 font-poppins">
-      {/* Curated Badge */}
-      <div className="mb-8">
-        <a
-          href="https://paystack.shop/pay/skillembassy-membership"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 bg-emerald-500/10 text-emerald-400 text-xs font-medium px-3 py-1.5 rounded-full border border-emerald-500/20 hover:text-white transition-colors duration-200"
-        >
-          <span className="relative w-2 h-2">
-            <span className="absolute inset-0 block rounded-full bg-emerald-400 opacity-70 animate-ping"></span>
-            <span className="relative block w-2 h-2 rounded-full bg-emerald-400"></span>
-          </span>
-          2000+ Community Members
-        </a>
-      </div>
+  const scrollToSection = () => {
 
-      {/* Main Heading */}
-      <div className="text-center max-w-4xl mb-12">
-        <h1 className="text-4xl md:text-6xl font-bold text-neutral-100 mb-4">
-          Build Once. Earn More.
-        </h1>
-        <h2 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
-          Enjoy Life.
-        </h2>
-      </div>
+const section = document.getElementById('solution-section');
 
-      {/* Subtitle */}
-      <p className="text-center text-neutral-300 text-lg md:text-xl max-w-2xl mb-16">
-Build And Earn With The Creative Ability Of Your Mind      </p>
+if (section) {
 
-      {/* Category Filters */}
-      <div className="flex flex-wrap justify-center gap-3 mb-12 max-w-5xl">
-        {categories.map((category) => (
-          <button
-            key={category.id}
-            onClick={() => setActiveCategory(category.id)}
-            className={`px-4 py-2 rounded-lg font-medium text-sm transition-all duration-200 ${
-              activeCategory === category.id
-                ? 'bg-neutral-100 text-neutral-900'
-                : 'bg-neutral-800 text-neutral-300 hover:bg-neutral-700'
-            }`}>
-            {category.label}
-          </button>
-        ))}
-      </div>
+section.scrollIntoView({ behavior: 'smooth' });
 
-      
+}
 
-      {/* Stats */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-        {stats.map((stat, index) => (
-          <div key={index}>
-            <p className="text-3xl md:text-4xl font-bold text-neutral-100 mb-1">
-              {stat.number}
-            </p>
-            <p className="text-neutral-400 text-sm md:text-base">
-              {stat.label}
-            </p>
-          </div>
-        ))}
-      </div>
-
-      {/* How it works hint */}
-      <div className="mt-16 pt-16 border-t border-neutral-700 text-center">
-        <p className="text-neutral-400 text-sm mb-4">Become A Member</p>
-        <div className="flex justify-center gap-2">
-          <svg
-            className="w-5 h-5 text-neutral-500 animate-bounce"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24">
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M19 14l-7 7m0 0l-7-7m7 7V3"
-            />
-          </svg>
-        </div>
-      </div>
-    </div>
-  );
 };
 
+  
+
+return (
+
+<section className="relative overflow-hidden bg-black text-white">
+
+<div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(139,92,246,0.22),_transparent_35%),radial-gradient(circle_at_100%_50%,_rgba(16,185,129,0.16),_transparent_30%)]" />
+
+<div className="relative mx-auto max-w-7xl px-4 py-28 sm:py-32">
+
+<div className="flex justify-center">
+  <a href="https://paystack.shop/pay/skillembassy-membership" target="_blank" rel="noopener noreferrer">
+
+<span className="inline-flex items-center rounded-full bg-white/10 px-4 py-2 text-xs uppercase tracking-[0.3em] text-slate-200">
+
+2,000+ Community Members
+
+</span>
+</a>
+</div>
+
+  
+
+<div className="mt-10 text-center">
+
+<p className="mb-4 text-sm uppercase tracking-[0.4em] text-slate-400">Join the network →</p>
+
+<h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl">
+
+Learn the future-proof skills
+
+</h1>
+
+<p className="mt-3 text-4xl font-bold tracking-tight text-cyan-400 sm:text-5xl md:text-6xl">
+  <span className="inline-flex items-center gap-1">
+    <span>{text}</span>
+    <span className="text-cyan-400" aria-hidden="true">
+      {showCursor ? (phase === 'waiting' ? '_' : '|') : ' '}
+    </span>
+  </span>
+</p>
+
+<p className="mx-auto mt-6 max-w-2xl text-sm leading-7 text-slate-300 sm:text-base md:text-lg">
+
+Turn Your Ideas & Interests Into Income, Optimize Your Workflow, & Build A High Energy Lifestyle. Start Your Learning Adventure Today!.
+
+</p>
+
+  
+
+<div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+
+<a
+
+href="https://paystack.shop/pay/skillembassy-membership"
+
+target="_blank"
+
+rel="noopener noreferrer"
+
+className="inline-flex items-center justify-center rounded-full bg-white px-7 py-3 text-sm font-semibold text-slate-950 shadow-lg shadow-white/10 transition hover:bg-slate-100"
+
+>
+
+Join The Cohort
+
+</a>
+
+<button
+
+type="button"
+
+onClick={scrollToSection}
+
+className="inline-flex items-center justify-center rounded-full border border-white/20 bg-white/5 px-7 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
+
+>
+
+Watch Classes
+
+</button>
+
+</div>
+
+</div>
+
+  
+
+<div className="mx-auto mt-16 max-w-4xl rounded-3xl border border-white/10 bg-slate-950/60 p-6 shadow-2xl shadow-violet-500/10 backdrop-blur-lg">
+
+<div className="grid gap-6 sm:grid-cols-2 xl:grid-cols-4">
+
+{stats.map((item) => (
+
+<div key={item.label} className="text-center">
+
+<p className="text-3xl font-semibold text-white sm:text-5xl">{item.number}</p>
+
+<p className="mt-2 text-sm text-slate-400">{item.label}</p>
+
+</div>
+
+))}
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+);
+
+};
+
+  
+
 export default Hero;
-
-// import React, { useState, useEffect } from "react";
-// import { Link, Route, Routes } from "react-router-dom";
-// import ClassesDesktop from "../assets/classes-desktop.png";
-// import ClassesMobile from "../assets/classes-mobile.png";
-
-// const Hero = () => {
-//   const [isMobile, setIsMobile] = useState(false);
-
-//   useEffect(() => {
-//     const checkWindowSize = () => {
-//       setIsMobile(window.innerWidth < 768); // Adjust the breakpoint as needed
-//     };
-
-//     // Add a listener to check window size on resize
-//     window.addEventListener("resize", checkWindowSize);
-
-//     // Initial check
-//     checkWindowSize();
-
-//     // Clean up the listener on unmount
-//     return () => {
-//       window.removeEventListener("resize", checkWindowSize);
-//     };
-//   }, []);
-
-//   return (
-//     <div className="flex flex-col lg:flex-row items-center my-20 font-poppins lg:my-[100px]">
-//       {/* Left Column (Content) */}
-//       <div className="w-full lg:w-[40%] flex flex-col text-left gap-[30px] md:w-[700px]">
-//         <h1 className="font-bold text-neutral-50 text-4xl md:text-6xl">
-//           Kickstart Your Lucrative Tech Career
-//         </h1>
-//         <p className="text-lg font-normal text-neutral-100 dark:text-gray-400 mb-6">
-//           Gain REAL - WORLD EXPERIENCE!! - No boring case studies or theory
-//         </p>
-
-//         {/* <div className="flex justify-left mb-8 md:mb-[10px]">
-//           <a href="https://nas.io/skillembassy">
-//             <button
-//               type="button"
-//               className="font-bold bg-neutral-50 text-sm text-neutral-950 mx-[5px] py-[10px] px-[30px] rounded-sm md:text-base hover:drop-shadow-xl"
-//             >
-//               Start Today
-//             </button>
-//           </a>
-
-//           <a href="https://calendly.com/skillembassy-advisor">
-//             <button
-//               type="button"
-//               className="font-bold text-sm text-neutral-50 border-[1px] border-gray-200 rounded-sm underline-offset-auto py-[10px] px-[20px] md:text-base hover:drop-shadow-xl"
-//             >
-//               How it works?
-//             </button>
-//           </a>
-//   </div> */}
-//         <div className="flex justify-left mb-8 md:mb-[10px]">
-//           <Link to="application">
-//             <button
-//               type="button"
-//               className="font-bold bg-neutral-50 text-sm text-neutral-950 mx-[5px] py-[10px] px-[30px] rounded-sm md:text-base hover:drop-shadow-xl">
-//               Start Today
-//             </button>
-//           </Link>
-
-//           <a href="https://calendly.com/skillembassy-advisor">
-//             <button
-//               type="button"
-//               className="font-bold text-sm text-neutral-50 border-[1px] border-gray-200 rounded-sm underline-offset-auto py-[10px] px-[20px] md:text-base hover:drop-shadow-xl">
-//               How it works?
-//             </button>
-//           </a>
-//         </div>
-//       </div>
-
-//       {/* Right Column (Image) */}
-//       <div className="w-full lg:w-[70%]">
-//         <img
-//           src={isMobile ? ClassesMobile : ClassesDesktop}
-//           alt="Your Image"
-//           className="w-full h-auto lg:w-auto lg:h-auto lg:block mx-auto" // Adjust image size for different screen sizes
-//         />
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Hero;

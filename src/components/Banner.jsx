@@ -1,39 +1,63 @@
 import React, { useState } from "react";
+
 import { MdClose } from "react-icons/md";
-import { Link } from "react-router-dom";
+
+  
 
 const Banner = () => {
-  const [isVisible, setIsVisible] = useState(true);
 
-  const handleDismiss = () => {
-    setIsVisible(false);
-  };
+const [isVisible, setIsVisible] = useState(true);
 
-  return isVisible ? (
-    <div className="fixed bottom-2 left-0 right-0 z-50">
-      <div className="container bg-white opacity-95 rounded-lg max-w-[1170px] mx-auto flex justify-center items-center border border-gray-200 shadow-lg">
-        <section className="mb-0">
-          <div className="py-2 text-center text-gray-900">
-            
-            <div className="flex items-center justify-center gap-3">
-              <div className="font-bold text-sm text-neutral-100 mx-[5px] py-[10px] px-[30px] rounded-sm">
-                 <a
-                  href="https://paystack.shop/pay/skillembassy-membership"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-500 underline hover:text-blue-600"
-                >Join</a> our vibrant community of learners and builders. 
-               
-              </div>
-              <button className="bg-gray-200 p-1 rounded-full" onClick={handleDismiss}>
-                <MdClose className="text-gray-700" />
-              </button>
-            </div>
-          </div>
-        </section>
-      </div>
-    </div>
-  ) : null;
+  
+
+const handleDismiss = () => {
+
+setIsVisible(false);
+
 };
+
+  
+
+return isVisible ? (
+
+<div className="relative z-50 bg-gradient-to-r from-violet-600 via-fuchsia-600 to-rose-500 text-white">
+
+<div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-2">
+
+<p className="text-sm font-semibold tracking-tight">
+
+Unlock Your Full Potential. Join Zero To Hero Challenge! 🚀
+
+<a href="https://paystack.shop/pay/skillembassy-membership" className="ml-2 underline decoration-white/70 underline-offset-4">
+
+Register Now
+
+</a>
+
+</p>
+
+<button
+
+className="rounded-full bg-white/10 px-2.5 py-1.5 text-white hover:bg-white/20 transition"
+
+onClick={handleDismiss}
+
+aria-label="Close announcement"
+
+>
+
+<MdClose size={18} />
+
+</button>
+
+</div>
+
+</div>
+
+) : null;
+
+};
+
+  
 
 export default Banner;
