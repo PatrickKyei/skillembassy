@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const steps = [
   {
@@ -27,87 +27,78 @@ const steps = [
 const Solution = () => {
   const [activeStep, setActiveStep] = useState(1);
 
+  useEffect(() => {
+    if (activeStep !== 2) return;
+
+    const scriptId = "twitter-wjs";
+    const existingScript = document.getElementById(scriptId);
+
+    if (!existingScript) {
+      const script = document.createElement("script");
+      script.id = scriptId;
+      script.src = "https://platform.twitter.com/widgets.js";
+      script.async = true;
+      document.body.appendChild(script);
+    } else if (window.twttr && window.twttr.widgets) {
+      window.twttr.widgets.load();
+    }
+  }, [activeStep]);
+
   const renderRightContent = () => {
     if (activeStep === 2) {
       return (
         <div className="relative">
-          <div className="rounded-[1.5rem] border border-white/10 bg-neutral-900/80 p-5 shadow-[0_24px_80px_rgba(0,0,0,0.35)]">
             <div className="grid gap-4">
               <div className="flex items-center justify-between text-neutral-400">
-                <div className="text-xl font-semibold text-white">Discover</div>
-                <div className="flex items-center gap-2">
-                  <button className="rounded-full border border-neutral-800 bg-neutral-950 px-3 py-2 text-sm text-neutral-300">All</button>
-                  <button className="rounded-full border border-neutral-800 bg-neutral-950 px-3 py-2 text-sm text-neutral-300">+ Add</button>
-                </div>
+                <div className="text-xl font-semibold text-white">Human Potential</div>
+              
               </div>
               <div className="rounded-3xl border border-white/10 bg-neutral-950 p-4">
-                <div className="h-32 rounded-3xl bg-neutral-900/80" />
+                <div className="rounded-3xl bg-neutral-900/70 p-4 text-sm leading-6 text-neutral-200">
+                  <blockquote className="twitter-tweet">
+                    <p lang="en" dir="ltr">
+                      You as a single person have more power today than a 20 person company of the past. The internet gave you the ability to learn anything. Social media gave you the leverage to reach anyone. AI is giving you the ability to create almost anything. Please don&apos;t waste it.
+                    </p>
+                    — Dan Koe (@thedankoe) <a href="https://x.com/thedankoe/status/1946955771176276293">September 27, 2023</a>
+                  </blockquote>
+                </div>
+                
                 <div className="mt-4 flex items-center gap-3 text-sm text-neutral-400">
-                  <span className="h-10 w-10 rounded-full bg-gradient-to-br from-amber-400 to-orange-500" />
-                  <div>
-                    <p className="font-semibold text-white">Feel Behind? (Do This for 30 Days)</p>
-                    <p className="text-xs text-neutral-500">Sahil Bloom · 173K views · 1mo</p>
-                  </div>
-                  <span className="ml-auto rounded-full bg-rose-500/10 px-2.5 py-1 text-xs text-rose-300">87×</span>
+                  
                 </div>
               </div>
-            </div>
+            
           </div>
 
-          <div className="absolute -right-8 top-12 w-72 rounded-[1.75rem] border border-white/10 bg-neutral-950/95 p-5 shadow-[0_30px_80px_rgba(0,0,0,0.35)]">
-            <div className="mb-5 text-xs uppercase tracking-[0.35em] text-neutral-400">Boost</div>
-            <div className="space-y-4">
-              <div className="rounded-3xl bg-neutral-900/90 p-4">
-                <p className="text-sm text-neutral-400 uppercase tracking-[0.2em] mb-2">A</p>
-                <p className="font-semibold text-white">Headline Variations</p>
-                <p className="mt-2 text-sm text-neutral-400">Brainstorm titles for your niche</p>
-              </div>
-              <div className="rounded-3xl bg-neutral-900/90 p-4">
-                <p className="text-sm text-neutral-400 uppercase tracking-[0.2em] mb-2">⌾</p>
-                <p className="font-semibold text-white">Break into Post Ideas</p>
-                <p className="mt-2 text-sm text-neutral-400">Mine 10 short-post angles from this</p>
-              </div>
-              <div className="rounded-3xl bg-neutral-900/90 p-4 ring-1 ring-emerald-300/20">
-                <p className="font-semibold text-white">Reverse Engineer</p>
-                <p className="mt-2 text-sm text-neutral-400">Break down why it works</p>
-              </div>
-              <div className="rounded-3xl bg-neutral-900/90 p-4">
-                <p className="font-semibold text-white">Replicate</p>
-                <p className="mt-2 text-sm text-neutral-400">Use the structure yourself</p>
-              </div>
-            </div>
-          </div>
+        
         </div>
       );
     }
 
     if (activeStep === 3) {
       const chips = [
-        "your curiosity and love for learning are your advantage",
-        "the missing piece was a vessel",
-        "the generalist emerges naturally from this triad",
-        "your edge lies more in intersection than it does in expertise",
-        "a perspective that only you can see",
-        "be duped into believing the promise that specialization is what makes a human valuable",
-        "self-education, self-interest, self-sufficiency",
-        "the ultimate moat is an opinion",
-        "everyone's niche is self-actualization",
-        "plot your world domination",
-        "monk mode",
-        "the boring fundamentals",
-        "there is no one right way",
-        "everyone is right and everyone is wrong",
-        "your ability to think is your greatest asset",
-        "take back control of your life",
-        "stop ignoring your inner voice",
-        "the death of the expert",
+        "curiosity-based learning",
+        "hands-on application",
+        "community-driven growth",
+        "mentorship and guidance",
+        "real-world problem solving",
+        "collaboration and networking",
+        "continuous feedback and improvement",
+        "personalized learning paths",
+        "experiential learning",
+        "monthly live training",
+        "Real time discussions and support",
+        "innovation and creativity",
+        "action articles and resources",
+
+
       ];
 
       return (
         <div className="rounded-[1.5rem] border border-white/10 bg-neutral-900/80 p-6 shadow-[0_24px_80px_rgba(0,0,0,0.35)]">
-          <div className="mb-5 text-sm uppercase tracking-[0.35em] text-neutral-400">Vocabulary</div>
+          <div className="mb-5 text-sm uppercase tracking-[0.35em] text-neutral-400">Modern Approach</div>
           <p className="mb-6 text-sm leading-7 text-neutral-300">
-            Phrases you actually say. Lift these from your own writing, not from how you think writing should sound.
+            Using real strategies that came from years of iteration, refinement, and testing.
           </p>
           <div className="flex flex-wrap gap-3">
             {chips.map((text, index) => (
@@ -126,46 +117,27 @@ const Solution = () => {
     return (
       <div className="rounded-[1.5rem] border border-white/10 bg-neutral-900/80 p-5 shadow-[0_24px_80px_rgba(0,0,0,0.35)]">
         <div className="flex items-center justify-between text-neutral-400 mb-6">
-          <div className="text-xl font-semibold text-white">Discover</div>
-          <div className="flex items-center gap-2">
-            <button className="rounded-full border border-neutral-800 bg-neutral-950 px-3 py-2 text-sm text-neutral-300">All</button>
-            <button className="rounded-full border border-neutral-800 bg-neutral-950 px-3 py-2 text-sm text-neutral-300">+ Add</button>
-          </div>
+          <div className="text-xl font-semibold text-white">Job Search</div>
+       
         </div>
-        <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-3xl border border-white/10 bg-neutral-950 p-4">
-            <div className="flex items-center gap-3 mb-3">
-              <span className="h-10 w-10 rounded-full bg-gradient-to-br from-emerald-400 to-lime-400" />
-              <div>
-                <p className="text-sm text-neutral-400">Mark Manson</p>
-                <p className="text-xs text-neutral-500">@markmanson · 8d</p>
-              </div>
-            </div>
-            <p className="text-sm leading-7 text-neutral-200">
-              An underrated cheat code in life: being incredibly reliable. Show up on time. Do what you say you will. Own your mistakes. It goes so much further than you think.
-            </p>
-            <div className="mt-4 flex flex-wrap gap-3 text-xs text-neutral-400">
-              <span>19K</span>
-              <span>3.2K</span>
-              <span>164</span>
-            </div>
-          </div>
+        <div className="grid gap-4 md:grid-cols-0">
+          
           <div className="rounded-3xl border border-white/10 bg-neutral-950 p-4">
             <div className="flex items-center gap-3 mb-3">
               <span className="h-10 w-10 rounded-full bg-gradient-to-br from-sky-400 to-indigo-500" />
               <div>
-                <p className="text-sm text-neutral-400">Kpaxs</p>
-                <p className="text-xs text-neutral-500">@kpaxs · 20d</p>
+                <p className="text-sm text-neutral-400">Jireh</p>
+                <p className="text-xs text-neutral-500">@jireh_001 · 20d</p>
               </div>
             </div>
             <p className="text-sm leading-7 text-neutral-200">
-              Want to become high-agency? Stop assuming the world is rigid. It’s not. Your assumptions are. Agency is a ladder you climb one rung at a time, and most people are stuck at the bottom.
-            </p>
+Sometimes I sit down and ask myself, what is really wrong with me?
+I’m almost 27. I’m a nurse, still waiting to be posted, still job hunting. I was working as a home care nurse but I’m currently home. I live with my sister. I help with the house chores, take care of her daughters, run errands, do everything I can. From the outside, it may look like I don’t have problems. But inside, I feel stuck. Like my life is on pause while everyone else is moving forward.
+I want to work. I want to earn my own money. I want to rent my own small place and start building my life. I don’t want to feel like I’m serving everyone while my own dreams are waiting.            </p>
             <div className="mt-4 flex flex-wrap gap-3 text-xs text-neutral-400">
               <span>1.3K</span>
-              <span>108</span>
+              <span>238</span>
               <span>11</span>
-              <span>73K</span>
             </div>
           </div>
         </div>
@@ -214,39 +186,16 @@ const Solution = () => {
             </div>
           </div>
 
-          <div className="mx-auto w-full max-w-3xl rounded-[2rem] border border-white/10 bg-neutral-950/90 p-6 shadow-[0_45px_110px_rgba(0,0,0,0.45)] backdrop-blur-xl">
-            <div className="rounded-[1.75rem] border border-white/10 bg-[#0c1014] p-6 shadow-[inset_0_0_0_1px_rgba(255,255,255,0.03)]">
               <div className="flex flex-col gap-6">
                 <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
-                  <div className="flex items-center gap-3 rounded-3xl bg-neutral-900/90 px-4 py-3">
-                    <svg
-                      className="h-5 w-5 text-neutral-400"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="1.5"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M21 21l-4.35-4.35m1.35-4.65A7 7 0 1 0 3 9a7 7 0 0 0 14 0z"
-                      />
-                    </svg>
-                    <span className="text-sm text-neutral-300">deep work</span>
-                  </div>
-                  <div className="flex flex-wrap items-center gap-3 text-sm text-neutral-400">
-                    <span className="rounded-full border border-neutral-800 bg-neutral-900/90 px-3 py-2">2 platforms</span>
-                    <span>Last month</span>
-                    <span className="rounded-full bg-emerald-400/10 px-3 py-2 text-emerald-300">10×</span>
-                  </div>
+                  
+                  
                 </div>
                 {renderRightContent()}
               </div>
             </div>
           </div>
-        </div>
-      </div>
+      
     </section>
   );
 };

@@ -26,7 +26,7 @@ return isVisible ? (
 
 <p className="text-sm font-semibold tracking-tight">
 
-Unlock Your Full Potential. Join Zero To Hero Challenge! 🚀
+The #1 Digital Community. Join Zero To Hero Challenge! 🚀
 
 <a href="https://paystack.shop/pay/skillembassy-membership" className="ml-2 underline decoration-white/70 underline-offset-4">
 

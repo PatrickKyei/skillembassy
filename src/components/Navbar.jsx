@@ -54,7 +54,7 @@ SA
 
 <div>
 
-<p className="text-sm uppercase tracking-[0.3em] text-slate-300">Skillembassy Aca.</p>
+<p className="text-sm uppercase tracking-[0.3em] text-slate-300">Skillembassy</p>
 
 <p className="text-xs text-slate-400">by Trout</p>
 
@@ -104,7 +104,7 @@ SA
 
 <a
 
-href="https://paystack.com/pay/skillembassy-membership"
+href="hhttps://web.facebook.com/groups/formasterminds"
 
 target="_blank"
 

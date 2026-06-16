@@ -2,9 +2,9 @@ import React, { useEffect, useState } from 'react';
 
 const stats = [
 
-{ number: '13,500+', label: 'Total Members' },
+{ number: '20,600+', label: 'Total Members' },
 
-{ number: '4,500+', label: 'Discord Members' },
+{ number: '2,000+', label: 'Learners' },
 
 { number: '85%', label: 'Confidence Boost' },
 
@@ -94,9 +94,9 @@ return (
   
 
 <div className="mt-10 text-center">
-
+  <a href="https://web.facebook.com/groups/formasterminds" target="_blank" rel="noopener noreferrer">
 <p className="mb-4 text-sm uppercase tracking-[0.4em] text-slate-400">Join the network →</p>
-
+</a>
 <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl">
 
 Learn the future-proof skills

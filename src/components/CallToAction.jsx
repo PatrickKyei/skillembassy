@@ -11,11 +11,11 @@ const CallToAction = () => {
         </div>
 
         <h2 className="max-w-3xl text-4xl font-semibold leading-tight text-neutral-100 sm:text-5xl">
-          AI made everyone sound the same. Eden makes you sound unmistakably you.
+          Build Once. Earn More. Enjoy Life.
         </h2>
 
         <p className="mt-6 max-w-2xl text-base leading-8 text-neutral-400 sm:text-lg">
-          Free for 7 days. No card. Downgrades to a free boards plan if you don't upgrade.
+          Join our community of motivated individuals who are learning the skills to create value, solve real-world problems, and build sustainable income.
         </p>
 
         <button

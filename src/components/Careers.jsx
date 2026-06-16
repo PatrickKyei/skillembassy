@@ -1,45 +1,108 @@
 import React, { useRef } from "react";
-import UX from "../assets/careers/modernEntrepreneur.png";
-import Brand from "../assets/careers/digitalMastery.png";
-import Digital from "../assets/digital.png";
-import Graphic from "../assets/graphic.png";
 
 const careerData = [
   {
-    title: "Brand voice",
-    label: "New custom voice",
-    imageUrl: Brand,
-    tagline: "Train AI on the intricacies of your voice.",
+    title: "Content Marketing",
+    icon: (
+      <svg viewBox="0 0 24 24" className="h-10 w-10 text-emerald-300" fill="none" stroke="currentColor" strokeWidth="1.8">
+        <path d="M6 6h12" strokeLinecap="round" />
+        <path d="M6 10h12" strokeLinecap="round" />
+        <path d="M6 14h8" strokeLinecap="round" />
+        <path d="M8 18h8" strokeLinecap="round" />
+        <path d="M17 7l4-4" strokeLinecap="round" />
+        <path d="M15 9l6-6" strokeLinecap="round" />
+      </svg>
+    ),
+    tagline: "Turn your ideas into content that attracts attention and converts.",
     body:
-      "Build your personal voice or custom voices in a guided chat, or by pasting links to your content. Then brainstorm, test ideas, or get feedback in that voice.",
-    badge: "Create voice",
+      "Build compelling content systems that grow your audience, boost engagement, and drive real revenue.",
+    badge: "Create consistently",
+    features: [
+      "Story frameworks that convert",
+      "Social, blog, and email content flows",
+      "Repeatable systems for daily output",
+    ],
   },
   {
-    title: "Validated ideas",
-    label: "Discover post winners",
-    imageUrl: UX,
-    tagline: "Find validated ideas to write about, on any platform.",
+    title: "Mental Monetization",
+    icon: (
+      <svg viewBox="0 0 24 24" className="h-10 w-10 text-blue-300" fill="none" stroke="currentColor" strokeWidth="1.8">
+        <path d="M12 3a6 6 0 0 0-6 6c0 2.5 1.5 4.7 3.6 5.6L10 22h4l.4-7.4A6.002 6.002 0 0 0 18 9a6 6 0 0 0-6-6Z" />
+        <path d="M12 11v6" strokeLinecap="round" />
+        <path d="M10 13h4" strokeLinecap="round" />
+      </svg>
+    ),
+    tagline: "Convert your expertise into paid offers and recurring income.",
     body:
-      "Search 1M+ high-performing posts in your niche across X, YouTube, Instagram, TikTok, LinkedIn, and Substack. Sort by views, format, or outlier multiplier.",
-    badge: "Study ideas",
+      "Learn to identify market-ready ideas, package them as premium products, and sell your knowledge with confidence.",
+    badge: "Monetize ideas",
+    features: [
+      "Rapid idea-to-offer mapping",
+      "Pricing, launches, and high-ticket positioning",
+      "Sales messaging built for trust and conversions",
+    ],
   },
   {
-    title: "Creator content",
-    label: "Study top feeds",
-    imageUrl: Digital,
-    tagline: "Study any creator's top content, add them to lists.",
+    title: "Affiliate Marketing",
+    icon: (
+      <svg viewBox="0 0 24 24" className="h-10 w-10 text-pink-300" fill="none" stroke="currentColor" strokeWidth="1.8">
+        <path d="M7 12h4" strokeLinecap="round" />
+        <path d="M13 12h4" strokeLinecap="round" />
+        <path d="M11 8l4 4-4 4" strokeLinecap="round" />
+        <path d="M7 5l-3 3 3 3" strokeLinecap="round" />
+        <path d="M17 14l4 3-4 3" strokeLinecap="round" />
+      </svg>
+    ),
+    tagline: "Earn commissions from products and services without building your own offer.",
     body:
-      "Pick any creator and slice their feed by views, outlier multiplier, or format. Save the wins straight into a list you can pull back open later.",
-    badge: "Add to list",
+      "Master affiliate funnels, partner outreach, and traffic strategies that generate scalable commissions.",
+    badge: "Launch affiliate",
+    features: [
+      "High-converting affiliate funnel blueprints",
+      "Sponsor and partner outreach tactics",
+      "Tracking, scaling, and repeatable launches",
+    ],
   },
   {
-    title: "Viral templates",
-    label: "Use a viral board",
-    imageUrl: Graphic,
-    tagline: "Start with a viral board template for guidance.",
+    title: "Autopilot Sales",
+    icon: (
+      <svg viewBox="0 0 24 24" className="h-10 w-10 text-yellow-300" fill="none" stroke="currentColor" strokeWidth="1.8">
+        <path d="M4 8h16" strokeLinecap="round" />
+        <path d="M12 8v12" strokeLinecap="round" />
+        <path d="M8 12l4-4 4 4" strokeLinecap="round" />
+        <path d="M8 16h8" strokeLinecap="round" />
+      </svg>
+    ),
+    tagline: "Build automated sales systems that close deals while you sleep.",
     body:
-      "Pick from viral YouTube, X, and Reels templates. Chat alongside them to have Eden guide you through writing your own posts and scripts.",
-    badge: "Open template",
+      "Discover the step-by-step framework for ads, funnels, and follow-up flows that turn cold traffic into recurring customers.",
+    badge: "Automate sales",
+    features: [
+      "High-converting funnel sequences",
+      "Automated follow-up and retargeting",
+      "Scale revenue with minimal manual work",
+    ],
+  },
+
+    {
+    title: "Online Importation",
+    icon: (
+      <svg viewBox="0 0 24 24" className="h-10 w-10 text-cyan-300" fill="none" stroke="currentColor" strokeWidth="1.8">
+        <path d="M4 7h16v10H4z" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M7 7l5-4 5 4" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M12 13v4" strokeLinecap="round" />
+        <path d="M9 16h6" strokeLinecap="round" />
+      </svg>
+    ),
+    tagline: "Learn how to source, ship, and sell imported products profitably.",
+    body:
+      "Master the full importation process from supplier sourcing and customs to retail-ready fulfillment.",
+    badge: "Start importing",
+    features: [
+      "Find profitable international suppliers",
+      "Navigate customs, duties and compliance",
+      "Launch high-margin import products fast",
+    ],
   },
 ];
 
@@ -59,16 +122,22 @@ const Careers = () => {
       <div className="mx-auto max-w-6xl">
         <div className="flex flex-col gap-4 text-center lg:text-left">
           <p className="text-sm uppercase tracking-[0.35em] text-purple-300">Careers & creative workflows</p>
-          <h2 className="text-4xl md:text-5xl font-semibold leading-tight">
-            Everything you need to write content people love <span className="text-emerald-300">(that doesn't feel fake.)</span>
-          </h2>
+          <div className="inline-flex flex-col items-center gap-3 lg:items-start">
+            <div className="rounded-full border border-emerald-400/20 bg-emerald-400/5 px-4 py-2 text-sm uppercase tracking-[0.35em] text-emerald-300">
+              Flat 45% off on one challenge
+            </div>
+            <h2 className="text-4xl md:text-5xl font-semibold leading-tight">
+              Everything you need to succeed in the digital economy
+            </h2>
+          </div>
           <p className="max-w-3xl text-base text-neutral-300 sm:text-lg">
-            Explore the workflow suite that helps you study the right examples, map them into your own work, and turn them into templates that actually convert.
+            Learn the systems, tools and courses designed for creators, coaches, and founders.
+            Each program is built to help you launch faster, write smarter, and earn more.
           </p>
         </div>
 
         <div className="relative mt-12">
-          <div className="absolute right-0 top-0 flex gap-3">
+          <div className="absolute right-0 top-0 z-10 flex gap-3">
             <button
               type="button"
               onClick={() => scroll("left")}
@@ -99,39 +168,39 @@ const Careers = () => {
             {careerData.map((career, index) => (
               <article
                 key={index}
-                className="min-w-[320px] max-w-[420px] shrink-0 rounded-[2rem] border border-white/10 bg-neutral-950 shadow-[0_25px_80px_rgba(0,0,0,0.35)]"
+                className="min-w-[320px] max-w-[420px] shrink-0 overflow-hidden rounded-[2rem] border border-white/10 bg-neutral-950/90 shadow-[0_30px_120px_rgba(0,0,0,0.35)]"
               >
-                <div className="relative h-80 overflow-hidden rounded-t-[2rem] bg-neutral-900">
-                  <img
-                    src={career.imageUrl}
-                    alt={career.title}
-                    className="h-full w-full object-cover transition duration-500 hover:scale-105"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-neutral-950/95 via-neutral-950/10 to-transparent" />
-                  <div className="absolute inset-x-0 top-4 px-5">
-                    <div className="flex items-center justify-between">
-                      <span className="rounded-full border border-white/10 bg-black/40 px-3 py-1 text-xs uppercase tracking-[0.2em] text-neutral-200">
-                        {career.label}
-                      </span>
-                      <button className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-black/40 text-neutral-100 transition hover:bg-black/60">
-                        <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2">
-                          <path d="M12 5v14M5 12h14" strokeLinecap="round" strokeLinejoin="round" />
-                        </svg>
-                      </button>
+                <div className="rounded-t-[2rem] bg-gradient-to-br from-neutral-900 via-neutral-950 to-neutral-900 px-6 py-8">
+                  <div className="flex items-center gap-4">
+                    <div className="flex h-14 w-14 items-center justify-center rounded-3xl bg-white/5 ring-1 ring-white/10">
+                      {career.icon}
                     </div>
+                    <span className="inline-flex rounded-full bg-purple-300/10 px-4 py-2 text-xs uppercase tracking-[0.35em] text-purple-200">
+                      {career.badge}
+                    </span>
                   </div>
+                  <h3 className="mt-6 text-3xl font-semibold text-white">{career.title}</h3>
+                  <p className="mt-4 text-sm text-neutral-300">{career.tagline}</p>
                 </div>
-                <div className="space-y-4 p-6">
-                  <div className="rounded-3xl bg-neutral-900/80 p-4 text-sm text-neutral-300 ring-1 ring-white/10">
-                    <p className="font-semibold text-white">{career.tagline}</p>
-                  </div>
+
+                <div className="space-y-5 border-t border-white/10 px-6 py-7">
+                  <p className="text-neutral-300">{career.body}</p>
                   <div className="space-y-3">
-                    <h3 className="text-2xl font-semibold text-white">{career.title}</h3>
-                    <p className="text-sm leading-7 text-neutral-300">{career.body}</p>
+                    {career.features.map((feature, itemIndex) => (
+                      <div key={itemIndex} className="flex items-start gap-3 text-sm text-neutral-300">
+                        <span className="mt-1 inline-flex h-2.5 w-2.5 rounded-full bg-emerald-300" />
+                        <span>{feature}</span>
+                      </div>
+                    ))}
                   </div>
-                  <div className="flex items-center justify-between rounded-3xl bg-neutral-900/80 px-4 py-3 text-sm text-neutral-200 ring-1 ring-white/10">
-                    <span>{career.badge}</span>
-                    <span className="rounded-full bg-emerald-400/10 px-3 py-1 text-emerald-300">View</span>
+                  <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+                    <span className="text-sm uppercase tracking-[0.25em] text-neutral-400">Course preview</span>
+                    <button
+                      type="button"
+                      className="rounded-full bg-emerald-400 px-5 py-3 text-sm font-semibold text-neutral-950 transition hover:bg-emerald-300"
+                    >
+                      Enroll now
+                    </button>
                   </div>
                 </div>
               </article>

@@ -23,7 +23,7 @@ import Message from "../components/Message";
 // import Faqs from "../components/Faqs";
 import CallToAction from "../components/CallToAction";
 // import Newsletter from "../components/Newsletter";
-// import Footer from "../components/Footer";
+import Footer from "../components/Footer";
 import "../App.css";
 
 function Home() {
@@ -61,7 +61,7 @@ function Home() {
       </main>
 
       {/*  Site footer */}
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
