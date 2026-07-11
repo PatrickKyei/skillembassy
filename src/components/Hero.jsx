@@ -95,7 +95,7 @@ return (
 
 <div className="mt-10 text-center">
   <a href="https://web.facebook.com/groups/formasterminds" target="_blank" rel="noopener noreferrer">
-<p className="mb-4 text-sm uppercase tracking-[0.4em] text-slate-400">Join the network →</p>
+<p className="mb-4 text-sm uppercase tracking-[0.4em] text-slate-400">A Community For Creators</p>
 </a>
 <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl">
 
@@ -124,7 +124,7 @@ Turn Your Ideas & Interests Into Income, Optimize Your Workflow, & Build A High 
 
 <a
 
-href="https://paystack.shop/pay/skillembassy-membership"
+href="https://selar.com/skillembassy-tiers"
 
 target="_blank"
 
@@ -134,23 +134,10 @@ className="inline-flex items-center justify-center rounded-full bg-white px-7 py
 
 >
 
-Join The Cohort
+Join 500+ Creators
 
 </a>
 
-<button
-
-type="button"
-
-onClick={scrollToSection}
-
-className="inline-flex items-center justify-center rounded-full border border-white/20 bg-white/5 px-7 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
-
->
-
-Watch Classes
-
-</button>
 
 </div>
 

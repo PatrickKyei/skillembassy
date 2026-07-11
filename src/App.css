@@ -1,20 +1,20 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #000;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 .container-main {
-  width: 90%; /* Default width for both mobile and desktop */
-  margin: 0 auto; /* Center the container horizontally */
-}
-
-/* Media query for mobile devices */
-@media (max-width: 767px) {
-  .container-main {
-    width: 100%; /* Set full width for mobile screens */
-  }
-}
-
-
-/* Media query for desktop devices */
-@media (min-width: 768px) {
-  .container-main {
-    width: 90%; /* Set 80% width for desktop screens */
-  }
+  width: 100%;
+  margin: 0 auto;
+  background: #000;
 }
 

@@ -1,88 +1,82 @@
-import React from "react";
-import {
-  FiUsers,
-  FiTool,
-  FiLink,
-  FiFolder,
-  FiMap,
-  FiBriefcase,
-  FiCode,
-  FiUser,
-} from "react-icons/fi";
+import React from 'react';
 
-const benefitsData = [
+const courseTopics = [
   {
-    icon: FiUsers,
-    title: "Cohort Program",
-    text: "Free three (3) months training program for newbies in tech.",
+    title: 'Content Writing',
+    description: 'become a freelance writer, ghostwriter, or social media manager. Learn how to create short or long form content for social media.',
   },
   {
-    icon: FiTool,
-    title: "Workshop Labs",
-    text: "Virtual hands-on learning experience with industry experts.",
+    title: 'Audience Building',
+    description: 'the one thing holding most businesses back from succeeding on social media.',
   },
   {
-    icon: FiLink,
-    title: "Talent Network",
-    text: "Matching organisations with potential job seekers.",
+    title: 'Branding',
+    description: 'become a brand designer or brand consultant. Learn how to make your brand stand out by leveraging your personality.',
   },
   {
-    icon: FiFolder,
-    title: "Cohort Resources",
-    text: "Learning resources from our instructors & mentors.",
+    title: 'Newsletter Writing',
+    description: 'become an email marketer, ghostwriter, or do guest posts in publications.',
   },
   {
-    icon: FiMap,
-    title: "Beyond Roadmap",
-    text: "Open solution to provide learning insights, tips and ideas.",
+    title: 'Lead Magnet Creation',
+    description: 'help people build their email list and land clients.',
   },
   {
-    icon: FiBriefcase,
-    title: "Open Job Listing",
-    text: "Open digital job listing in tech for our community members.",
+    title: 'Digital Marketing',
+    description: 'understand promotions, audience nurturing, and product launches.',
   },
   {
-    icon: FiCode,
-    title: "Open Projects",
-    text: "Hands-on experience building real world solutions with peers.",
+    title: 'Offer Creation',
+    description: 'Create digital product or service that sells (like freelancing, consulting, cohorts, courses, eBooks, and more).',
   },
   {
-    icon: FiUser,
-    title: "Startup Interns",
-    text: "Our interns are ready to bring innovative ideas to your projects.",
+    title: 'Sales & Funnels',
+    description: 'Learn the sales process and how to turn leads from cold to hot with qualification, emails, and manual outreach.',
+  },
+  {
+    title: 'Copywriting',
+    description: 'become a funnel builder, write landing pages, and use persuasion to make more sales.',
+  },
+  {
+    title: 'Combine Them All',
+    description: 'you can create irresistible offers that others can\'t compete with.',
   },
 ];
 
-const Benefits = () => {
+export default function Benefits() {
   return (
-    <div id="benefits-section" className="container my-20 lg:my-[50px]">
-      {/* <h2 className="text-left mb-20 text-4xl font-bold text-neutral-100">
-        Why is it so great?
-      </h2> */}
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
-        {benefitsData.map((item) => {
-          const Icon = item.icon;
-          return (
-            <div
-              key={item.title}
-              className="text-left border border-neutral-700 bg-neutral-900 text-neutral-100 hover:bg-gradient-to-r from-neutral-900 to-neutral-800 hover:text-white p-6 rounded-sm shadow-md"
-            >
-              <div className="text-left mb-6">
-                <Icon className="h-6 w-6 text-white" />
-              </div>
+    <div className="max-w-4xl mx-auto px-6 py-12">
+      <h2 className="text-5xl sm:text-6xl font-extrabold tracking-tighter text-white leading-[1.05] text-center">
+        What's Inside Skillembassy &amp; the Community Library?
+      </h2>
 
-              <div className="text-left">
-                <h1 className="font-bold text-xl">{item.title}</h1>
-              </div>
-              <p className="text-md font-normal text-neutral-100 my-2">
-                {item.text}
-              </p>
+      <p className="mt-6 text-xl text-slate-300 text-center max-w-3xl mx-auto leading-relaxed">
+        These are the skills and topics you will learn in Skillembassy.{' '}
+        <span className="font-medium text-white">
+          You can use these to build your own business, or use them as topics and skills that you teach and sell (with enough practice).
+        </span>
+      </p>
+
+      <div className="mt-12 space-y-8 text-left">
+        {courseTopics.map((topic, index) => (
+          <div key={index} className="flex gap-4">
+            <div className="mt-2 h-3 w-3 flex-shrink-0 rounded-full bg-violet-400" />
+            <div>
+              <span className="text-[1.35rem] font-semibold text-white">
+                {topic.title}
+              </span>
+              <span className="text-[1.35rem] font-medium text-slate-400 mx-2">–</span>
+              <span className="text-[1.1rem] leading-relaxed text-slate-300">
+                {topic.description}
+              </span>
             </div>
-          );
-        })}
+          </div>
+        ))}
       </div>
+
+      <p className="mt-16 text-xl font-medium text-white text-center max-w-3xl mx-auto leading-relaxed">
+        At Skillembassy, you will learn all of the skills that turn you into a future-proof creator (if you execute with consistency).
+      </p>
     </div>
   );
-};
-
-export default Benefits;
+}

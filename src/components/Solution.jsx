@@ -84,11 +84,9 @@ const Solution = () => {
         "real-world problem solving",
         "collaboration and networking",
         "continuous feedback and improvement",
-        "personalized learning paths",
         "experiential learning",
         "monthly live training",
         "Real time discussions and support",
-        "innovation and creativity",
         "action articles and resources",
 
 

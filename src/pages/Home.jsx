@@ -2,65 +2,47 @@ import React from "react";
 import Banner from "../components/Banner";
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
-// import HeroImage from "../components/HeroImage";
-// import KeyFeatures from "../components/KeyFeatures";
-// import Users from "../components/Users";
-// import About from "../components/About";
-import Partners from "../components/Partners";
-import Benefits from "../components/Benefits";
-// import PainPoints from "../components/PainPoints";
-// import CTA from "../components/CTA";
-import Values from "../components/Values";
-import Careers from "../components/Careers";
-import Impacts from "../components/Impacts";
-import Strategies from "../components/Strategies";
 import Solution from "../components/Solution";
-import Video from "../components/Video";
-import Message from "../components/Message";
-// import Testimonials from "../components/Testimonials";
-// import Interview from "../components/Interview";
-// import Teams from "../components/Teams";
-// import Faqs from "../components/Faqs";
-import CallToAction from "../components/CallToAction";
-// import Newsletter from "../components/Newsletter";
+import Who from "../components/Who";
+import Results from "../components/Results";
+import Inside from "../components/Inside";
+import Testimonials from "../components/Testimonials";
+import Funded from "../components/Funded";
+import Benefits from '../components/Benefits';
+import Trap from '../components/Trap';
+import Membership from '../components/Membership';
+import Featured from "../components/Featured";
+import Pricing from "../components/Pricing";
+import Offer from "../components/Offer";
+import FAQ from "../components/FAQ";
+import Guarantee from "../components/Guarantee";
 import Footer from "../components/Footer";
+import FinalOffer from "../components/FinalOffer";
 import "../App.css";
 
 function Home() {
   return (
-    <div className="mb-[0px] flex flex-col">
-      {/*  Site header */}
-      <main className="pt-0 px-8 md:mx[100px] grow">
+    <div id="creator-central" className="min-h-screen bg-black text-white">
+      <main className="mx-auto max-w-6xl px-4 py-0">
         <Banner />
         <Navbar />
-
-        {/*  Page content */}
         <Hero />
-
-        <Solution/>
-        {/* <About /> */}
-        {/* <HeroImage /> */}
-        {/* <KeyFeatures /> */}
-        {/* <Users /> */}
-        {/* <CTA /> */}
-        {/* <PainPoints/> */}
-        <Partners />
+        <Solution />
+        <Who />
+        <Featured />
+        <Results />
+        <Inside />
+        <Testimonials />
+        <Funded />
+        <Trap />
         <Benefits />
-        <Video />
-        <Values />
-        <Careers />
-        <Impacts />
-        <Strategies />
-        <Message />
-        {/* <Testimonials /> */}
-        {/* <Interview /> */}
-        {/* <Teams /> */}
-        {/* <Faqs /> */}
-        <CallToAction />
-        {/* <Newsletter /> */}
+        <Membership />
+        <Pricing />
+        <Offer/>
+        <FAQ />
+        <Guarantee />
+        <FinalOffer />
       </main>
-
-      {/*  Site footer */}
       <Footer />
     </div>
   );
