@@ -24,9 +24,9 @@ const traps = [
 
 export default function Trap() {
   return (
-    <section className="bg-black py-20 px-2 md:px-12 lg:px-20">
-      <div className="mx-auto max-w-5xl rounded-[2rem] border border-white/10 bg-slate-950/95 p-4 shadow-[0_20px_80px_rgba(15,23,42,0.35)]">
-        <div className="text-slate-200 text-lg leading-8 space-y-5">
+    <section className="bg-black py-18 max-w-5xl mx-auto px-2 md:px-8 lg:px-8">
+      <div className="mx-auto max-w-8xl rounded-[2rem] border border-white/10 bg-slate-950/95 p-4 shadow-[0_20px_80px_rgba(15,23,42,0.35)]">
+        <div className="text-slate-200 text-lg leading-8 space-y-6">
           <p>
             To whoever has stumbled upon this page, For the rest of your valuable time here, I want you to do <strong>3 things</strong>:
           </p>

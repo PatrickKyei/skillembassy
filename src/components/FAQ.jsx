@@ -27,7 +27,7 @@ export default function FAQ() {
   const [openIndex, setOpenIndex] = useState(0);
 
   return (
-    <section id="faq-section" className="mt-20 scroll-mt-24">
+    <section id="faq-section" className="mt-20 max-w-4xl mx-auto px-2 md:px-8 lg:px-8 scroll-mt-24">
       <div className="text-center">
         <p className="text-sm uppercase tracking-[0.35em] text-violet-300">GOT QUESTIONS?</p>
         <h2 className="mt-6 text-4xl font-extrabold tracking-tight text-white sm:text-5xl">We've Got Answers</h2>

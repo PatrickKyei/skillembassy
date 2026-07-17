@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Membership() {
   return (
-    <section className="bg-black py-20 px-6 md:px-12 lg:px-20">
+    <section className="bg-black max-w-4xl mx-auto px-2 md:px-8 lg:px-8">
         <div className="text-center">
           <h2 className="text-5xl sm:text-6xl font-extrabold tracking-tight text-white">
             Join 1000+ One-Person Businesses Inside Skillembassy

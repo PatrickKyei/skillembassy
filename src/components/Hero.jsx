@@ -76,9 +76,9 @@ return (
 
 <section className="relative overflow-hidden bg-black text-white">
 
-<div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(139,92,246,0.22),_transparent_35%),radial-gradient(circle_at_100%_50%,_rgba(16,185,129,0.16),_transparent_30%)]" />
+<div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(139,92,246,0.22),_transparent_25%),radial-gradient(circle_at_100%_50%,_rgba(16,185,129,0.16),_transparent_30%)]" />
 
-<div className="relative mx-auto max-w-7xl px-4 py-28 sm:py-32">
+<div className="relative mx-auto max-w-7xl px-4 py-24 sm:py-24">
 
 <div className="flex justify-center">
   <a href="https://paystack.shop/pay/skillembassy-membership" target="_blank" rel="noopener noreferrer">

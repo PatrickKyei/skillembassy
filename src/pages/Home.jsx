@@ -23,7 +23,7 @@ import "../App.css";
 function Home() {
   return (
     <div id="creator-central" className="min-h-screen bg-black text-white">
-      <main className="mx-auto max-w-6xl px-4 py-0">
+      <main className="mx-auto max-w-9xl px-0 py-0">
         <Banner />
         <Navbar />
         <Hero />

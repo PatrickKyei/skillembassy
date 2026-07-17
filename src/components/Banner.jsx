@@ -20,9 +20,9 @@ setIsVisible(false);
 
 return isVisible ? (
 
-<div className="relative z-50 bg-gradient-to-r from-violet-600 via-fuchsia-600 to-rose-500 text-white">
+<div className="relative z-50 w-full bg-gradient-to-r from-violet-600 via-fuchsia-600 to-rose-500 text-white">
 
-<div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-2">
+<div className="flex w-full items-center justify-between gap-4 px-2 py-2">
 
 <p className="text-sm font-semibold tracking-tight">
 
