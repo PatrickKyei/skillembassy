@@ -89,10 +89,10 @@ const whoContent = [
 
 export default function Who() {
   return (
-    <section id="who-section" className="mt-20 scroll-mt-24 bg-black py-16">
-      <div className="max-w-3xl mx-auto px-6">
+    <section id="who-section" className="mt-18 scroll-mt-20 bg-black py-12">
+      <div className="max-w-4xl mx-auto px-2 md:px-8 lg:px-8">
         {/* White Content Box */}
-        <div className="bg-white p-12 text-left text-slate-900 shadow-[0_24px_80px_rgba(15,23,42,0.18)]">
+        <div className="bg-white p-8 text-left text-slate-900 shadow-[0_24px_80px_rgba(15,23,42,0.18)]">
           <div className="space-y-6 text-[1.2rem] leading-relaxed">
             {whoContent.map((item, index) => (
               <p key={index} className={item.className}>

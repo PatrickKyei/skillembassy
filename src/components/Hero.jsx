@@ -114,7 +114,7 @@ Learn the future-proof skills
 
 <p className="mx-auto mt-6 max-w-2xl text-sm leading-7 text-slate-300 sm:text-base md:text-lg">
 
-Turn Your Ideas & Interests Into Income, Optimize Your Workflow, & Build A High Energy Lifestyle. Start Your Learning Adventure Today!.
+Turn Your Ideas & Interests Into Income, Optimize Your Workflow, & Build A High Energy Lifestyle. Go From Ideas To Execution.
 
 </p>
 

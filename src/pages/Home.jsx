@@ -27,7 +27,7 @@ function Home() {
         <Banner />
         <Navbar />
         <Hero />
-        <Solution />
+        {/* <Solution /> */}
         <Who />
         <Featured />
         <Results />

@@ -3,10 +3,9 @@ import React from 'react';
 export default function Membership() {
   return (
     <section className="bg-black py-20 px-6 md:px-12 lg:px-20">
-      <div className="mx-auto max-w-5xl rounded-[1rem] border border-white/10 bg-slate-950/95 p-10 shadow-[0_20px_80px_rgba(15,23,42,0.35)]">
         <div className="text-center">
           <h2 className="text-5xl sm:text-6xl font-extrabold tracking-tight text-white">
-            Join 1000+ One-Person Businesses Skillembassy
+            Join 1000+ One-Person Businesses Inside Skillembassy
           </h2>
           <p className="mt-6 text-left text-xl text-slate-300 leading-8">
             Here's a challenge and guarantee for you: If you dedicate 10 measly minutes a day to interacting in Skillembassy - you will not fail.
@@ -86,7 +85,7 @@ export default function Membership() {
         <div className="mt-16 text-center">
           <h3 className="text-4xl font-extrabold tracking-tight text-white">Ready To Escape The Trap Of Surface Level Information?</h3>
         </div>
-      </div>
+      
     </section>
   );
 }

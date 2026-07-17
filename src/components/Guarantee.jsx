@@ -30,8 +30,7 @@ const focusAreas = [
 
 export default function Guarantee() {
   return (
-    <section className="bg-black py-20 px-6 md:px-12 lg:px-20">
-      <div className="mx-auto max-w-5xl rounded-[2rem] border border-white/10 bg-slate-950/95 p-10 shadow-[0_20px_80px_rgba(15,23,42,0.35)]">
+    <section className="bg-black py-20 px-4 md:px-12 lg:px-20">
         <div className="text-center">
           <h2 className="text-5xl sm:text-6xl font-extrabold tracking-tight text-white">
             How Do We Nearly Guarantee These Kinds Of Results?
@@ -50,7 +49,7 @@ export default function Guarantee() {
         <div className="mt-12 space-y-8">
           {focusAreas.map((area, index) => (
             <div key={index} className="flex gap-4 rounded-3xl border border-white/10 bg-black/60 p-6">
-              <div className="flex h-12 w-12 items-center justify-center rounded-3xl bg-amber-500 text-black text-lg font-bold">
+              <div className="flex h-8 w-12 items-center justify-center rounded-3xl bg-amber-500 text-black text-lg font-bold">
                 {index + 1}
               </div>
               <div>
@@ -77,7 +76,7 @@ export default function Guarantee() {
             This is what results in a flourishing relationship, and in our case <em>A flourishing business.</em>
           </p>
         </div>
-      </div>
+      
     </section>
   );
 }

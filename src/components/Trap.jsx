@@ -24,8 +24,8 @@ const traps = [
 
 export default function Trap() {
   return (
-    <section className="bg-black py-20 px-6 md:px-12 lg:px-20">
-      <div className="mx-auto max-w-5xl rounded-[2rem] border border-white/10 bg-slate-950/95 p-10 shadow-[0_20px_80px_rgba(15,23,42,0.35)]">
+    <section className="bg-black py-20 px-2 md:px-12 lg:px-20">
+      <div className="mx-auto max-w-5xl rounded-[2rem] border border-white/10 bg-slate-950/95 p-4 shadow-[0_20px_80px_rgba(15,23,42,0.35)]">
         <div className="text-slate-200 text-lg leading-8 space-y-5">
           <p>
             To whoever has stumbled upon this page, For the rest of your valuable time here, I want you to do <strong>3 things</strong>:
@@ -59,7 +59,7 @@ export default function Trap() {
 
           <div className="space-y-6">
             {traps.map((trap, index) => (
-              <div key={index} className="rounded-3xl border border-red-500/20 bg-red-500/10 p-6 shadow-[0_10px_40px_rgba(220,38,38,0.15)]">
+              <div key={index} className="rounded-2xl border border-red-500/20 bg-red-500/10 p-4 shadow-[0_10px_40px_rgba(220,38,38,0.15)]">
                 <div className="flex items-start gap-4">
                   <div className="mt-1 h-10 w-10 flex-shrink-0 rounded-full bg-red-500 text-center text-xl font-bold leading-10 text-white">
                     !

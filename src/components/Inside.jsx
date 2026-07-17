@@ -7,7 +7,7 @@ const insideItems = [
   },
   {
     title: 'The Strategy Library',
-    description: 'A library of 80+ strategies, trainings, and templates for branding, content creation, and monetization that we\'ve been building up for 3 years.',
+    description: 'a library of 80+ strategies, trainings, and templates for branding, content creation, and monetization that we\'ve been building up for 3 years.',
   },
   {
     title: 'Live Streams',

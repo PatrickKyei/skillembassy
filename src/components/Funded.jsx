@@ -4,7 +4,7 @@ export default function Funded() {
   return (
     <section id="funded-section" className="mt-20 scroll-mt-24 bg-black">
       {/* 1. Community Funded - Why Are We Doing This? (Centered) */}
-      <div className="max-w-4xl mx-auto px-6 pb-12">
+      <div className="max-w-6xl mx-auto px-1 md:px-12 lg:px-20 pb-12">
         <div className="rounded-[2rem] bg-slate-950/95 p-10 shadow-[0_20px_80px_rgba(15,23,42,0.35)]">
           <p className="text-sm uppercase tracking-[0.35em] text-cyan-300">COMMUNITY FUNDED</p>
           <h2 className="mt-6 text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
@@ -23,6 +23,7 @@ export default function Funded() {
             <p>We want to be able to listen to your feedback and implement it fast. We don't want to monetize like other brands in unethical ways like selling your data.</p>
             <p>At the same time, we don't want to ask for donations to build our platform, we want to provide you with the most value you've ever seen in your life through the Skillembassy community.</p>
             <p>We've had a lot of interest in the monthly challenges we are developing for creators & founders. With something like this, we can't just "open the flood gates" and let everyone in (or else we make it cheap and people get relaxed).</p>
+            <p>This is why we are charging a small fee $$ as a show of your commitment & also to keep the community running.</p>
           </div>
         </div>
       </div>
