@@ -6,6 +6,7 @@ import Solution from "../components/Solution";
 import Who from "../components/Who";
 import Results from "../components/Results";
 import Inside from "../components/Inside";
+import InsideView from "../components/InsideView";
 import Testimonials from "../components/Testimonials";
 import Funded from "../components/Funded";
 import Benefits from '../components/Benefits';
@@ -13,6 +14,7 @@ import Trap from '../components/Trap';
 import Membership from '../components/Membership';
 import Featured from "../components/Featured";
 import Pricing from "../components/Pricing";
+import Enroll from "../components/Enroll";
 import Offer from "../components/Offer";
 import FAQ from "../components/FAQ";
 import Guarantee from "../components/Guarantee";
@@ -32,6 +34,7 @@ function Home() {
         <Featured />
         <Results />
         <Inside />
+        <InsideView />
         <Testimonials />
         <Funded />
         <Trap />
@@ -39,6 +42,7 @@ function Home() {
         <Membership />
         <Pricing />
         <Offer/>
+        <Enroll />
         <FAQ />
         <Guarantee />
         <FinalOffer />

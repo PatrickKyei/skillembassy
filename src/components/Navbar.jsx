@@ -2,11 +2,10 @@ import React, { useState } from 'react';
 import { MdMenu, MdClose } from 'react-icons/md';
 
 const navLinks = [
-  { label: 'Skillembassy', href: '#creator-central' },
-  { label: 'How it works', href: '#how-section' },
+  { label: 'Home', href: '#creator-central' },
+  { label: 'How it works', href: '#guarantee-section' },
   { label: "What's inside", href: '#inside-section' },
   { label: "Who's it for", href: '#who-section' },
-  { label: 'Pricing', href: '#funded-section' },
   { label: 'Community funded', href: '#funded-section' },
   { label: 'Join', href: '#pricing-section' },
 ];

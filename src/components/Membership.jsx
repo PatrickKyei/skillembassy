@@ -5,7 +5,7 @@ export default function Membership() {
     <section className="bg-black max-w-4xl mx-auto px-2 md:px-8 lg:px-8">
         <div className="text-center">
           <h2 className="text-5xl sm:text-6xl font-extrabold tracking-tight text-white">
-            Join 1000+ One-Person Businesses Inside Skillembassy
+            Join 500+ One-Person Businesses Inside Skillembassy
           </h2>
           <p className="mt-6 text-left text-xl text-slate-300 leading-8">
             Here's a challenge and guarantee for you: If you dedicate 10 measly minutes a day to interacting in Skillembassy - you will not fail.
@@ -18,7 +18,7 @@ export default function Membership() {
             We are an Inner Circle that is dedicated to living a meaningful life with work that invigorates us.
           </p>
           <p className="mt-4 text-left text-xl text-slate-300 leading-8">
-            If you do not have a similar vision, this group is not for you.
+            If you do not have a similar vision, this community is not for you.
           </p>
           <p className="mt-4 text-left text-xl text-slate-300 leading-8">
             If you are ready to embark on this journey of betterment, fill out the form below and read the instructions on the next page carefully.

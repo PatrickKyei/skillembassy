@@ -30,7 +30,7 @@ const focusAreas = [
 
 export default function Guarantee() {
   return (
-    <section className="bg-black py-20 max-w-5xl mx-auto px-2 md:px-8 lg:px-8">
+    <section id="guarantee-section" className="bg-black py-20 max-w-5xl mx-auto px-2 md:px-8 lg:px-8">
         <div className="text-center">
           <h2 className="text-5xl sm:text-6xl font-extrabold tracking-tight text-white">
             How Do We Nearly Guarantee These Kinds Of Results?

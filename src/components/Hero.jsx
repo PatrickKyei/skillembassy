@@ -58,17 +58,13 @@ const Hero = () => {
     return () => clearTimeout(timeout);
   }, [text, phase, programIndex]);
 
-  const scrollToSection = () => {
+  const scrollToPricing = () => {
+    const section = document.getElementById('pricing-section');
 
-const section = document.getElementById('solution-section');
-
-if (section) {
-
-section.scrollIntoView({ behavior: 'smooth' });
-
-}
-
-};
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
 
   
 
@@ -81,14 +77,13 @@ return (
 <div className="relative mx-auto max-w-7xl px-4 py-24 sm:py-24">
 
 <div className="flex justify-center">
-  <a href="https://paystack.shop/pay/skillembassy-membership" target="_blank" rel="noopener noreferrer">
-
-<span className="inline-flex items-center rounded-full bg-white/10 px-4 py-2 text-xs uppercase tracking-[0.3em] text-slate-200">
-
-2,000+ Community Members
-
-</span>
-</a>
+  <button
+    type="button"
+    onClick={scrollToPricing}
+    className="inline-flex items-center rounded-full bg-white/10 px-4 py-2 text-xs uppercase tracking-[0.3em] text-slate-200 transition hover:bg-white/20"
+  >
+    2,000+ Community Members
+  </button>
 </div>
 
   

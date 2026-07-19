@@ -62,7 +62,7 @@ const whoContent = [
     className: 'font-semibold',
   },
   {
-    text: "We've gotten to a point in our own creator journey where we aren't really 'competing' with others. We are focused on building a software business.",
+    text: "We've gotten to a point in our own creator journey where we aren't really 'competing' with others. We are focused on building a community of thinkers and performers.",
     className: '',
   },
   {
@@ -89,7 +89,7 @@ const whoContent = [
 
 export default function Who() {
   return (
-    <section id="who-section" className="mt-18 scroll-mt-20 bg-black py-12">
+    <section id="who-section" className="mt-18 scroll-mt-20 bg-black py-10">
       <div className="max-w-4xl mx-auto px-2 md:px-8 lg:px-8">
         {/* White Content Box */}
         <div className="bg-white p-8 text-left text-slate-900 shadow-[0_24px_80px_rgba(15,23,42,0.18)]">
