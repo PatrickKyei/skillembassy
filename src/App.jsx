@@ -4,6 +4,7 @@ import "./App.css";
 import "aos/dist/aos.css";
 import AOS from "aos";
 import Home from "./pages/Home";
+import Pathfinder from "./pages/Pathfinder";
 // import Business from "./pages/Business";
 // import Inclusion from "./pages/Inclusion";
 // import OurStory from "./pages/OurStory";
@@ -33,6 +34,7 @@ function App() {
       <div className="container-main">
         <Routes>
           <Route exact path="/" element={<Home />} />
+          <Route path="pathfinder" element={<Pathfinder />} />
           <Route path="about" element={<About />} />
           {/* <Route path="careers" element={<Courses />} /> */}
 

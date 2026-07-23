@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { MdMenu, MdClose } from 'react-icons/md';
 
 const navLinks = [
-  { label: 'Home', href: '#creator-central' },
-  { label: 'How it works', href: '#guarantee-section' },
-  { label: "What's inside", href: '#inside-section' },
-  { label: "Who's it for", href: '#who-section' },
-  { label: 'Community funded', href: '#funded-section' },
-  { label: 'Join', href: '#pricing-section' },
+  { label: 'Home', href: '#creator-central', isRoute: false },
+  { label: 'How it works', href: '#guarantee-section', isRoute: false },
+  { label: "What's inside", href: '#inside-section', isRoute: false },
+  { label: "Who's it for", href: '#who-section', isRoute: false },
+  { label: 'Pathfinder', href: '/pathfinder', isRoute: true },
+  { label: 'Join', href: '#pricing-section', isRoute: false },
 ];
 
 const Navbar = () => {
@@ -38,9 +39,15 @@ const Navbar = () => {
           <ul className="flex flex-col gap-4 text-center md:flex-row md:items-center md:gap-6">
             {navLinks.map((link) => (
               <li key={link.label}>
-                <a href={link.href} className="text-sm text-slate-100 hover:text-white transition-colors">
-                  {link.label}
-                </a>
+                {link.isRoute ? (
+                  <Link to={link.href} className="text-sm text-slate-100 hover:text-white transition-colors">
+                    {link.label}
+                  </Link>
+                ) : (
+                  <a href={link.href} className="text-sm text-slate-100 hover:text-white transition-colors">
+                    {link.label}
+                  </a>
+                )}
               </li>
             ))}
           </ul>
